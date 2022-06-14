@@ -1,0 +1,5 @@
+﻿.main {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #4c0622, #430426, #380528, #2d0629, #210529);
+    background-color: black !important;
+}

@@ -1,5 +1,9 @@
 ﻿// --------------------------- Slider & pagitation start ---------------------------
 export function slider_func() {
+    // These two variables are to prevent the slider from being clicked again until the last click (if any) finish its job.
+    let lastClick = 0;
+    let delay = 1600;
+
     let element_index = 4;          // mine
     var btns = document.querySelectorAll('.btn');
     var paginationWrapper = document.querySelector('.pagination-wrapper');
@@ -32,6 +36,10 @@ export function slider_func() {
     }
 
     function slider_show_prev(element) {
+        if (lastClick >= (Date.now() - delay))
+            return; // if this function running now Don't run it again until finishing the current execution
+        lastClick = Date.now();
+
         clearInterval(auto_slide_intervar);  // (to reset interval) stop it first and at the end start it again
         $('.slider-right').animate({
             'opacity': "0"
@@ -63,6 +71,10 @@ export function slider_func() {
 
 
     function slider_show_next(element) {
+        if (lastClick >= (Date.now() - delay))
+            return; // if this function running now Don't run it again until finishing the current execution
+        lastClick = Date.now();
+
         clearInterval(auto_slide_intervar);  // (to reset interval) stop it first and at the end start it again
         $('.slider-right').animate({
             'right': "-600",

@@ -1,14 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "Hash": "pE+hTh+yQB/mHA+NK9B77tXdoSSkbIspDn4KS362AtA=",
-=======
-  "Hash": "mLtLJ7kUXY4kh8N1CqEt0pAfSQ9O1x40aT4MkeCgs74=",
->>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
-=======
-  "Hash": "qbNMiCz1+TbhNhOqKdN7su3cYU8A6+yvSE2fAjyrdt8=",
->>>>>>> parent of ca3a7d4 (edit Home/Index.cshtml)
+  "Hash": "1g5cVsiIgwhbrova9rKgQG8F5KSMQGMMoXYyjbJrQZQ=",
   "Source": "Avero.Web",
   "BasePath": "_content/Avero.Web",
   "Mode": "Default",
@@ -297,10 +289,6 @@
       "OriginalItemSpec": "wwwroot\\img\\test\\r4.jpg"
     },
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Home\\Index.js",
-=======
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Partial\\_slider.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
@@ -319,10 +307,6 @@
     },
     {
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\site.js",
->>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
-=======
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\site.js",
->>>>>>> parent of ca3a7d4 (edit Home/Index.cshtml)
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
@@ -558,6 +542,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.css",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "lib/Swiper/swiper-bundle.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.js",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "lib/Swiper/swiper-bundle.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.js.map",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "lib/Swiper/swiper-bundle.min.js.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Swiper\\swiper-bundle.min.js.map"
     }
   ]
 }

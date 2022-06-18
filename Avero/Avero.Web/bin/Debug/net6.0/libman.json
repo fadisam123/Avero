@@ -19,5 +19,16 @@
         "jquery.min.js"
       ]
     }
+  ,
+{
+  "provider": "cdnjs",
+  "library": "Swiper@8.2.4",
+  "destination": "wwwroot/lib/Swiper/",
+  "files": [
+    "swiper-bundle.min.js",
+    "swiper-bundle.min.js.map",
+    "swiper-bundle.min.css"
   ]
+}
+]
 }

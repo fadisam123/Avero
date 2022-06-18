@@ -1,4 +1,4 @@
-﻿.slide {
+﻿﻿.slide {
  position: relative;
   height: 100%;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -64,5 +64,8 @@ cursor: pointer;
 border-radius: 5px;
 background-color: rgba(0, 0, 0, 0.3);
 }
-
-
+/* ﻿.main {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #4c0622, #430426, #380528, #2d0629, #210529);
+    background-color: black !important;
+} */

@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "pE+hTh+yQB/mHA+NK9B77tXdoSSkbIspDn4KS362AtA=",
+=======
+  "Hash": "mLtLJ7kUXY4kh8N1CqEt0pAfSQ9O1x40aT4MkeCgs74=",
+>>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
   "Source": "Avero.Web",
   "BasePath": "_content/Avero.Web",
   "Mode": "Default",
@@ -612,7 +616,28 @@
       "OriginalItemSpec": "wwwroot\\img\\test\\r4.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Home\\Index.js",
+=======
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Partial\\_slider.js",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "js/Partial/_slider.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Partial\\_slider.js"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\site.js",
+>>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",

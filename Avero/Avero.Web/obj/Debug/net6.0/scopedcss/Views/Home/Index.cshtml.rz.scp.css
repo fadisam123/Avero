@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .slide[b-zil5iyl7cg] {
  position: relative;
   height: 100%;
@@ -66,3 +67,10 @@ background-color: rgba(0, 0, 0, 0.3);
 }
 
 
+=======
+.main[b-zil5iyl7cg] {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #4c0622, #430426, #380528, #2d0629, #210529);
+    background-color: black !important;
+}
+>>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76

@@ -15,7 +15,23 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\SAM\Desktop\Avero\Avero\Avero.Web
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< HEAD
 [C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/Privacy.cshtml]
+=======
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/Privacy.cshtml]
+>>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -39,7 +55,23 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/Index.cshtml]
+=======
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Account/Views/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxWaWV3c1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-j4nm5sjpiz
+
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Account/Views/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxWaWV3c1xSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-s9gaoyef57
+
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Admin/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-6bi3m7bft7
+
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/Index.cshtml]
+>>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-zil5iyl7cg
 

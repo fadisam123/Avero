@@ -250,6 +250,7 @@ C:\Users\ROG\Desktop\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\Views\Home
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\Views\Partial\_slider.cshtml.rz.scp.css
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\projectbundle\Avero.Web.bundle.scp.css
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\Views\Partial\_searchBox.cshtml.rz.scp.css
+<<<<<<< HEAD
 C:\Users\SAM\Avero\Avero\Avero.Web\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\SAM\Avero\Avero\Avero.Web\bin\Debug\net6.0\appsettings.json
 C:\Users\SAM\Avero\Avero\Avero.Web\bin\Debug\net6.0\libman.json
@@ -722,3 +723,5 @@ C:\Users\SAM\Desktop\Avero\Avero\Avero.Web\obj\Debug\net6.0\Avero.Web.genruntime
 C:\Users\SAM\Desktop\Avero\Avero\Avero.Web\obj\Debug\net6.0\ref\Avero.Web.dll
 =======
 >>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
+=======
+>>>>>>> parent of ca3a7d4 (edit Home/Index.cshtml)

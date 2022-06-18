@@ -18,15 +18,6 @@
       "files": [
         "jquery.min.js"
       ]
-    },
-    {
-      "library": "Swiper@8.2.4",
-      "destination": "wwwroot/lib/Swiper/",
-      "files": [
-        "swiper-bundle.min.js",
-        "swiper-bundle.min.css",
-        "swiper-bundle.min.js.map"
-      ]
     }
   ]
 }

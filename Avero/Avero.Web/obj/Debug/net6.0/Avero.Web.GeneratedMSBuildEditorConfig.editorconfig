@@ -8,16 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Avero.Web
 build_property.RootNamespace = Avero.Web
-build_property.ProjectDir = C:\Users\SAM\Desktop\Avero\Avero\Avero.Web\
+build_property.ProjectDir = C:\Users\ROG\Desktop\Avero\Avero\Avero.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\SAM\Desktop\Avero\Avero\Avero.Web
+build_property.MSBuildProjectDirectory = C:\Users\ROG\Desktop\Avero\Avero\Avero.Web
 build_property._RazorSourceGeneratorDebug = 
 
-<<<<<<< HEAD
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/Privacy.cshtml]
-=======
 [C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -31,33 +28,29 @@ build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFy
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/Privacy.cshtml]
->>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/Error.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/_ViewImports.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/_ViewStart.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/Index.cshtml]
-=======
 [C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Areas/Account/Views/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxWaWV3c1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-j4nm5sjpiz
@@ -71,14 +64,13 @@ build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxIb21l
 build_metadata.AdditionalFiles.CssScope = b-6bi3m7bft7
 
 [C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/Index.cshtml]
->>>>>>> 05c07f5c3748ec825193a53e4ca888009f7eda76
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-zil5iyl7cg
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Partial/_searchBox.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Partial/_searchBox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFxfc2VhcmNoQm94LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-hf1qk2ei4s
 
-[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Partial/_slider.cshtml]
+[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Partial/_slider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFxfc2xpZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-0hyncgi3kr

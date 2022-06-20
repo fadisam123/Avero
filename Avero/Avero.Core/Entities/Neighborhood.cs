@@ -1,11 +1,20 @@
-﻿namespace Avero.Core.Entities
-{
-    public class Neighborhood
-    {
-        int neighborhood_id { get; set; }
-        String? name { get; set; }
+﻿using Avero.Core.Shared;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-        City? city_id { get; set; }
-        public ICollection<User> users { get; set; } = new HashSet<User>();
+namespace Avero.Core.Entities
+{
+    public class Neighborhood : BaseEntity
+    {
+
+/*        [Key]
+        int neighborhood_id { get; set; }*/
+
+        [Required]
+        public String? name { get; set; }
+
+        [Required]
+        public City? city { get; set; }
+        public ICollection<User> user { get; set; } = new List<User>();
     }
 }

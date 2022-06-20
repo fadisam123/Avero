@@ -1,11 +1,11 @@
+C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.deps.json
+C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.dll
+C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.pdb
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.csproj.AssemblyReference.cache
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.AssemblyInfoInputs.cache
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.AssemblyInfo.cs
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.csproj.CoreCompileInputs.cache
-C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.deps.json
-C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.dll
-C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.pdb
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.dll
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\refint\Avero.Core.dll
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.pdb

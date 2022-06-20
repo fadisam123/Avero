@@ -1,16 +1,22 @@
-﻿using System;
+﻿using Avero.Core.Shared;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Avero.Core.Entities
 {
-    public class City
+    public class City : BaseEntity
     {
-        int city_id { get; set; }
-        string? name { get; set; }
 
-        public ICollection<Neighborhood> neighborhoods { get; set; } = new List<Neighborhood>();
+/*        [Key]
+        int city_id { get; set; }*/
+
+        [Required]
+        public string? name { get; set; }
+
+        public ICollection<Neighborhood> neighborhood { get; set; } = new List<Neighborhood>();
     } 
 }

@@ -7,12 +7,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Persistence\Temp\**" />
+    <EmbeddedResource Remove="Persistence\Temp\**" />
+    <None Remove="Persistence\Temp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Avero.Application\Avero.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Identity\" />
-    <Folder Include="Persistence\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

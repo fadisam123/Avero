@@ -23,4 +23,11 @@
     <ProjectReference Include="..\Avero.Infrastructure\Avero.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Accunt\Controllers\" />
+    <Folder Include="Areas\Accunt\Data\" />
+    <Folder Include="Areas\Accunt\Models\" />
+    <Folder Include="Areas\Accunt\Views\" />
+  </ItemGroup>
+
 </Project>

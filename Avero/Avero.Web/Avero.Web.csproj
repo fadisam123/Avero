@@ -19,4 +19,9 @@
     <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Avero.Application\Avero.Application.csproj" />
+    <ProjectReference Include="..\Avero.Infrastructure\Avero.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

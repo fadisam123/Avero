@@ -1,0 +1,344 @@
+﻿/*-------------- slider start --------------*/
+
+.slider-container {
+    height: 60vh;
+    width: 65vw;
+    background: url(/img/slider.jpg) center center no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 15px 5px rgb(171 18 18 / 70%);
+    transition: all 1s ease-in-out;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slider-left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 35%;
+    padding: 1rem;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+    .slider-left strong {
+        font-size: 25px;
+        color: #bf0f0a;
+        text-transform: uppercase;
+    }
+
+        .slider-left strong span {
+            display: block;
+            margin-top: -16px
+        }
+
+    .slider-left b {
+        display: block;
+        font-size: 18px;
+        color: #312826;
+        letter-spacing: -1px
+    }
+
+    .slider-left p {
+        position: relative;
+        padding: 0 10px;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+
+        .slider-left p::before {
+            content: '';
+            width: 19px;
+            height: 19px;
+            background: url(/img/quot1.png) center center no-repeat;
+            position: absolute;
+            top: 0;
+            left: -10px
+        }
+
+        .slider-left p::after {
+            content: '';
+            width: 19px;
+            height: 19px;
+            background: url(/img/quot2.png) right bottom no-repeat;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+.slider-right {
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background: url(/img/test/r4.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.pagination {
+    width: 110px;
+    height: 35px;
+    margin: 0;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pagination-wrapper {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes pagination-container--animation-prev {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(18px);
+    }
+}
+
+@keyframes pagination-container--animation-next {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-18px);
+    }
+}
+
+.transition-prev .pagination-container {
+    animation: pagination-container--animation-prev 0.3s forwards;
+}
+
+.transition-next .pagination-container {
+    animation: pagination-container--animation-next 0.3s forwards;
+}
+
+.little-dot {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 6px;
+    position: relative;
+    z-index: 10;
+}
+
+.little-dot--first,
+.little-dot--last {
+    z-index: 5;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-18px);
+    }
+}
+
+.transition-prev .little-dot--first {
+    animation: slideLeft 0.4s 0.3s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes little-dot--first--animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.transition-next .little-dot--first {
+    animation: little-dot--last--animation 0.3s forwards;
+}
+
+
+@keyframes little-dot--last--animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.transition-prev .little-dot--last {
+    animation: little-dot--last--animation 0.3s forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(18px);
+        opacity: 1;
+    }
+}
+
+.transition-next .little-dot--last {
+    animation: slideRight 0.4s 0.3s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.big-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: #f6af54;
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+}
+
+.transition-next .big-dot {
+    right: auto;
+    left: -6px;
+}
+
+.big-dot-container {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.transition-next .big-dot-container {
+    right: auto;
+    left: 3px;
+}
+
+@keyframes big-dot-container--animation-prev {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(-179deg);
+    }
+}
+
+@keyframes big-dot-container--animation-next {
+    0% {
+        transform: translateY(-50%);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(-181deg);
+    }
+}
+
+.transition-prev .big-dot-container {
+    animation: big-dot-container--animation-prev 0.3s forwards;
+}
+
+.transition-next .big-dot-container {
+    animation: big-dot-container--animation-next 0.3s forwards;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #fff;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+    .btn:hover {
+        opacity: 0.6;
+    }
+
+.btn--next {
+    left: calc(60% + 10px);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.btn--prev {
+    right: calc(60% + 10px);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    .slider-container {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider-container {
+        width: 90vw;
+        height: 68vh;
+        top: 57%;
+    }
+
+    .slider {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .slider-left {
+        width: 100%;
+        height: 35%;
+        top: 0;
+    }
+
+    .slider-right {
+        width: 100%;
+        height: 65%;
+        bottom: 0;
+    }
+
+    .search-container {
+        top: 16.5% !important;
+    }
+}
+/*-------------- slider start --------------*/

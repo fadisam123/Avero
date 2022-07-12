@@ -7,21 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Account\Controllers\" />
-    <Folder Include="Areas\Account\Data\" />
-    <Folder Include="Areas\Account\Models\" />
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Avero.Application\Avero.Application.csproj" />
     <ProjectReference Include="..\Avero.Infrastructure\Avero.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\Account\Login.css" />
+    <None Include="wwwroot\css\Account\Register.css" />
   </ItemGroup>
 
 </Project>

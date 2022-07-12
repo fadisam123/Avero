@@ -27,11 +27,19 @@ namespace Avero.Core.Entities
         public int rated_people_count { set; get; } = 0;
 
         [Required]
-        public User? wholesealer { get; set; }
+        public long catagory_id { get; set; }
         [Required]
-        public Catagory? catagory { get; set; }
-        public ICollection<Product_review> product_review { set; get; } = new List<Product_review>();
-        public ICollection<Order_details> order_details { set; get; } = new List<Order_details>();
-        public ICollection<Product_imgs> product_imgs { set; get; } = new List<Product_imgs>();
+        public String? wholesealer_id { get; set; }
+
+
+        [Required]
+        [ForeignKey("wholesealer_id")]
+        public virtual User? wholesealer { get; set; }
+        [Required]
+        [ForeignKey("catagory_id")]
+        public virtual Catagory? catagory { get; set; }
+        public virtual ICollection<Product_review> product_review { set; get; } = new List<Product_review>();
+        public virtual ICollection<Order_details> order_details { set; get; } = new List<Order_details>();
+        public virtual ICollection<Product_imgs> product_imgs { set; get; } = new List<Product_imgs>();
     }
 }

@@ -18,17 +18,23 @@
       "files": [
         "jquery.min.js"
       ]
+    },
+    {
+      "library": "Swiper@8.2.4",
+      "destination": "wwwroot/lib/Swiper/",
+      "files": [
+        "swiper-bundle.min.js",
+        "swiper-bundle.min.js.map",
+        "swiper-bundle.min.css"
+      ]
+    },
+    {
+      "library": "jquery-validate@1.19.5",
+      "destination": "wwwroot/lib/jquery-validate/"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
     }
-  ,
-{
-  "provider": "cdnjs",
-  "library": "Swiper@8.2.4",
-  "destination": "wwwroot/lib/Swiper/",
-  "files": [
-    "swiper-bundle.min.js",
-    "swiper-bundle.min.js.map",
-    "swiper-bundle.min.css"
   ]
-}
-]
 }

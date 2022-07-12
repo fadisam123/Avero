@@ -8,6 +8,6 @@ namespace Avero.Core.Enum
 {
     public enum Rating
     {
-        one, two, three, four, five
+        zero, one, two, three, four, five
     }
 }

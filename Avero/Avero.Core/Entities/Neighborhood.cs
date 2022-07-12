@@ -7,14 +7,17 @@ namespace Avero.Core.Entities
     public class Neighborhood : BaseEntity
     {
 
-/*        [Key]
+/*      [Key]
         int neighborhood_id { get; set; }*/
 
         [Required]
         public String? name { get; set; }
+        [Required]
+        public long city_id { get; set; }
 
         [Required]
-        public City? city { get; set; }
-        public ICollection<User> user { get; set; } = new List<User>();
+        [ForeignKey("city_id")]
+        public virtual City? city { get; set; }
+        public virtual ICollection<User> users { get; set; } = new List<User>();
     }
 }

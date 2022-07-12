@@ -30,6 +30,9 @@ namespace Avero.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
+                    b.Property<string>("img_name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -64,7 +67,7 @@ namespace Avero.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<long>("cityId")
+                    b.Property<long>("city_id")
                         .HasColumnType("bigint");
 
                     b.Property<string>("name")
@@ -73,7 +76,7 @@ namespace Avero.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("cityId");
+                    b.HasIndex("city_id");
 
                     b.ToTable("neighborhood");
                 });
@@ -90,13 +93,13 @@ namespace Avero.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("retailerId")
+                    b.Property<string>("retailer_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("retailerId");
+                    b.HasIndex("retailer_id");
 
                     b.ToTable("order");
                 });
@@ -109,13 +112,13 @@ namespace Avero.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<long?>("orderId")
+                    b.Property<long?>("order_id")
                         .HasColumnType("bigint");
 
                     b.Property<int>("processing_state")
                         .HasColumnType("int");
 
-                    b.Property<long?>("productId")
+                    b.Property<long?>("product_id")
                         .HasColumnType("bigint");
 
                     b.Property<int>("quantity")
@@ -123,9 +126,9 @@ namespace Avero.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("orderId");
+                    b.HasIndex("order_id");
 
-                    b.HasIndex("productId");
+                    b.HasIndex("product_id");
 
                     b.ToTable("order_details");
                 });
@@ -138,7 +141,7 @@ namespace Avero.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<long>("catagoryId")
+                    b.Property<long>("catagory_id")
                         .HasColumnType("bigint");
 
                     b.Property<DateTime?>("created_at")
@@ -172,15 +175,15 @@ namespace Avero.Infrastructure.Migrations
                     b.Property<int?>("rating")
                         .HasColumnType("int");
 
-                    b.Property<string>("wholesealerId")
+                    b.Property<string>("wholesealer_id")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("catagoryId");
+                    b.HasIndex("catagory_id");
 
-                    b.HasIndex("wholesealerId");
+                    b.HasIndex("wholesealer_id");
 
                     b.ToTable("product");
                 });
@@ -193,12 +196,15 @@ namespace Avero.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<long?>("productId")
+                    b.Property<string>("img_name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("product_id")
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("productId");
+                    b.HasIndex("product_id");
 
                     b.ToTable("Product_imgs");
                 });
@@ -218,17 +224,17 @@ namespace Avero.Infrastructure.Migrations
                     b.Property<DateTime>("created_at")
                         .HasColumnType("datetime2");
 
-                    b.Property<long>("productId")
+                    b.Property<long>("product_id")
                         .HasColumnType("bigint");
 
-                    b.Property<string>("userId")
+                    b.Property<string>("user_id")
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("productId");
+                    b.HasIndex("product_id");
 
-                    b.HasIndex("userId");
+                    b.HasIndex("user_id");
 
                     b.ToTable("product_review");
                 });
@@ -289,7 +295,7 @@ namespace Avero.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("img_path")
+                    b.Property<string>("img_name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("last_login")
@@ -306,7 +312,10 @@ namespace Avero.Infrastructure.Migrations
                     b.Property<double>("longitude")
                         .HasColumnType("float");
 
-                    b.Property<long>("neighborhoodId")
+                    b.Property<string>("marker_map_address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("neighborhood_id")
                         .HasColumnType("bigint");
 
                     b.Property<int>("rated_people_count")
@@ -332,7 +341,7 @@ namespace Avero.Infrastructure.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
-                    b.HasIndex("neighborhoodId");
+                    b.HasIndex("neighborhood_id");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -473,8 +482,8 @@ namespace Avero.Infrastructure.Migrations
             modelBuilder.Entity("Avero.Core.Entities.Neighborhood", b =>
                 {
                     b.HasOne("Avero.Core.Entities.City", "city")
-                        .WithMany("neighborhood")
-                        .HasForeignKey("cityId")
+                        .WithMany("neighborhoods")
+                        .HasForeignKey("city_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -485,7 +494,7 @@ namespace Avero.Infrastructure.Migrations
                 {
                     b.HasOne("Avero.Core.Entities.User", "retailer")
                         .WithMany("order")
-                        .HasForeignKey("retailerId")
+                        .HasForeignKey("retailer_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -496,11 +505,11 @@ namespace Avero.Infrastructure.Migrations
                 {
                     b.HasOne("Avero.Core.Entities.Order", "order")
                         .WithMany("order_details")
-                        .HasForeignKey("orderId");
+                        .HasForeignKey("order_id");
 
                     b.HasOne("Avero.Core.Entities.Product", "product")
                         .WithMany("order_details")
-                        .HasForeignKey("productId");
+                        .HasForeignKey("product_id");
 
                     b.Navigation("order");
 
@@ -511,13 +520,13 @@ namespace Avero.Infrastructure.Migrations
                 {
                     b.HasOne("Avero.Core.Entities.Catagory", "catagory")
                         .WithMany("product")
-                        .HasForeignKey("catagoryId")
+                        .HasForeignKey("catagory_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Avero.Core.Entities.User", "wholesealer")
                         .WithMany("product")
-                        .HasForeignKey("wholesealerId")
+                        .HasForeignKey("wholesealer_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -530,7 +539,9 @@ namespace Avero.Infrastructure.Migrations
                 {
                     b.HasOne("Avero.Core.Entities.Product", "product")
                         .WithMany("product_imgs")
-                        .HasForeignKey("productId");
+                        .HasForeignKey("product_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("product");
                 });
@@ -539,13 +550,13 @@ namespace Avero.Infrastructure.Migrations
                 {
                     b.HasOne("Avero.Core.Entities.Product", "product")
                         .WithMany("product_review")
-                        .HasForeignKey("productId")
+                        .HasForeignKey("product_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Avero.Core.Entities.User", "user")
                         .WithMany("product_review")
-                        .HasForeignKey("userId");
+                        .HasForeignKey("user_id");
 
                     b.Navigation("product");
 
@@ -555,8 +566,8 @@ namespace Avero.Infrastructure.Migrations
             modelBuilder.Entity("Avero.Core.Entities.User", b =>
                 {
                     b.HasOne("Avero.Core.Entities.Neighborhood", "neighborhood")
-                        .WithMany("user")
-                        .HasForeignKey("neighborhoodId")
+                        .WithMany("users")
+                        .HasForeignKey("neighborhood_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -621,12 +632,12 @@ namespace Avero.Infrastructure.Migrations
 
             modelBuilder.Entity("Avero.Core.Entities.City", b =>
                 {
-                    b.Navigation("neighborhood");
+                    b.Navigation("neighborhoods");
                 });
 
             modelBuilder.Entity("Avero.Core.Entities.Neighborhood", b =>
                 {
-                    b.Navigation("user");
+                    b.Navigation("users");
                 });
 
             modelBuilder.Entity("Avero.Core.Entities.Order", b =>

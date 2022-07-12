@@ -17,6 +17,6 @@ namespace Avero.Core.Entities
         [Required]
         public string? name { get; set; }
 
-        public ICollection<Neighborhood> neighborhood { get; set; } = new List<Neighborhood>();
+        public virtual ICollection<Neighborhood> neighborhoods { get; set; } = new List<Neighborhood>();
     } 
 }

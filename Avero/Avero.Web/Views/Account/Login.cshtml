@@ -1,0 +1,53 @@
+﻿@using Avero.Web.ViewModels
+@model LoginViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+    ViewBag.Title = "Login";
+}
+@section style {
+
+    <link rel="stylesheet" href="~/css/Account/Login.css" />
+
+}
+    <div class="login-box">
+        <h2>Login</h2>
+        <form id="login" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="user-box">
+                <input asp-for="Email">
+                <label>Email</label>
+                <i class="icon">
+                    <img src="~/img/Account/Login/admin_avatar_human_login_user_icon.png" alt="">
+                </i>
+            </div>
+            <div class="user-box">
+                <input asp-for="Password">
+                <label>Password</label>
+                <i class="icon">
+                    <img src="~/img/Account/Login/admin_avatar_human_login_user_icon.png" alt="">
+                </i>
+            </div>
+            <div class="form-group">
+                <div class="checkbox text-white">
+                    <label asp-for="RememberMe">
+                        <input asp-for="RememberMe" />
+                        @Html.DisplayNameFor(m => m.RememberMe)
+                    </label>
+                </div>
+            </div>
+
+
+            <a href="javascript:{}" onclick="document.getElementById('login').submit();" class="next">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
+            <div class="d-flex justify-content-between">
+                <a class="m-auto px-1" style="left: 0; font-size: 10px;" asp-action="ForgotPassword">Forgot Password</a>
+                <a asp-controller="account" asp-action="register" class="m-auto px-1" style="left: 0; font-size: 10px;" asp-action="ForgotPassword">Register</a>
+            </div>
+        </form>
+
+</div>

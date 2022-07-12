@@ -1,5 +1,5 @@
 /*using Avero.Infrastructure.Persistence;*/
-
+using Microsoft.Extensions.DependencyInjection;
 using Avero.Application.Interfaces;
 using Avero.Core.Entities;
 using Avero.Infrastructure.Persistence;
@@ -18,8 +18,16 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 
 builder.Services.AddIdentity<User, IdentityRole>(options =>
 {
-    options.Password.RequiredLength = 8;
+    options.Password.RequiredLength = 6;
     options.Password.RequiredUniqueChars = 2;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireDigit = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireLowercase = false;
+
+    options.User.RequireUniqueEmail = true;
+    options.SignIn.RequireConfirmedEmail = true;
+
 
     /*options.SignIn.RequireConfirmedEmail = true;
     options.Tokens.EmailConfirmationTokenProvider = "CustomEmailConfirmation";*/
@@ -70,16 +78,39 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-      name: "areas",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
-});
+app.MapControllerRoute(
+    name: "MyArea",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// seed data
+CreateDbIfNotExists(app);
+
 app.Run();
+
+
+
+
+
+
+// seed data function
+static void CreateDbIfNotExists(IHost host)
+{
+    using (var scope = host.Services.CreateScope())
+    {
+        var services = scope.ServiceProvider;
+        try
+        {
+            var context = services.GetRequiredService<ApplicationDBContext>();
+            var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+            DataSeeder.seed(context, roleManager);
+        }
+        catch (Exception ex)
+        {
+            throw new Exception(ex.ToString());
+        }
+    }
+}

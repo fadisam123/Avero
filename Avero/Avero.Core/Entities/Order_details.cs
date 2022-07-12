@@ -7,20 +7,18 @@ namespace Avero.Core.Entities
 {
     public class Order_details : BaseEntity
     {
-
-/*        [ForeignKey("order_id")]
-        public int order_id { get; set; }
-        [ForeignKey("product_id")]
-        public int product_id { get; set; }*/
+        public long? order_id { get; set; }
+        public long? product_id { get; set; }
 
         [Required]
         public int quantity { get; set; }
         [Required]
         public Order_state? processing_state { get; set; }
 
-/*        [Required]*/
-        public Order? order { get; set; }
-/*        [Required]*/
-        public Product? product { get; set; }
+
+        [ForeignKey("order_id")]
+        public virtual Order? order { get; set; }
+        [ForeignKey("product_id")]
+        public virtual Product? product { get; set; }
     }
 }

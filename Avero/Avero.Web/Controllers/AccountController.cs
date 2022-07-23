@@ -39,6 +39,22 @@ namespace Avero.Web.Controllers
             return result;
         }
 
+        [AcceptVerbs("Get", "Post")]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsEmailInUse(string email)
+        {
+            var user = await userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                return Json(true);
+            }
+            else
+            {
+                return Json($"Email {email} is already in use");
+            }
+        }
+
         [HttpGet]
         [AllowAnonymous]
         public IActionResult Register()
@@ -69,11 +85,10 @@ namespace Avero.Web.Controllers
                 }
                 var user = new User
                 {
-                    fname = model.fname,
-                    lname = model.lname,
+                    name = model.name,
                     street_name = model.street_name,
                     registered_at = DateTime.Now,
-                    neighborhood_id = (long) model.neighborhood,
+                    neighborhood_id = (long)model.neighborhood,
                     UserName = model.Email,
                     Email = model.Email,
                     PhoneNumber = model.Phone,
@@ -105,7 +120,7 @@ namespace Avero.Web.Controllers
                     email.From.Add(new MailboxAddress("Avero Confirmation Message", "Avero-manager@outlook.com"));
                     email.To.Add(MailboxAddress.Parse(user.UserName));
                     email.Subject = "Test Email Subject";
-                    email.Body = new TextPart(TextFormat.Html) { Text = "<h1>Click Here To <a href='"+ confirmationLink +"'>Confirm</a></h1>" };
+                    email.Body = new TextPart(TextFormat.Html) { Text = "<h1>Click Here To <a href='" + confirmationLink + "'>Confirm</a></h1>" };
 
                     // send email
                     using var smtp = new SmtpClient();
@@ -160,7 +175,7 @@ namespace Avero.Web.Controllers
             {
                 await signInManager.SignInAsync(user, true);
                 TempData["confirm"] = "true";
-                return RedirectToAction("index","home");
+                return RedirectToAction("index", "home");
             }
 
             ViewBag.ErrorTitle = "Email cannot be confirmed";
@@ -233,10 +248,10 @@ namespace Avero.Web.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("index", "home");
         }
-        
+
         public async Task<IActionResult> ResendConfirmationEmail(string userId)
         {
-            if(userId != null)
+            if (userId != null)
             {
                 var user = await userManager.FindByIdAsync(userId);
                 var token = await userManager.GenerateEmailConfirmationTokenAsync(user);

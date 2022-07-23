@@ -1,4 +1,5 @@
 ﻿using Avero.Core.Entities;
+using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
 namespace Avero.Web.ViewModels
@@ -6,13 +7,8 @@ namespace Avero.Web.ViewModels
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "First Name")]
-        public String? fname { set; get; }
-
-
-        [Required]
-        [Display(Name = "Last Name")]
-        public String? lname { set; get; }
+        [Display(Name = "Name")]
+        public String? name { set; get; }
 
         public String? street_name { set; get; }
         [Required(ErrorMessage = "Please Select Your Neighborhood")]
@@ -28,7 +24,8 @@ namespace Avero.Web.ViewModels
         public String? marker_map_address { set; get; }
 
         [Required]
-        [RegularExpression(@"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b", ErrorMessage = "Invalid email")]            
+        [RegularExpression(@"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b", ErrorMessage = "Invalid email")]
+        [Remote(action: "IsEmailInUse", controller: "Account")]
         public string? Email { get; set; }
 
         [MaxLength(14)]

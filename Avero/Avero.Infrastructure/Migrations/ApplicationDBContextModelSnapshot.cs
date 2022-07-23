@@ -291,10 +291,6 @@ namespace Avero.Infrastructure.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
-                    b.Property<string>("fname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("img_name")
                         .HasColumnType("nvarchar(max)");
 
@@ -305,14 +301,14 @@ namespace Avero.Infrastructure.Migrations
                     b.Property<double>("latitude")
                         .HasColumnType("float");
 
-                    b.Property<string>("lname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<double>("longitude")
                         .HasColumnType("float");
 
                     b.Property<string>("marker_map_address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<long>("neighborhood_id")

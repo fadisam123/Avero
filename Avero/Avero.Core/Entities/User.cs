@@ -8,9 +8,7 @@ namespace Avero.Core.Entities
     public class User : IdentityUser // id, email, passwordHash, phoneNumber, Roles (from base class)
     {
         [Required]
-        public String? fname { set; get; }
-        [Required]
-        public String? lname { set; get; }
+        public String? name { set; get; }
         public String? img_name { set; get; }
         public double latitude { set; get; }
         public double longitude { set; get; }

@@ -6,108 +6,106 @@
 @section style {
 
     <link rel="stylesheet" href="~/css/Account/Register.css" />
-
+    <style>
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
 }
 
 
 
 
 
-    <div>
-        <div>
-            <form id="reg" method="post" asp-controller="Account" asp-action="Register" enctype="multipart/form-data">
+    <div class="px-2">
+        <form id="reg" method="post" asp-controller="Account" asp-action="Register" enctype="multipart/form-data">
 
-                <!-- Modal validation popup -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button onclick="$('#myModal').modal('hide')" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div id="validation-summary" asp-validation-summary="All" class="text-danger"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <button onclick="$('#myModal').modal('hide')" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
+            <!-- Modal validation popup -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button onclick="$('#myModal').modal('hide')" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="validation-summary" asp-validation-summary="All" class="text-danger"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button onclick="$('#myModal').modal('hide')" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label asp-for="Email"></label>
-                    <input asp-for="Email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" class="form-control" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="ConfirmPassword"></label>
-                    <input asp-for="ConfirmPassword" class="form-control" />
-                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-                </div>
+            <div class="form-group">
+                <label class="required" asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="required" asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="required" asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
 
-                <div class="form-group">
-                    <label asp-for="fname"></label>
-                    <input asp-for="fname" class="form-control" />
-                    <span asp-validation-for="fname" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="lname"></label>
-                    <input asp-for="lname" class="form-control" />
-                    <span asp-validation-for="lname" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="street_name"></label>
-                    <input asp-for="street_name" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label asp-for="Phone"></label>
-                    <input asp-for="Phone" />
-                </div>
-                <div class="form-group">
-                    <label>City</label>
-                    <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"><option value="">Select City</option></select>
-                </div>
-                <div class="form-group">
-                    <label asp-for="neighborhood"></label>
-                    <select id="neighborhood" asp-for="neighborhood"><option value="">Select City First</option></select>
-                    <span asp-validation-for="neighborhood" class="text-danger"></span>
-                </div>
+            <div class="form-group">
+                <label class="required" asp-for="name"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="street_name"></label>
+                <input asp-for="street_name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone"></label>
+                <input asp-for="Phone" />
+            </div>
+            <div class="form-group">
+                <label>City</label>
+                <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"><option value="">Select City</option></select>
+            </div>
+            <div class="form-group">
+                <label class="required" asp-for="neighborhood"></label>
+                <select id="neighborhood" asp-for="neighborhood"><option value="">Select City First</option></select>
+                <span asp-validation-for="neighborhood" class="text-danger"></span>
+            </div>
 
-                <div class="form-check">
-                    <label asp-for="is_wholesealer"></label>
-                    <input type="checkbox" asp-for="is_wholesealer" />
-                </div>
+            <div class="form-check">
+                <label asp-for="is_wholesealer"></label>
+                <input type="checkbox" asp-for="is_wholesealer" />
+            </div>
 
 
 
-                <div class="form-group d-flex align-items-center">
-                    <div class="me-4"><img src="~/img/users/Default.jpg" class="rounded" id="photoOutput" width="200" /></div>
-                    <div class="flex-fill">
-                        <div class="custom-file">
-                            <input accept="image/png, image/jpeg" id="photo" asp-for="Photo" class="form-control custom-file-input">
-                        </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="me-4"><img src="~/img/users/Default.jpg" class="rounded" id="photoOutput" width="200" /></div>
+                <div class="flex-fill">
+                    <div class="custom-file">
+                        <input accept="image/png, image/jpeg" id="photo" asp-for="Photo" class="form-control custom-file-input">
                     </div>
                 </div>
+            </div>
 
 
-                <div id="myMap" style="width:75%;height:400px; margin: auto"></div>
+            <div id="myMap" style="width:75%;height:400px; margin: auto"></div>
 
 
-                <input id="latInput" asp-for="latitude" hidden value="0" />
-                <input id="longInput" asp-for="longitude" hidden value="0" />
-                <input id="marker_map_address" asp-for="marker_map_address" hidden value="" />
+            <input id="latInput" asp-for="latitude" hidden value="0" />
+            <input id="longInput" asp-for="longitude" hidden value="0" />
+            <input id="marker_map_address" asp-for="marker_map_address" hidden value="" />
 
-                <button onclick="if(!$('#reg').valid())$('#myModal').modal('show')" type="submit" class="btn btn-primary">Register</button>
-            </form>
-        </div>
+            <button onclick="if(!$('#reg').valid())$('#myModal').modal('show')" type="submit" class="btn btn-primary">Register</button>
+        </form>
     </div>
 
     @section script {
@@ -142,7 +140,7 @@
             mapEvents.addHandler(pin, 'mouseout', function(e) {
                 e.target.setOptions({ title: '' });
             });
-            mapEvents.addHandler(pin, 'dragend', function (e) { 
+            mapEvents.addHandler(pin, 'dragend', function(e) {
                 $('#latInput').val(e.location.latitude);
                 $('#longInput').val(e.location.longitude);
                 // this call to update marker_map_address input

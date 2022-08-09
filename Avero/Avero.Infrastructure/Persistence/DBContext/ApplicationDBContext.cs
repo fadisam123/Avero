@@ -22,6 +22,8 @@ namespace Avero.Infrastructure.Persistence.DBContext
         public DbSet<Order_details>? order_details { get; set; }
         public DbSet<Product>? product { get; set; }
         public DbSet<Product_review>? product_review { get; set; }
+        public DbSet<Product_catagory>? product_catagory { get; set; }
+        public DbSet<Product_imgs>? product_imgs { get; set; }
 
     }
 }

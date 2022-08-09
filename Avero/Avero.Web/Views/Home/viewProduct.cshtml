@@ -1,0 +1,115 @@
+﻿@model Avero.Core.Entities.Product
+
+@{
+    ViewData["Title"] = "View Product";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@{
+    var pImages = @Model.product_imgs.ToList();
+    var w = 2;
+}
+
+
+@section style{
+<style>
+    .userImg img{
+        transition: all 0.3s ease-out;
+    }
+
+        .userImg:hover img{
+            transform: scale(1.15);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+
+</style>
+}
+<div>
+    <h4>Product Details</h4>
+    <hr />
+    <div class="d-flex flex-wrap justify-content-center">
+        @for (int i = 0; i < pImages.Count(); i++)
+        {
+            <div class="m-1">
+                <img class="img-thumbnail" style="object-position: 50% 50%; object-fit: cover; width: 250px; height:250px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i" />
+            </div>
+        }
+    </div>
+
+
+
+
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.desc)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.desc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.quantity_available)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.quantity_available)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.price_per_unit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.price_per_unit) S.P
+        </dd>
+
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.offer_price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.offer_price) S.P
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.offer_price_start_date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.offer_price_start_date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.offer_price_end_date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.offer_price_end_date)
+        </dd>
+
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.created_at)
+        </dd>
+
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.wholesealer)
+        </dt>
+        <dd style="width: auto" class="col-sm-10">
+            @{
+                var wholesealerImage = @Model.wholesealer?.img_name ?? "Default.jpg";
+            }
+            <a class="link-dark text-decoration-none" asp-controller="Home" asp-action="viewUser" asp-route-id="@Model.wholesealer_id">
+                <span class="userImg d-flex align-items-center">
+                    <img style="object-position: 50% 50%; object-fit: cover; width: 50px; height:50px" class="rounded-circle me-2" src="~/img/users/@wholesealerImage" alt="user image" asp-append-version="true" />
+                    <span class="userName">@Model.wholesealer.name</span>
+                </span>
+            </a>
+
+        </dd>
+    </dl>
+</div>

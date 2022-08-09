@@ -10,6 +10,6 @@ namespace Avero.Core.Entities
         public String? name { set; get; }
         public string? img_name { set; get; }
 
-        public virtual ICollection<Product> product { set; get; } = new List<Product>();
+        public virtual ICollection<Product_catagory> product_catagory { set; get; } = new List<Product_catagory>();
     }
 }

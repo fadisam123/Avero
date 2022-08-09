@@ -254,7 +254,6 @@ namespace Avero.Infrastructure.Migrations
                     created_at = table.Column<DateTime>(type: "datetime2", nullable: true),
                     rating = table.Column<int>(type: "int", nullable: true),
                     rated_people_count = table.Column<int>(type: "int", nullable: false),
-                    catagory_id = table.Column<long>(type: "bigint", nullable: false),
                     wholesealer_id = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
@@ -264,12 +263,6 @@ namespace Avero.Infrastructure.Migrations
                         name: "FK_product_AspNetUsers_wholesealer_id",
                         column: x => x.wholesealer_id,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_product_catagory_catagory_id",
-                        column: x => x.catagory_id,
-                        principalTable: "catagory",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -295,6 +288,30 @@ namespace Avero.Infrastructure.Migrations
                         principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_order_details_product_product_id",
+                        column: x => x.product_id,
+                        principalTable: "product",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "product_catagory",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "bigint", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    catagory_id = table.Column<long>(type: "bigint", nullable: true),
+                    product_id = table.Column<long>(type: "bigint", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_product_catagory", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_product_catagory_catagory_catagory_id",
+                        column: x => x.catagory_id,
+                        principalTable: "catagory",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_product_catagory_product_product_id",
                         column: x => x.product_id,
                         principalTable: "product",
                         principalColumn: "Id");
@@ -412,14 +429,19 @@ namespace Avero.Infrastructure.Migrations
                 column: "product_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_product_catagory_id",
-                table: "product",
-                column: "catagory_id");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_product_wholesealer_id",
                 table: "product",
                 column: "wholesealer_id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_product_catagory_catagory_id",
+                table: "product_catagory",
+                column: "catagory_id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_product_catagory_product_id",
+                table: "product_catagory",
+                column: "product_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Product_imgs_product_id",
@@ -458,6 +480,9 @@ namespace Avero.Infrastructure.Migrations
                 name: "order_details");
 
             migrationBuilder.DropTable(
+                name: "product_catagory");
+
+            migrationBuilder.DropTable(
                 name: "Product_imgs");
 
             migrationBuilder.DropTable(
@@ -470,13 +495,13 @@ namespace Avero.Infrastructure.Migrations
                 name: "order");
 
             migrationBuilder.DropTable(
+                name: "catagory");
+
+            migrationBuilder.DropTable(
                 name: "product");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "catagory");
 
             migrationBuilder.DropTable(
                 name: "neighborhood");

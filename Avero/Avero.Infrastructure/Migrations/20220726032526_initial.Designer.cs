@@ -12,14 +12,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Avero.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20220723032124_initial")]
+    [Migration("20220726032526_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.6")
+                .HasAnnotation("ProductVersion", "6.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -143,9 +143,6 @@ namespace Avero.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
-                    b.Property<long>("catagory_id")
-                        .HasColumnType("bigint");
-
                     b.Property<DateTime?>("created_at")
                         .HasColumnType("datetime2");
 
@@ -183,11 +180,32 @@ namespace Avero.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("catagory_id");
-
                     b.HasIndex("wholesealer_id");
 
                     b.ToTable("product");
+                });
+
+            modelBuilder.Entity("Avero.Core.Entities.Product_catagory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+
+                    b.Property<long?>("catagory_id")
+                        .HasColumnType("bigint");
+
+                    b.Property<long?>("product_id")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("catagory_id");
+
+                    b.HasIndex("product_id");
+
+                    b.ToTable("product_catagory");
                 });
 
             modelBuilder.Entity("Avero.Core.Entities.Product_imgs", b =>
@@ -516,21 +534,28 @@ namespace Avero.Infrastructure.Migrations
 
             modelBuilder.Entity("Avero.Core.Entities.Product", b =>
                 {
-                    b.HasOne("Avero.Core.Entities.Catagory", "catagory")
-                        .WithMany("product")
-                        .HasForeignKey("catagory_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Avero.Core.Entities.User", "wholesealer")
                         .WithMany("product")
                         .HasForeignKey("wholesealer_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("wholesealer");
+                });
+
+            modelBuilder.Entity("Avero.Core.Entities.Product_catagory", b =>
+                {
+                    b.HasOne("Avero.Core.Entities.Catagory", "catagory")
+                        .WithMany("product_catagory")
+                        .HasForeignKey("catagory_id");
+
+                    b.HasOne("Avero.Core.Entities.Product", "product")
+                        .WithMany("product_catagory")
+                        .HasForeignKey("product_id");
+
                     b.Navigation("catagory");
 
-                    b.Navigation("wholesealer");
+                    b.Navigation("product");
                 });
 
             modelBuilder.Entity("Avero.Core.Entities.Product_imgs", b =>
@@ -625,7 +650,7 @@ namespace Avero.Infrastructure.Migrations
 
             modelBuilder.Entity("Avero.Core.Entities.Catagory", b =>
                 {
-                    b.Navigation("product");
+                    b.Navigation("product_catagory");
                 });
 
             modelBuilder.Entity("Avero.Core.Entities.City", b =>
@@ -646,6 +671,8 @@ namespace Avero.Infrastructure.Migrations
             modelBuilder.Entity("Avero.Core.Entities.Product", b =>
                 {
                     b.Navigation("order_details");
+
+                    b.Navigation("product_catagory");
 
                     b.Navigation("product_imgs");
 

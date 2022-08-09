@@ -6,28 +6,26 @@
     ViewData["Title"] = "Home Page";
 }
 
-
 @if (TempData["confirm"] != null)
 {
-    <!-- confermed email successfully popup Modal -->
-    <div class="modal fade" id="confermed_successfully_popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <button onclick="$('#confermed_successfully_popup').modal('hide')" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h5>Thank you for confirming your email</h5>
-                </div>
-                <div class="modal-footer">
-                    <button onclick="$('#confermed_successfully_popup').modal('hide')" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
+    <!-- confermed email successfully toast -->
+
+    <button hidden type="button" class="btn btn-primary" id="liveToastBtn"></button>
+
+    <div style="z-index: 999999999999;" class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img style="width: 30px; height:auto" src="~/img/Avero-favicon.png" class="rounded me-2" alt="Avero">
+                <strong class="me-auto">Avero</strong>
+                <small>Just Now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello <strong>@User.Identity.Name</strong>, Thank you for confirming your email.
             </div>
         </div>
     </div>
+
 }
 
 
@@ -299,7 +297,14 @@
     <script src="~/lib/Swiper/swiper-bundle.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#confermed_successfully_popup').modal('show');
+            if ('@TempData["confirm"]' === 'true') {
+                // show toast if TempData["confirm"] != null
+                document.getElementById('liveToastBtn').addEventListener('click', () => {
+                    const toast = new bootstrap.Toast(document.getElementById('liveToast'))
+                    toast.show()
+                });
+                document.getElementById('liveToastBtn').click();
+            }
 
             var swiper = new Swiper(".mySwiper", {
                 spaceBetween: 30,

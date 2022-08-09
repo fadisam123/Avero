@@ -1,0 +1,161 @@
+﻿@using Avero.Web.ViewModels.Admin
+@model viewProductsViewModel
+@inject UserManager<User> UserManager;
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+}
+
+@if (TempData["add"] != null || TempData["edit"] != null || TempData["remove"] != null)
+{
+    <!-- toast -->
+    <button hidden type="button" class="btn btn-primary" id="liveToastBtn"></button>
+
+    <div style="z-index: 999999999999;" class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img style="width: 30px; height:auto" src="~/img/Avero-favicon.png" class="rounded me-2" alt="Avero" />
+                <strong class="me-auto">Avero</strong>
+                <small>Just Now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                @if (TempData["edit"] != null)
+                {
+                    <span> Your product has been updated successfully. </span>
+                }
+                else if(TempData["add"] != null)
+                {
+                    <span> New Product Added successfully. </span>
+                }
+                else
+                {
+                    <span> The Product Removed successfully. </span>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<h1>Your Products</h1>
+<div class="form-group d-flex flex-wrap justify-content-evenly">
+    @for (int i = 0; i < Model.PaginatedProduct().Count(); i++)
+    {
+        int productIndex = ((@Model.currentPage - 1) * @Model.productPerPage) + i;
+        var pimgs = @Model.products.ElementAt(productIndex).product_imgs.Where(pi => pi.product_id == @Model.products.ElementAt(productIndex).Id).ToList();
+        String main_img;
+        if (pimgs.Any())
+            main_img = pimgs[0].img_name;
+        else
+            main_img = "Default.jpg";
+        <div class="card mb-4" style="width: 18rem; flex: 0 0 32%;">
+            <img src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+            <div class="card-body">
+                <h5 class="card-title">@Model.products.ElementAt(productIndex).name</h5>
+                <p class="card-text">@Model.products.ElementAt(productIndex).price_per_unit SYP</p>
+                <form asp-controller="Admin" asp-action="deleteProduct" asp-route-id="@Model.products.ElementAt(productIndex).Id" asp-route-currentPage="@Model.currentPage" method="post">
+                    <a id="edit_@Model.products.ElementAt(productIndex).Id" asp-action="editProduct" asp-controller="Admin" asp-route-id="@Model.products.ElementAt(productIndex).Id" class="btn btn-primary">Edit</a>
+                    <span id="confirmDeleteSpan_@Model.products.ElementAt(productIndex).Id" style="display:none">
+                        <span>Are you sure you want to delete this product?</span>
+                        <button type="submit" class="btn btn-danger">Yes</button>
+                        <a class="btn btn-primary"
+                       onclick="confirmDelete('@Model.products.ElementAt(productIndex).Id', false)">No</a>
+                    </span>
+
+                    <span id="deleteSpan_@Model.products.ElementAt(productIndex).Id">
+                        <a class="btn btn-danger"
+                       onclick="confirmDelete('@Model.products.ElementAt(productIndex).Id', true)">Delete</a>
+                    </span>
+                </form>
+
+
+            </div>
+        </div>
+    }
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center my-2">
+        @if (Model.PageCount() > 1)
+        {
+            <li class="page-item">
+                <a class="page-link prevPagination" href="#">
+                    Previous
+                </a>
+            </li>
+        }
+        @for (int i = 1; i <= Model.PageCount(); i++)
+        {
+            if ((i >= @Model.currentPage - 3 && i <= @Model.currentPage + 3) || (i == @Model.PageCount()))
+            {
+                <li class="@(i == Model.currentPage ? "page-item active" : "page-item")">
+                    <a class="page-link" href="@Url.Action("viewProducts", new {id = userId, page = i })">@i</a>
+                </li>
+            }
+            else if (i == @Model.currentPage + 4 && i != @Model.PageCount())
+            {
+                <li class="mx-3">
+                    . . .
+                </li>
+            }
+        }
+        @if (Model.PageCount() > 1)
+        {
+            <li class="page-item">
+                <a class="page-link nextPagination" href="#">
+                    Next
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
+
+@section script {
+    <script>
+        if ('@TempData["add"]' != '' || '@TempData["edit"]' != '' || '@TempData["remove"]' != '') {
+            // show toast if TempData["confirm"] != null
+            document.getElementById('liveToastBtn').addEventListener('click', () => {
+                const toast = new bootstrap.Toast(document.getElementById('liveToast'))
+                toast.show()
+            });
+            document.getElementById('liveToastBtn').click();
+        }
+
+        if (@Model.PageCount() > 1) {
+            if (@Model.currentPage == 1) {
+                $('.prevPagination').parent().addClass("disabled");
+            }
+            else if (@Model.currentPage == @Model.PageCount()) {
+                $('.nextPagination').parent().addClass("disabled");
+            }
+            else {
+                $('.prevPagination').parent().removeClass("disabled");
+                $('.nextPagination').parent().removeClass("disabled");
+            }
+            $('.prevPagination').attr("href", "@Url.Action("viewProducts", new {id = userId, page = @Model.currentPage-1 })");
+            $('.nextPagination').attr("href", "@Url.Action("viewProducts", new {id = userId, page = @Model.currentPage+1 })");
+        }
+
+        function confirmDelete(uniqueId, isDeleteClicked) {
+
+            var deleteSpan = 'deleteSpan_' + uniqueId;
+            var confirmDeleteSpan = 'confirmDeleteSpan_' + uniqueId;
+            var editLink = 'edit_' + uniqueId;
+
+            if (isDeleteClicked) {
+                $('#' + deleteSpan).hide();
+                $('#' + editLink).hide();
+                $('#' + confirmDeleteSpan).show();
+            } else {
+                $('#' + deleteSpan).show();
+                $('#' + editLink).show();
+                $('#' + confirmDeleteSpan).hide();
+            }
+        }
+    </script>
+            }

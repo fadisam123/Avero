@@ -68,6 +68,23 @@ namespace Avero.Infrastructure.Persistence
                 context.SaveChanges();
             }
 
+            if (!context.catagory.Any())
+            {
+
+                var catagories = new Catagory[]
+                {
+                    new Catagory{name = "Sport"},
+                    new Catagory{name = "Food"},
+                    new Catagory{name = "Phone"},
+                    new Catagory{name = "Other"},
+                };
+                foreach (Catagory n in catagories)
+                {
+                    context.catagory.Add(n);
+                }
+                context.SaveChanges();
+            }
+
 
         }
 

@@ -7,17 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Identity\**" />
     <Compile Remove="Persistence\Temp\**" />
+    <EmbeddedResource Remove="Identity\**" />
     <EmbeddedResource Remove="Persistence\Temp\**" />
+    <None Remove="Identity\**" />
     <None Remove="Persistence\Temp\**" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Avero.Application\Avero.Application.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Identity\" />
   </ItemGroup>
 
   <ItemGroup>

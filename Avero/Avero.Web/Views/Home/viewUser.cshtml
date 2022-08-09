@@ -1,0 +1,115 @@
+﻿@model Avero.Core.Entities.User
+
+@{
+    ViewData["Title"] = "User Details";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+<div>
+    <h4>User Details</h4>
+    <hr />
+
+    @{
+        var userImage = @Model.img_name ?? "Default.jbg";
+    }
+    <div class="m-1">
+        <img class="img-thumbnail" style="object-position: 50% 50%; object-fit: cover; width: 250px; height:250px" src="~/img/users/@userImage" alt="User image" />
+    </div>
+
+
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            User name
+        </dt>
+        <dd class="col-sm-10">
+            @Model.name
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Email
+        </dd>
+        <dt class="col-sm-2">
+            City
+        </dt>
+        <dd class="col-sm-10">
+            @Model.neighborhood.city.name
+        </dd>
+        <dt class="col-sm-2">
+            Neighborhood
+        </dt>
+        <dd class="col-sm-10">
+            @Model.neighborhood.name
+        </dd>
+        <dt class="col-sm-2">
+            Phone
+        </dt>
+        <dd class="col-sm-10">
+            @Model.PhoneNumber
+        </dd>
+        <dt class="col-sm-2">
+            Last Seen
+        </dt>
+        <dd class="col-sm-10">
+            @Model.last_login
+        </dd>
+
+        <dt class="col-sm-2">
+            Total Products
+        </dt>
+        <dd class="col-sm-10">
+            @Model.product.ToList().Count() Products
+        </dd>
+        @if (@Model.latitude != 0)
+        {
+            <dt class="col-sm-2">
+                Location On Map
+            </dt>
+            <dd class="col-sm-10">
+                @Model.marker_map_address
+            </dd>
+        }
+    </dl>
+
+    @if (@Model.latitude != 0)
+    {
+        <div id="myMap" style="width:75%;height:400px; margin: auto"></div>
+    }
+
+</div>
+
+@section script {
+
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ak2ass0c0kTsKeJjvphla8s95xKqXgpxzb8erLHJaUMOjvDunbG1qBf_fHbOG1VS' async defer></script>
+
+    <script>
+        if ($("#myMap").length) {
+            let map;
+            function GetMap() {
+                map = new Microsoft.Maps.Map('#myMap', {
+                    center: new Microsoft.Maps.Location(@Model.latitude, @Model.longitude),
+                    zoom: 12,
+                    showLocateMeButton: true,
+                    showBreadcrumb: true,
+                    showMapTypeSelector: false,
+                    showZoomButtons: false,
+
+                });
+                var pin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(@Model.latitude, @Model.longitude), {
+                    title: '',
+                    text: '1',
+                    draggable: false,
+                    color: 'red',
+                    icon: '/img/marker.png',
+                });
+                map.entities.push(pin);
+            }
+        }
+
+
+    </script>
+
+    }

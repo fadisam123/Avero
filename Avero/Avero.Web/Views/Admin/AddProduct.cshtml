@@ -1,0 +1,115 @@
+﻿@using Avero.Web.ViewModels.Admin
+@model addProductViewModel
+@inject UserManager<User> UserManager;
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+}
+@{
+    ViewData["Title"] = "Add Product";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section style {
+    <style>
+        .required:after {
+            content: " *";
+            color: red;
+        }
+    </style>
+}
+<h1>Add Product</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="AddProduct" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-4">
+                <label asp-for="@Model.name" class="control-label"></label>
+                <input asp-for="@Model.name" class="form-control" />
+                <span asp-validation-for="@Model.name" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="desc" class="control-label"></label>
+                <input asp-for="desc" class="form-control" />
+                <span asp-validation-for="desc" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="quantity_available" class="control-label"></label>
+                <input asp-for="quantity_available" class="form-control" />
+                <span asp-validation-for="quantity_available" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="price_per_unit" class="control-label"></label>
+                <input asp-for="price_per_unit" class="form-control" />
+                <span asp-validation-for="price_per_unit" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <input class="discountId" type="checkbox" asp-for="make_discount" />
+                <label asp-for="make_discount" class="control-label"></label>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="offer_price" class="control-label"></label>
+                <input disabled asp-for="offer_price" class="form-control offerId" />
+                <span asp-validation-for="offer_price" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="offer_price_start_date" class="control-label"></label>
+                <input disabled asp-for="offer_price_start_date" class="form-control offerId" />
+                <span asp-validation-for="offer_price_start_date" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="offer_price_end_date" class="control-label"></label>
+                <input disabled asp-for="offer_price_end_date" class="form-control offerId" />
+                <span asp-validation-for="offer_price_end_date" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-4 d-flex align-items-center">
+                <div class="me-4"><img src="~/img/users/Default.jpg" class="rounded" id="photoOutput" width="200" /></div>
+                <div class="flex-fill">
+                    <div class="custom-file">
+                        <input multiple accept="image/png, image/jpeg" id="photo" asp-for="imgs" class="form-control custom-file-input">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-4 d-flex flex-wrap">
+                @for (int i = 0; i < @Model.catagories.Count(); i++)
+                {
+                    <div style="flex: 0 0 33%;" class="mb-2">
+                        <input hidden asp-for="@Model.catagories[i].catagory_id" />
+                        <input hidden asp-for="@Model.catagories[i].catagory_name" />
+                        <input type="checkbox" asp-for="@Model.catagories[i].IsSelected" />
+                        <label asp-for="@Model.catagories[i].IsSelected" class="control-label">@Model.catagories[i].catagory_name</label>
+                    </div>
+                }
+            </div>
+
+            <input hidden asp-for="wholesealer_id" value="@userId" />
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section script {
+    <script>
+
+        $('.discountId').change(function() {
+            if (this.checked) {
+                $(".offerId").prop('disabled', false);
+            }
+            else {
+                $(".offerId").prop('disabled', true);
+            }
+        });
+
+        // preview the photo when selected
+        $('#photo').on('change', function() {
+            $('#photoOutput')[0].src = URL.createObjectURL(event.target.files[0]);
+        })
+
+    </script>
+            }

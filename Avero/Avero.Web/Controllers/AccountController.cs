@@ -88,7 +88,7 @@ namespace Avero.Web.Controllers
                     name = model.name,
                     street_name = model.street_name,
                     registered_at = DateTime.Now,
-                    neighborhood_id = (long)model.neighborhood,
+                    neighborhood_id = model.neighborhood,
                     UserName = model.Email,
                     Email = model.Email,
                     PhoneNumber = model.Phone,
@@ -217,7 +217,7 @@ namespace Avero.Web.Controllers
                 }
 
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password,
-                                        model.RememberMe, true);
+                                        model.RememberMe, lockoutOnFailure: true);
 
                 if (result.Succeeded)
                 {

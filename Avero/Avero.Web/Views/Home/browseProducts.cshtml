@@ -1,0 +1,306 @@
+﻿@using Avero.Infrastructure.Persistence.DBContext
+@using Avero.Web.ViewModels.Admin
+@using Microsoft.EntityFrameworkCore
+@model viewProductsViewModel
+@inject UserManager<User> UserManager;
+@inject ApplicationDBContext context;
+@{
+    ViewData["Title"] = "Browse Products";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+    Boolean? is_wholesealer = null;
+    if (user != null)
+        is_wholesealer = await UserManager.IsInRoleAsync(user, "WholeSealer");
+
+    long orderId = @ViewBag.orderId ?? 0;
+    var order = context.order.Include(o => o.order_details).FirstOrDefault(o => o.Id == orderId);
+}
+@section style {
+    <style>
+
+        .product {
+            display: block;
+            top: 0px;
+            position: relative;
+            max-width: 262px;
+            background-color: #f2f8f9;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 12px;
+            text-decoration: none;
+            z-index: 0;
+            overflow: hidden;
+            border: 1px solid #f2f8f9;
+            transition: all 0.3s ease-out;
+        }
+
+            .product:hover {
+                transition: all 0.2s ease-out;
+                box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+                top: -4px;
+                border: 1px solid #cccccc;
+                background-color: white;
+            }
+
+        .userImg {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            left: 0px;
+            top: 0px;
+            height: 32px;
+            width: 32px;
+            border-radius: 32px;
+            transform: scale(2);
+            transform-origin: 50% 50%;
+            transition: all 0.3s ease-out;
+        }
+
+            .userImg:hover {
+                transform: scale(2.15);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                left: 18px;
+                top: 18px;
+            }
+
+        .userName {
+            transition: all 0.3s ease-out;
+            position: absolute;
+            top: -10px;
+            right: -15px;
+            background-color: #ffffff0d;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 2px;
+            border-radius: 3px;
+            font-size: 5px;
+        }
+
+        .userImg:hover .userName {
+            top: 10px;
+        }
+    </style>
+
+}
+    <div class="d-flex">
+        <div class="text-light bg-dark me-3" style="width: 25%; height:300px">
+            some content
+        </div>
+        <div style="width: 75%" class="form-group d-flex flex-wrap justify-content-evenly">
+            @for (int i = 0; i < Model.PaginatedProduct().Count(); i++)
+        {
+            int productIndex = ((@Model.currentPage - 1) * @Model.productPerPage) + i;
+            var p = @Model.products.ElementAt(productIndex);
+            var main_img = context.product_imgs.FirstOrDefault(pi => pi.product_id == p.Id)?.img_name ?? "Default.jpg";
+            var userImg = @p.wholesealer.img_name;
+
+
+            <div role="button" val="/Home/viewProduct/@p.Id" class="card product" style=" flex: 0 0 30%;">
+                <a class="link-dark" asp-controller="Home" asp-action="viewUser" asp-route-id="@p.wholesealer_id">
+                    <span class="userImg d-flex align-items-center">
+                        <img class="mw-100 rounded-circle" src="~/img/users/@userImg" alt="user image" asp-append-version="true" />
+                        <span class="userName bg-light">@p.wholesealer.name</span>
+                    </span>
+                </a>
+
+                <img style="display:block; margin:auto; object-position: 50% 50%; object-fit: cover; width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+                <div class="card-body">
+                    <h5 class="card-title">@p.name</h5>
+                    <p class="card-text">@p.price_per_unit SYP</p>
+                    @if (is_wholesealer ?? false)
+                    {
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="This Action Is Disabled">
+                            <a class="btn-sm btn btn-primary disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                        </span>
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="This Action Is Disabled">
+                            <a id="@p.Id" class="btn-sm btn btn-danger disabled" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                        </span>
+                    }
+                    else
+                    {
+                        if (order?.order_details.Any(od => od.product_id == @p.Id) ?? false)
+                        {
+                            <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart.">
+                                <a id="@p.Id" class="btn-sm btn btn-primary addToCart disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                            </span>
+                            <a id="@p.Id" class="btn-sm btn btn-danger removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                        }
+                        else
+                        {
+                            <a id="@p.Id" class="btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                            <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                        }
+                    }
+
+                </div>
+
+            </div>
+
+        }
+    </div>
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center my-2">
+        @if (Model.PageCount() > 1)
+        {
+            <li class="page-item">
+                <a class="page-link prevPagination" href="#">
+                    Previous
+                </a>
+            </li>
+        }
+        @for (int i = 1; i <= Model.PageCount(); i++)
+        {
+            if ((i >= @Model.currentPage - 3 && i <= @Model.currentPage + 3) || (i == @Model.PageCount()))
+            {
+                <li class="@(i == Model.currentPage ? "page-item active" : "page-item")">
+                    <a class="page-link" href="@Url.Action("browseProducts", new { page = i , orderId = @ViewBag.orderId})">@i</a>
+                </li>
+            }
+            else if (i == @Model.currentPage + 4 && i != @Model.PageCount())
+            {
+                <li class="mx-3">
+                    . . .
+                </li>
+            }
+        }
+        @if (Model.PageCount() > 1)
+        {
+            <li class="page-item">
+                <a class="page-link nextPagination" href="#">
+                    Next
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
+
+@section script {
+    <script>
+
+        // Enable tooltips (initialize tooltips before they can be used)
+        var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        var tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+        if (@Model.PageCount() > 1) {
+            if (@Model.currentPage == 1) {
+                $('.prevPagination').parent().addClass("disabled");
+            }
+            else if (@Model.currentPage == @Model.PageCount()) {
+                $('.nextPagination').parent().addClass("disabled");
+            }
+            else {
+                $('.prevPagination').parent().removeClass("disabled");
+                $('.nextPagination').parent().removeClass("disabled");
+            }
+
+            $('.prevPagination').attr("href", "@Html.Raw(@Url.Action("browseProducts", new { page = @Model.currentPage-1 , orderId = @ViewBag.orderId}))");
+            $('.nextPagination').attr("href", "@Html.Raw(@Url.Action("browseProducts", new { page = @Model.currentPage+1 , orderId = @ViewBag.orderId}))");
+        }
+
+
+
+        $('div[role="button"]').click(function(e) {
+            if ($(".addToCart").data('clicked')) {
+                $(".addToCart").data('clicked', false)
+            }
+            else {
+                window.location.href = $(this).attr('val');
+            }
+        });
+
+        if ($("#cartItemCount").html() == 0)
+            $("#cartItemCount").hide();
+        var orderId = null;
+        if ('@ViewBag.orderId' != '')
+            var orderId = '@ViewBag.orderId';
+
+        $(".addToCart").click(function(e) {
+
+
+
+            $(this).addClass("disabled");
+            $(this).next().removeClass("disabled");
+            $(this).wrap('<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart."></span>');
+
+            tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+            let id = $(".addToCart").attr("id");
+
+            $("a[id=" + id + "]").data('clicked', true);
+            e.preventDefault();
+
+
+            let url = $(this).attr("href") + "&orderId=0";
+            if (orderId != null)
+                url = $(this).attr("href") + "&orderId=" + orderId;
+
+            $.get(url, function(data, status) {
+
+                if (status == "success") {
+                    //data[0] = orderItemCount
+                    //data[1] = orderId
+
+                    $("#cartItemCount").fadeOut(250);
+                    $("#cartItemCount").fadeIn(250);
+                    $("#cartItemCount").html(data[0]);
+
+                    orderId = data[1];
+                }
+                else {
+                    alert("Error in add to cart");
+                }
+            });
+
+        })
+
+
+
+
+
+
+        $(".removeFromCart").click(function(e) {
+
+            $(this).addClass("disabled");
+            $(this).prev().children().removeClass("disabled").unwrap();
+
+            let id = $(".removeFromCart").attr("id");
+
+            $("a[id=" + id + "]").data('clicked', true);
+            e.preventDefault();
+
+            url = $(this).attr("href") + "&orderId=" + orderId;
+
+            $.get(url, function(data, status) {
+
+                if (status == "success") {
+                    //data[0] = orderItemCount
+                    //data[1] = orderId
+
+                    orderId = data[1];
+
+                    if (data[0] == 0) {
+                        $("#cartItemCount").fadeOut();
+                        $("#cartItemCount").html(data[0]);
+                    }
+                    else {
+                        $("#cartItemCount").fadeOut(250);
+                        $("#cartItemCount").fadeIn(250);
+                        $("#cartItemCount").html(data[0]);
+                    }
+
+                }
+                else {
+                    alert("Error in remove from cart");
+                }
+            });
+
+        })
+
+    </script>
+            }

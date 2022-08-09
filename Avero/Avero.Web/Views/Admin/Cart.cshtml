@@ -1,0 +1,72 @@
+﻿@model User;
+@inject UserManager<User> UserManager;
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+
+    var orders = @Model.order.OrderByDescending(p => p.order_date).ToList();
+    long? orderId = null;
+    int itemCount = 0;
+    if (orders.Any())
+    {
+        orderId = orders.ElementAt(0).Id;
+        itemCount = orders.ElementAt(0).order_details.ToList().Count();
+
+    }
+
+}
+
+
+<h1>Cart</h1>
+<hr />
+
+
+@if (itemCount != 0)
+{
+    var ordersDetails = orders.ElementAt(0).order_details.ToList();
+    var totalPrice = 0.0;
+    @for (int i = 0; i < ordersDetails.Count(); i++)
+    {
+        var pName = ordersDetails.ElementAt(i).product.name;
+        var pPricePerUnit = ordersDetails.ElementAt(i).product.price_per_unit;
+        var pOfferEndDate = ordersDetails.ElementAt(i).product.offer_price_end_date;
+        var pOfferPrice = ordersDetails.ElementAt(i).product.offer_price;
+        var pImage = ordersDetails.ElementAt(i).product.product_imgs?.FirstOrDefault().img_name ?? "Default.jpg";
+        var pQuantity = ordersDetails.ElementAt(i).quantity;
+
+        var pWholesealerName = ordersDetails.ElementAt(i).product.wholesealer.name;
+        var pWholesealerImage = ordersDetails.ElementAt(i).product.wholesealer.img_name;
+
+        if (pOfferEndDate >= DateTime.Now)
+        {
+            totalPrice += (pOfferPrice * pQuantity);
+        }
+        else
+        {
+            totalPrice += (pPricePerUnit * pQuantity);
+        }
+
+
+
+
+    }
+
+
+    <a class="btn btn-primary" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">checkout</a>
+    <a class="btn btn-danger" asp-controller="Admin" asp-action="clearCart" asp-route-id="@userId" asp-route-orderId="@orderId">clear my cart</a>
+    <a class="btn btn-dark" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Continue Shopping</a>
+
+}
+else
+{
+
+
+    <a class="btn btn-primary disabled" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">checkout</a>
+    <a class="btn btn-danger disabled" asp-controller="Admin" asp-action="clearCart" asp-route-id="@userId" asp-route-orderId="@orderId">clear my cart</a>
+    <a class="btn btn-dark" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Browse Products</a>
+}

@@ -1,0 +1,224 @@
+﻿@using Avero.Infrastructure.Persistence.DBContext
+@using Microsoft.EntityFrameworkCore
+@model User;
+@inject UserManager<User> UserManager;
+@inject ApplicationDBContext context;
+@{
+    ViewData["Title"] = "My Orders";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+@section style{
+
+    <style>
+
+        h1 {
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .tbl-header {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        .tbl-content {
+            height: 350px;
+            overflow-x: auto;
+            margin-top: 0px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        th {
+            padding: 20px 15px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 15px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: 300;
+            font-size: 15px;
+            color: #fff;
+            border-bottom: solid 1px rgba(255,255,255,0.1);
+        }
+
+
+        .tbl-content tr:hover {
+            background: linear-gradient(to left, #25c481, #25b7c4);
+        }
+
+        /* demo styles */
+
+        body {
+            background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+            background: linear-gradient(to right, #25c481, #25b7c4);
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        /* for custom scrollbar for webkit browser*/
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+    </style>
+
+}
+
+
+
+
+
+
+
+    @{
+    var user1 = await UserManager.GetUserAsync(User);
+    var userId = user1?.Id;
+    Boolean? is_wholesealer = null;
+    if (user1 != null)
+        is_wholesealer = await UserManager.IsInRoleAsync(user1, "WholeSealer");
+}
+
+@if (is_wholesealer ?? false)
+{
+
+    var query = (from p in context.product
+                 join od in context.order_details on p.Id equals od.product_id
+                 join o in context.order on od.order_id equals o.Id
+                 join u in context.Users on o.retailer_id equals u.Id
+                 where p.wholesealer_id == userId
+                 select new
+                 {
+                     pId = p.Id,
+                     pName = p.name,
+                     pQuantity = od.quantity,
+                     pProcessing_state = od.processing_state,
+                     pOrder_date = o.order_date,
+                     uId = u.Id,
+                     uName = u.name,
+                     uImg = u.img_name
+                 }).OrderByDescending(x => x.pOrder_date).ToList();
+
+    if (query.Any())
+    {
+        <section>
+            <!--for demo wrap-->
+            <h1>Orders</h1>
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th>pimage</th>
+                            <th>product</th>
+                            <th>quantity</th>
+                            <th>order date</th>
+                            <th>order owner</th>
+                            <th>state</th>
+                            <th>aprove btn</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+
+                        @for (int i = 0; i < query.Count(); i++)
+                        {
+                            var pimg = context.product_imgs.FirstOrDefault(pi => pi.product_id == @query.ElementAt(i).pId)?.img_name ?? "Default.jpg";
+                            var uimg = @query.ElementAt(i).uImg ?? "Default.jpg";
+
+                            <tr>
+                                <td>
+                                    <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@query.ElementAt(i).pId">
+                                        <span class="userImg d-flex align-items-center w-100">
+                                            <img class="mw-100 rounded" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />
+                                        </span>
+                                    </a>
+                                </td>
+
+                                <td>@query.ElementAt(i).pName</td>
+                                <td>@query.ElementAt(i).pQuantity</td>
+                                <td>@query.ElementAt(i).pOrder_date</td>
+
+                                <td>
+                                    <a class="link-dark" asp-controller="Home" asp-action="viewUser" asp-route-id="@query.ElementAt(i).uId">
+                                        <span class="userImg d-flex align-items-center w-50">
+                                            <img class="me-2 mw-100 rounded-circle" src="~/img/users/@uimg" alt="user image" asp-append-version="true" />
+                                            <span class="userName">@query.ElementAt(i).uName</span>
+                                        </span>
+                                    </a>
+                                </td>
+
+                                <td>@query.ElementAt(i).pProcessing_state</td>
+                                <td><a class="btn btn-primary">Approve</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    }
+    else
+    {
+        <h1>no orders yet</h1>
+    }
+
+
+}
+else if ((!is_wholesealer) ?? false)
+{
+    var user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.wholesealer).ThenInclude(wh => wh.neighborhood).ThenInclude(ne => ne.city).FirstOrDefaultAsync(u => u.Id == userId);
+
+    int ordersCount = 0;
+    DateTime? lastOrderDate = null;
+    long? lastOrderId = null;
+    if (user.order.ToList().Count() > 1)
+    {
+        ordersCount = user.order.OrderByDescending(p => p.order_date).ToList().Count() - 1;
+        lastOrderDate = user.order.OrderByDescending(p => p.order_date).ToList().ElementAt(1).order_date;
+        lastOrderId = user.order.OrderByDescending(p => p.order_date).ToList().ElementAt(1).Id;
+    }
+
+
+    <h1>My Orders</h1>
+    <h1>orders count: @ordersCount </h1>
+    <h1>last order Date: @lastOrderDate</h1>
+    <h1>last order Id: @lastOrderId</h1>
+}
+
+@section script{
+
+    <script>
+
+        // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+        $(window).on("load resize ", function() {
+            var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+            $('.tbl-header').css({ 'padding-right': scrollWidth });
+        }).resize();
+
+    </script>
+
+    }

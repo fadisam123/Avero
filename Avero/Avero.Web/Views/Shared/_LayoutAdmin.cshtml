@@ -1,0 +1,169 @@
+﻿@inject UserManager<User> UserManager;
+
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+    Boolean? is_wholesealer = null;
+    if (user != null)
+        is_wholesealer = await UserManager.IsInRoleAsync(user, "WholeSealer");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avero - @ViewData["Title"]</title>
+    <link rel="icon" type="image/png" href="~/Avero-favicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <style>
+        header {
+            width: 20%;
+            height: 100vh;
+            float: left;
+            position: fixed;
+            overflow: auto;
+        }
+
+        nav {
+            overflow: auto;
+        }
+
+        ul li a {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+            ul li a:hover {
+                background-color: #00000033;
+            }
+
+            ul li a.active {
+                background-color: #0062ff;
+            }
+
+        .sidebar li .submenu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        main {
+            width: 80%;
+            float: right;
+            overflow: auto;
+        }
+    </style>
+    @await RenderSectionAsync("style", false)
+</head>
+<body>
+    <header>
+        <nav class="w-100 h-100 bg-primary sidebar py-2 rounded-end">
+            <ul class="nav flex-column" id="nav_accordion">
+                <li class="nav-item">
+                    <a class="nav-link link-light" asp-action="index" asp-controller="Home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
+                            <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z" />
+                        </svg>
+                        Back To Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light active" asp-action="Profile" asp-controller="Admin" asp-route-id="@userId"> My Profile </a>
+                </li>
+                @if (is_wholesealer ?? false)
+                {
+                    <li class="nav-item has-submenu link-light">
+                        <a class="nav-link link-light">
+                            Manage Products
+                            <span class="text-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <ul class="submenu collapse">
+                            <li><a class="nav-link link-light" asp-controller="Admin" asp-action="viewProducts" asp-route-id="@userId">View All Products</a></li>
+                            <li><a class="nav-link link-light" asp-controller="Admin" asp-action="AddProduct">Add New Product</a></li>
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link link-light active" asp-action="Cart" asp-controller="Admin" asp-route-id="@userId"> Cart </a>
+                    </li>
+                }
+                <li class="nav-item has-submenu">
+                    <a class="nav-link link-light" href="#">
+                        More menus
+                        <span class="text-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                        </span>
+                    </a>
+                    <ul class="submenu collapse">
+                        <li>
+                            <a class="nav-link link-light active" asp-action="orders" asp-controller="Admin"> My Orders </a>
+                        </li>
+                        <li><a class="nav-link link-light" href="#">Submenu item 5 </a></li>
+                        <li><a class="nav-link link-light" href="#">Submenu item 6 </a></li>
+                        <li><a class="nav-link link-light" href="#">Submenu item 7 </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="#"> Something </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="#"> Other link </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-2">
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.sidebar .nav-link').forEach(function(element) {
+
+                element.addEventListener('click', function(e) {
+
+                    let nextEl = element.nextElementSibling;
+                    let parentEl = element.parentElement;
+
+                    if (nextEl) {
+                        e.preventDefault();
+                        let mycollapse = new bootstrap.Collapse(nextEl);
+
+                        if (nextEl.classList.contains('show')) {
+                            mycollapse.hide();
+                        } else {
+                            mycollapse.show();
+                        }
+                    }
+                }); // addEventListener
+            }) // forEach
+
+            if ('@ViewBag.active') {
+                $("ul li a").removeClass("active");
+                $("ul").removeClass("active");
+                $("header nav ul li a[href*=" + '@ViewBag.active' + "]").addClass("active");
+                $("header nav ul li a[href*=" + '@ViewBag.active' + "]").parent().parent().addClass("show");
+            }
+
+        });
+                                                                        // DOMContentLoaded  end
+    </script>
+    @*we set (type="module") in this script because we used (import statment) inside the file*@
+    @await RenderSectionAsync("script", required: false)
+</body>
+</html>

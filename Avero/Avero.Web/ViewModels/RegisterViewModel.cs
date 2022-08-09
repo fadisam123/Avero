@@ -1,18 +1,18 @@
-﻿using Avero.Core.Entities;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
 namespace Avero.Web.ViewModels
 {
     public class RegisterViewModel
     {
+        public String? id { set; get; }
         [Required]
         [Display(Name = "Name")]
         public String? name { set; get; }
 
         public String? street_name { set; get; }
         [Required(ErrorMessage = "Please Select Your Neighborhood")]
-        public int? neighborhood { set; get; }
+        public long neighborhood { set; get; }
 
         [Display(Name = "I am a wholesealer")]
         public Boolean is_wholesealer { set; get; } = false;

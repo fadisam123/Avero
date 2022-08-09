@@ -1,8 +1,35 @@
 ﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Avero.Infrastructure.Persistence.DBContext
 @using Avero.Web.ViewModels;
 @using Microsoft.AspNetCore.Identity;
 @using Avero.Core.Entities;
+@using Microsoft.EntityFrameworkCore
 @inject SignInManager<User> signInManager;
+@inject UserManager<User> UserManager;
+@inject ApplicationDBContext context;
+
+@{
+    var user1 = await UserManager.GetUserAsync(User);
+    User? user = null;
+    long? orderId = null;
+    int? orderCount = null;
+    if (user1 != null)
+    {
+        user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(od => od.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_catagory).ThenInclude(pc => pc.catagory).FirstOrDefaultAsync(u => u.Id == user1.Id);
+        if (user?.order.ToList().Any() ?? false)
+        {
+            orderId = user?.order.OrderByDescending(p => p.order_date).ToList().ElementAt(0).Id;
+            orderCount = user?.order.OrderByDescending(p => p.order_date).ToList().ElementAt(0).order_details.ToList().Count();
+
+        }
+
+    }
+
+    var userId = user?.Id;
+    Boolean? is_wholesealer = null;
+    if (user != null)
+        is_wholesealer = await UserManager.IsInRoleAsync(user, "WholeSealer");
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +42,18 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     @*for css isolation (for each view) add this*@
     <link rel="stylesheet" href="~/Avero.Web.styles.css" asp-append-version="true" />
+    <style>
+
+        #cartItemCount {
+            background: #ff0000;
+            color: #fff;
+            padding: 2px 5px;
+            vertical-align: top;
+            border-radius: 9px;
+            margin-left: -12px;
+            position: absolute;
+        }
+    </style>
     @await RenderSectionAsync("style", false)
 </head>
 <body>
@@ -31,26 +70,45 @@
                             <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Browse Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Privacy">link1</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+
                     </ul>
                     <ul class="navbar-nav">
+
                         @if (signInManager.IsSignedIn(User))
                         {
-                            <li class="nav-item">
+                            if (is_wholesealer ?? false)
+                            {
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" asp-controller="Admin" asp-action="Profile" asp-route-id="@userId">My Profile</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Admin" asp-action="viewProducts" asp-route-id="@userId">My Products</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Admin" asp-action="AddProduct">Add Products</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Admin" asp-action="orders">My Orders </a></li>
+                                    </ul>
+                                </li>
+
+                            }
+                            else if ((!is_wholesealer) ?? false)
+                            {
+                                <li>
+                                    <a class="nav-link" asp-controller="Admin" asp-action="Cart" asp-route-id="@userId">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg>
+                                        <span class='badge badge-warning' id='cartItemCount'> @orderCount </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" asp-controller="Admin" asp-action="Profile" asp-route-id="@userId">My Profile</a>
+                                </li>
+                            }
+                            <li class="nav-item d-flex align-items-center">
                                 <form method="post" asp-action="logout" asp-controller="account">
                                     <button type="submit" class="nav-link btn btn-link py-0"
                                         style="width:auto">
@@ -104,6 +162,10 @@
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     @*we set (type="module") in this script because we used (import statment) inside the file*@
     <script type="module" src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        if ($("#cartItemCount").html() == 0)
+            $("#cartItemCount").hide();
+    </script>
     @await RenderSectionAsync("script", required: false)
 </body>
 </html>

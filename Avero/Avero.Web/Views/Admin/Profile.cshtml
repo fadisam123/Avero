@@ -1,0 +1,293 @@
+﻿@model RegisterViewModel
+@inject UserManager<User> UserManager;
+@{
+    var user = await UserManager.GetUserAsync(User);
+    var photoPath = "/img/users/" + (user.img_name ?? "Default.jpg");
+}
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Register";
+}
+
+@if (TempData["confirm"] != null)
+{
+    // update profile successfully toast
+    <button hidden type="button" class="btn btn-primary" id="liveToastBtn"></button>
+
+    <div style="z-index: 999999999999;" class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img style="width: 30px; height:auto" src="~/img/Avero-favicon.png" class="rounded me-2" alt="Avero">
+                <strong class="me-auto">Avero</strong>
+                <small>Just Now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Your profile has been updated successfully.
+            </div>
+        </div>
+    </div>
+}
+
+<div class="px-2">
+    <form id="reg" method="post" asp-controller="Admin" asp-action="Profile" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label class="required" asp-for="Email"></label>
+            <input disabled asp-for="Email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label class="required" asp-for="name"></label>
+            <input asp-for="name" class="form-control" />
+            <span asp-validation-for="name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="street_name"></label>
+            <input asp-for="street_name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Phone"></label>
+            <input asp-for="Phone" />
+        </div>
+        <div class="form-group">
+            <label>City</label>
+            <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"></select>
+        </div>
+        <div class="form-group">
+            <label class="required" asp-for="neighborhood"></label>
+            <select id="neighborhood" asp-for="neighborhood"></select>
+            <span asp-validation-for="neighborhood" class="text-danger"></span>
+        </div>
+
+        <div class="form-check">
+            <label asp-for="is_wholesealer"></label>
+            <input disabled type="checkbox" asp-for="is_wholesealer" />
+        </div>
+
+
+
+        <div class="form-group d-flex align-items-center">
+            <div class="me-4"><img asp-append-version="true" src="@photoPath" class="rounded" id="photoOutput" width="200" /></div>
+            <div class="flex-fill">
+                <div class="custom-file">
+                    <input accept="image/png, image/jpeg" id="photo" asp-for="Photo" class="form-control custom-file-input">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="myMap" style="width:75%;height:400px; margin: auto"></div>
+
+
+        <input asp-for="id" hidden />
+        <input id="latInput" asp-for="latitude" hidden />
+        <input id="longInput" asp-for="longitude" hidden />
+        <input id="marker_map_address" asp-for="marker_map_address" hidden />
+
+        <button onclick="if(!$('#reg').valid())$('#myModal').modal('show')" type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+@section script {
+
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ak2ass0c0kTsKeJjvphla8s95xKqXgpxzb8erLHJaUMOjvDunbG1qBf_fHbOG1VS' async defer></script>
+
+    <script>
+        if ('@TempData["confirm"]' === 'true') {
+            // show toast if TempData["confirm"] != null
+            document.getElementById('liveToastBtn').addEventListener('click', () => {
+                const toast = new bootstrap.Toast(document.getElementById('liveToast'))
+                toast.show()
+            });
+            document.getElementById('liveToastBtn').click();
+        }
+
+
+        var city_id2 = '@ViewBag.city_id';
+        $('#cityes option[value="' + city_id2 + '"]').prop('selected', true);
+
+
+        $.ajax({
+            type: 'GET',
+            url: '/Account/getNeighborhood/' + city_id2,
+            success: function(result) {
+                let p = $('#neighborhood').parent();
+                $('#neighborhood').empty();
+                if (result.length != 0)
+                    for (let i = 0; i < result.length; i++) {
+                        if (result[i].id == @Model.neighborhood)
+                            $('#neighborhood').append('<option selected value="' + result[i].id + '">' + result[i].name + '</option>');
+                        else
+                            $('#neighborhood').append('<option value="' + result[i].id + '">' + result[i].name + '</option>');
+                    }
+            },
+            error: function() {
+                alert('Failed to receive the Data');
+            }
+        });
+
+
+
+        var map, searchManager, mapEvents;
+        function GetMap() {
+            mapEvents = Microsoft.Maps.Events
+            map = new Microsoft.Maps.Map('#myMap', {
+                center: new Microsoft.Maps.Location(@Model.latitude ?? 35, @Model.longitude ?? 38),
+                zoom: 10,
+                showLocateMeButton: true,
+                showBreadcrumb: true,
+                showMapTypeSelector: false,
+                showZoomButtons: false,
+
+            });
+            var center = map.getCenter();
+            var pin = new Microsoft.Maps.Pushpin(center, {
+                title: '',
+                text: '1',
+                draggable: true,
+                color: 'red',
+                icon: '/img/marker.png',
+            });
+            if (@Model.latitude)
+                map.entities.push(pin);
+            else
+                geocodeQuery($('#neighborhood').find(":selected").text() + ', ' + $('#cityes').find(":selected").text() + ', Syria');
+
+            mapEvents.addHandler(pin, 'mouseover', function(e) {
+                e.target.setOptions({ title: 'Your location' });
+            });
+            mapEvents.addHandler(pin, 'mouseout', function(e) {
+                e.target.setOptions({ title: '' });
+            });
+            mapEvents.addHandler(pin, 'dragend', function(e) {
+                $('#latInput').val(e.location.latitude);
+                $('#longInput').val(e.location.longitude);
+                // this call to update marker_map_address input
+                reverseGeocode({ latitude: e.location.latitude, longitude: e.location.longitude, });
+            });
+            mapEvents.addHandler(map, 'click', function(e) {
+                if (!e.target.entities.get(0))
+                    e.target.entities.push(pin);
+                pin.setLocation({ latitude: e.location.latitude, longitude: e.location.longitude, })
+                $('#latInput').val(e.location.latitude);
+                $('#longInput').val(e.location.longitude);
+                // this call to update marker_map_address input
+                reverseGeocode({ latitude: e.location.latitude, longitude: e.location.longitude, });
+            });
+            mapEvents.addHandler(map, 'rightclick', function(e) {
+                e.target.entities.remove(pin);
+                $('#latInput').val(0);
+                $('#longInput').val(0);
+                $('#marker_map_address').val('');
+            });
+        }
+
+        function geocodeQuery(query) {
+            //If search manager is not defined, load the search module.
+            if (!searchManager) {
+                //Create an instance of the search manager and call the geocodeQuery function again.
+                Microsoft.Maps.loadModule('Microsoft.Maps.Search', function() {
+                    searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                    geocodeQuery(query);
+                });
+            } else {
+                var searchRequest = {
+                    where: query,
+                    callback: function(r) {
+                        //Add the first result to the map and zoom into it.
+                        if (r && r.results && r.results.length > 0)
+                            map.setView({ bounds: r.results[0].bestView });
+                    },
+                    errorCallback: function(e) {
+                        //If there is an error, alert the user about it.
+                        alert("No results found.");
+                    }
+                };
+
+                //Make the geocode request.
+                searchManager.geocode(searchRequest);
+            }
+        }
+
+        function reverseGeocode(location) {
+            //If search manager is not defined, load the search module.
+            if (!searchManager) {
+                //Create an instance of the search manager and call the reverseGeocode function again.
+                Microsoft.Maps.loadModule('Microsoft.Maps.Search', function() {
+                    searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                    reverseGeocode();
+                });
+            } else {
+                var searchRequest = {
+                    location: location,
+                    callback: function(r) {
+                        //Tell the user the name of the result.
+                        $('#marker_map_address').val(r.name);
+                    },
+                    errorCallback: function(e) {
+
+                    }
+                };
+
+                //Make the reverse geocode request.
+                searchManager.reverseGeocode(searchRequest);
+            }
+        }
+
+
+
+        // display name of photo in upload field
+        $('.custom-file-input').on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).next('.custom-file-label').html(fileName);
+        });
+
+        // preview the photo when selected
+        $('#photo').on('change', function() {
+            $('#photoOutput')[0].src = URL.createObjectURL(event.target.files[0]);
+        })
+
+
+        // changing dropdown list of neighborhoods when (city dropdown list) is changed
+        $('#cityes').on('change', function() {
+            let city_id;
+            if (!this.value) {
+                city_id = 0;
+                $('#neighborhood').empty();
+                $('#neighborhood').append('<option value="">Select City First</option>');
+                return;
+            }
+            else {
+                city_id = this.value;
+                $.ajax({
+                    type: 'GET',
+                    url: '/Account/getNeighborhood/' + city_id,
+                    success: function(result) {
+                        let p = $('#neighborhood').parent();
+                        $('#neighborhood').empty();
+                        if (result.length != 0)
+                            for (let i = 0; i < result.length; i++) {
+                                $('#neighborhood').append('<option value="' + result[i].id + '">' + result[i].name + '</option>');
+                            }
+                        // update map location with selected city
+                        geocodeQuery($('#neighborhood').find(":selected").text() + ', ' + $('#cityes').find(":selected").text() + ', Syria');
+
+                    },
+                    error: function() {
+                        alert('Failed to receive the Data');
+                    }
+                })
+            }
+        });
+
+        // update map location with selected neighborhood
+        $('#neighborhood').on('change', function() {
+            geocodeQuery($('#neighborhood').find(":selected").text() + ', ' + $('#cityes').find(":selected").text() + ', Syria');
+        });
+
+
+
+    </script>
+
+    }

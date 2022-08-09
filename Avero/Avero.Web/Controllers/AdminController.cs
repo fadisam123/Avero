@@ -347,7 +347,7 @@ namespace Avero.Web.Controllers
         {
             ViewBag.active = "Cart";
 
-            var user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(od => od.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_catagory).ThenInclude(pc => pc.catagory).FirstOrDefaultAsync(u => u.Id == id);
+            var user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(od => od.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_catagory).ThenInclude(pc => pc.catagory).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(od => od.wholesealer).FirstOrDefaultAsync(u => u.Id == id);
             return View(user);
         }
         [HttpGet]

@@ -8,106 +8,181 @@
     <link rel="stylesheet" href="~/css/Account/Register.css" />
     <style>
         .required:after {
-            content: " *";
+            content: "*";
+            margin-left: 5px;
             color: red;
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#141e30, #243b55);
+        }
+
+        .login-box {
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            background: rgba(0,0,0,.5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0,0,0,.6);
+            border-radius: 10px;
+        }
+
+            .login-box h3 {
+                margin-bottom: 10px;
+                padding: 0;
+                color: #fff;
+                text-align: center;
+            }
+
+            .login-box .user-box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+                .login-box .user-box input {
+                    width: 65%;
+                    padding: 2px 5px;
+                    font-size: 16px;
+                    color: #fff;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    outline: none;
+                    background: transparent;
+                }
+
+                .login-box .user-box label {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                    font-size: 16px;
+                    color: #fff;
+                }
+
+                .login-box .user-box input:focus {
+                    border-bottom: 1px solid#03e9f4;
+                }
+
+        select {
+            border: 1px solid #e0e0e0;
+            border-radius: 3px;
+            background: #fff;
+            width: 140px;
+            padding: 2px;
+        }
+
     </style>
 }
 
 
 
+    <div class="login-box">
+        <h3>Register</h3>
+        <div class="px-2">
+            <form id="reg" method="post" asp-controller="Account" asp-action="Register" enctype="multipart/form-data">
 
-
-    <div class="px-2">
-        <form id="reg" method="post" asp-controller="Account" asp-action="Register" enctype="multipart/form-data">
-
-            <!-- Modal validation popup -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                            <button onclick="$('#myModal').modal('hide')" type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="validation-summary" asp-validation-summary="All" class="text-danger"></div>
-                        </div>
-                        <div class="modal-footer">
-                            <button onclick="$('#myModal').modal('hide')" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!-- Modal validation popup -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button onclick="$('#myModal').modal('hide')" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="validation-summary" asp-validation-summary="All" class="text-danger"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button onclick="$('#myModal').modal('hide')" type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="form-group">
-                <label class="required" asp-for="Email"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="required" asp-for="Password"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label class="required" asp-for="ConfirmPassword"></label>
-                <input asp-for="ConfirmPassword" class="form-control" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <div class="user-box">
+                        <label class="required" asp-for="Email"></label>
+                        <input asp-for="Email" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="user-box">
+                        <label class="required" asp-for="Password"></label>
+                        <input asp-for="Password" class="form-control" />
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="user-box">
+                        <label class="required" asp-for="ConfirmPassword"></label>
+                        <input asp-for="ConfirmPassword" class="form-control" />
+                    </div>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
 
-            <div class="form-group">
-                <label class="required" asp-for="name"></label>
-                <input asp-for="name" class="form-control" />
-                <span asp-validation-for="name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="street_name"></label>
-                <input asp-for="street_name" class="form-control" />
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone"></label>
-                <input asp-for="Phone" />
-            </div>
-            <div class="form-group">
-                <label>City</label>
-                <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"><option value="">Select City</option></select>
-            </div>
-            <div class="form-group">
-                <label class="required" asp-for="neighborhood"></label>
-                <select id="neighborhood" asp-for="neighborhood"><option value="">Select City First</option></select>
-                <span asp-validation-for="neighborhood" class="text-danger"></span>
-            </div>
+                <div class="form-group mb-3">
+                    <div class="user-box">
+                        <label class="required" asp-for="name"></label>
+                        <input asp-for="name" class="form-control" />
+                    </div>
+                    <span asp-validation-for="name" class="text-danger"></span>
+                </div>
+                <div class="form-group user-box mb-3">
+                    <label asp-for="street_name"></label>
+                    <input asp-for="street_name" class="form-control" />
+                </div>
+                <div class="form-group user-box mb-3">
+                    <label asp-for="Phone"></label>
+                    <input asp-for="Phone" />
+                </div>
 
-            <div class="form-check">
-                <label asp-for="is_wholesealer"></label>
-                <input type="checkbox" asp-for="is_wholesealer" />
-            </div>
+                <div class="text-white mb-3">
+                    <input type="checkbox" asp-for="is_wholesealer" />
+                    <label asp-for="is_wholesealer"></label>
+                </div>
 
-
-
-            <div class="form-group d-flex align-items-center">
-                <div class="me-4"><img src="~/img/users/Default.jpg" class="rounded" id="photoOutput" width="200" /></div>
-                <div class="flex-fill">
-                    <div class="custom-file">
-                        <input accept="image/png, image/jpeg" id="photo" asp-for="Photo" class="form-control custom-file-input">
+                <div class="form-group mb-3 d-flex align-items-center user-box">
+                    <div class="me-4"><img src="~/img/users/Default.jpg" class="rounded" id="photoOutput" width="150px" /></div>
+                    <div class="flex-fill">
+                        <div class="custom-file">
+                            <input style="width: 100%" accept="image/png, image/jpeg" id="photo" asp-for="Photo" class="form-control custom-file-input">
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="d-flex justify-content-around">
+                    <div class="form-group user-box mb-3 justify-content-start">
+                        <label class="required">City</label>
+                        <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"><option value="">Select City</option></select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <div class="user-box justify-content-start">
+                            <label class="required" asp-for="neighborhood"></label>
+                            <select id="neighborhood" asp-for="neighborhood"><option value="">Select City First</option></select>
+                        </div>
+                        <span asp-validation-for="neighborhood" class="text-danger"></span>
+                    </div>
+                </div>
 
 
-            <div id="myMap" style="width:75%;height:400px; margin: auto"></div>
+                <div id="myMap" class="mb-3" style="width:100%;height:350px; margin: auto"></div>
 
 
-            <input id="latInput" asp-for="latitude" hidden value="0" />
-            <input id="longInput" asp-for="longitude" hidden value="0" />
-            <input id="marker_map_address" asp-for="marker_map_address" hidden value="" />
+                <input id="latInput" asp-for="latitude" hidden value="0" />
+                <input id="longInput" asp-for="longitude" hidden value="0" />
+                <input id="marker_map_address" asp-for="marker_map_address" hidden value="" />
 
-            <button onclick="if(!$('#reg').valid())$('#myModal').modal('show')" type="submit" class="btn btn-primary">Register</button>
-        </form>
+                <button onclick="if(!$('#reg').valid())$('#myModal').modal('show')" type="submit" class="btn btn-primary">Register</button>
+                <a class="btn btn-danger ms-2" asp-controller="Home" asp-action="Index"> Cancle </a>
+            </form>
+
+        </div>
     </div>
-
     @section script {
 
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ak2ass0c0kTsKeJjvphla8s95xKqXgpxzb8erLHJaUMOjvDunbG1qBf_fHbOG1VS' async defer></script>

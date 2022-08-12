@@ -36,7 +36,7 @@
         var pPricePerUnit = ordersDetails.ElementAt(i).product.price_per_unit;
         var pOfferEndDate = ordersDetails.ElementAt(i).product.offer_price_end_date;
         var pOfferPrice = ordersDetails.ElementAt(i).product.offer_price;
-        var pImage = ordersDetails.ElementAt(i).product.product_imgs?.FirstOrDefault().img_name ?? "Default.jpg";
+        var pImage = ordersDetails?.ElementAt(i)?.product?.product_imgs?.FirstOrDefault()?.img_name ?? "Default.jpg";
         var pQuantity = ordersDetails.ElementAt(i).quantity;
 
         var pWholesealerName = ordersDetails.ElementAt(i).product.wholesealer.name;

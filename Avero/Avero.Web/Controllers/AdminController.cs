@@ -359,8 +359,7 @@ namespace Avero.Web.Controllers
             context.RemoveRange(orderDetails);
             await context.SaveChangesAsync();
 
-            var user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(od => od.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_catagory).ThenInclude(pc => pc.catagory).FirstOrDefaultAsync(u => u.Id == id);
-            return RedirectToAction("Cart", user);
+            return RedirectToAction("Cart", new { id });
         }
 
         public async Task<IActionResult> checkOut(String id, long orderId)

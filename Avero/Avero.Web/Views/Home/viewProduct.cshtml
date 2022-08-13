@@ -11,28 +11,54 @@
 }
 
 
-@section style{
+@section style {
 <style>
-    .userImg img{
+   
+ .product-detiles {
+    margin: 0;
+    box-sizing: border-box;
+    height: 90vh;
+    width: auto;
+}
+
+  .row .first-section {
+    height: 600px;
+}
+
+  .boxs {
+    background-color:white; 
+    padding: 20px;
+    width: 75%;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+   dl dd {
+    margin-bottom: 5px;
+}
+
+   .userImg img {
         transition: all 0.3s ease-out;
     }
 
-        .userImg:hover img{
+   .userImg:hover img {
             transform: scale(1.15);
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
 
+       
+
 
 </style>
 }
-<div>
-    <h4>Product Details</h4>
+<div class="product-detiles row text-center">
+   
     <hr />
-    <div class="d-flex flex-wrap justify-content-center">
+    <div class="first-section col-md-7 mt-5 p-5">
         @for (int i = 0; i < pImages.Count(); i++)
         {
             <div class="m-1">
-                <img class="img-thumbnail" style="object-position: 50% 50%; object-fit: cover; width: 250px; height:250px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i" />
+                <img class="w-75 h-100" class="img-thumbnail" style="object-position: 50% 50%; object-fit: cover; width: 250px; height:250px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i" />
             </div>
         }
     </div>
@@ -40,66 +66,67 @@
 
 
 
-
-    <dl class="row">
-        <dt class="col-sm-2">
+    <div class="second-section col-md-5 mt-5 p-5">
+     <div class="boxs">
+      <dl>
+        <dt>
             @Html.DisplayNameFor(model => model.name)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.name)
         </dd>
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.desc)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.desc)
         </dd>
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.quantity_available)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.quantity_available)
         </dd>
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.price_per_unit)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.price_per_unit) S.P
         </dd>
 
 
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.offer_price)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.offer_price) S.P
         </dd>
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.offer_price_start_date)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.offer_price_start_date)
         </dd>
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.offer_price_end_date)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.offer_price_end_date)
         </dd>
 
 
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.created_at)
         </dt>
-        <dd class="col-sm-10">
+        <dd>
             @Html.DisplayFor(model => model.created_at)
         </dd>
 
 
-        <dt class="col-sm-2">
+        <dt>
             @Html.DisplayNameFor(model => model.wholesealer)
         </dt>
-        <dd style="width: auto" class="col-sm-10">
+        <dd>
             @{
                 var wholesealerImage = @Model.wholesealer?.img_name ?? "Default.jpg";
             }
@@ -112,4 +139,7 @@
 
         </dd>
     </dl>
+    </div>
 </div>
+</div>
+

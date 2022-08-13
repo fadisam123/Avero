@@ -26,15 +26,16 @@
             display: block;
             top: 0px;
             position: relative;
-            max-width: 262px;
-            background-color: #f2f8f9;
+            width: 300px;
+            background-color: #705f93;
             border-radius: 4px;
             padding: 10px;
-            margin: 12px;
+            margin-right: 15px;
             text-decoration: none;
             z-index: 0;
             overflow: hidden;
             border: 1px solid #f2f8f9;
+            border-radius:10px;
             transition: all 0.3s ease-out;
         }
 
@@ -82,14 +83,70 @@
         .userImg:hover .userName {
             top: 10px;
         }
+
+        
+.side-navbar {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #705f93;
+    border: 2px solid #eee;
+}
+.side-navbar .widget {
+    position: absolute;
+}
+
+.form-check-input:checked {
+    background-color:#766df4;
+    border-color: white;
+}
+
+.form-check-input:focus{
+    box-shadow: none;
+}
+
+h3 {
+    color: white;
+}
+
+.widget::after {
+    content: "ــــــــــــــــــــــ";
+    color: #eee;
+}
+
+.side-navbar .nav-item .nav-link:hover {
+    color: white;
+} 
+
     </style>
 
 }
-    <div class="d-flex">
-        <div class="text-light bg-dark me-3" style="width: 25%; height:300px">
-            some content
-        </div>
-        <div style="width: 75%" class="form-group d-flex flex-wrap justify-content-evenly">
+    <div class="main-page mt-2 p-2 d-flex">
+         <div class="side-navbar d-none d-lg-flex text-center col-lg-4">
+         <div class="widget">
+           <h3 class="widget-title mb-3">Sorte by</h3>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="Size">
+                  <label class="form-check-label text-nav" for="Size">Size</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="Type" checked="">
+                  <label class="form-check-label text-nav" for="Type">Type</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="Price">
+                  <label class="form-check-label text-nav" for="Price">Price</label>
+                </div>
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="Quantity">
+                  <label class="form-check-label text-nav" for="Quantity">Qunatity</label>
+                </div>
+         </div>
+         </div>
+         
+        <div  class="form-group col-lg-8 d-flex flex-wrap justify-content-evenly">
             @for (int i = 0; i < Model.PaginatedProduct().Count(); i++)
         {
             int productIndex = ((@Model.currentPage - 1) * @Model.productPerPage) + i;
@@ -98,7 +155,7 @@
             var userImg = @p.wholesealer.img_name;
 
 
-            <div role="button" val="/Home/viewProduct/@p.Id" class="card product" style=" flex: 0 0 30%;">
+            <div role="button" val="/Home/viewProduct/@p.Id" class="card product mb-2" style=" flex: 0 0 30%;">
                 <a class="link-dark" asp-controller="Home" asp-action="viewUser" asp-route-id="@p.wholesealer_id">
                     <span class="userImg d-flex align-items-center">
                         <img class="mw-100 rounded-circle" src="~/img/users/@userImg" alt="user image" asp-append-version="true" />
@@ -106,14 +163,14 @@
                     </span>
                 </a>
 
-                <img style="display:block; margin:auto; object-position: 50% 50%; object-fit: cover; width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
-                <div class="card-body">
+                <img style="display:block; border-radius:50%; margin:auto; object-position: 50% 50%; object-fit: cover; width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+                <div class="card-body text-center">
                     <h5 class="card-title">@p.name</h5>
                     <p class="card-text">@p.price_per_unit SYP</p>
                     @if (is_wholesealer ?? false)
                     {
                         <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="This Action Is Disabled">
-                            <a class="btn-sm btn btn-primary disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                            <a class="btn-sm btn me-2 btn-primary disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
                         </span>
                         <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="This Action Is Disabled">
                             <a id="@p.Id" class="btn-sm btn btn-danger disabled" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>

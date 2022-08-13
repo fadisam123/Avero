@@ -1,10 +1,12 @@
-﻿@section style{
+﻿@{
     <link rel="stylesheet"
       href="~/lib/Swiper/swiper-bundle.min.css" />
 }
+
     @{
     ViewData["Title"] = "Home Page";
 }
+
 
 @if (TempData["confirm"] != null)
 {
@@ -28,11 +30,15 @@
 
 }
 
+@section style{
+      
+}
+
 
 
 
 <div class="slide">
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" >
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="card">
@@ -42,7 +48,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-white fw-bold">Man's Clothes</h5>
                         <p class="card-text text-muted">Simple Cotton Gray T-Shirt</p>
-                        <h6 class="fw-bold fs-5 text-white">$19.00</h6>
+                        <h6 class="fw-bold fs-5 text-white">$20.00</h6>
                         <div class="icons d-flex justify-content-between">
                             <div class="stars">
                                 <img src="~/img/Home/Index/icons8-star-48.png" alt="">

@@ -516,24 +516,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ROG\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\SAM\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Application\\Avero.Application.csproj",
+      "projectUniqueName": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Application\\Avero.Application.csproj",
       "projectName": "Avero.Application",
-      "projectPath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Application\\Avero.Application.csproj",
-      "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Application\\obj\\",
+      "projectPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Application\\Avero.Application.csproj",
+      "packagesPath": "C:\\Users\\SAM\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ROG\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\SAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -547,8 +542,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj": {
-              "projectPath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj"
+            "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\Avero.Core.csproj": {
+              "projectPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\Avero.Core.csproj"
             }
           }
         }
@@ -577,7 +572,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

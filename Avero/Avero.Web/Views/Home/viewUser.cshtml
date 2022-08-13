@@ -6,74 +6,98 @@
 }
 
 
-<div>
-    <h4>User Details</h4>
+@section style{
+<style> 
+    dl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:white; 
+        padding: 20px;
+        width: 75%;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .img-thumbnail {
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+   
+   
+
+
+</style>
+}
+
+<div class="user-detiles text-center">
+    <h4 class="mt-2"><em>User Details</em></h4>
     <hr />
 
     @{
         var userImage = @Model.img_name ?? "Default.jbg";
     }
-    <div class="m-1">
+    <div class="mb-3">
         <img class="img-thumbnail" style="object-position: 50% 50%; object-fit: cover; width: 250px; height:250px" src="~/img/users/@userImage" alt="User image" />
     </div>
 
 
-
+    <div class="d-flex justify-content-center align-items-center">
     <dl class="row">
-        <dt class="col-sm-2">
-            User name
+        <dt class="col-sm-6">
+            User name :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.name
         </dd>
-        <dt class="col-sm-2">
-            Email
+        <dt class="col-sm-6">
+            Email :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.Email
         </dd>
-        <dt class="col-sm-2">
-            City
+        <dt class="col-sm-6">
+            City :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.neighborhood.city.name
         </dd>
-        <dt class="col-sm-2">
-            Neighborhood
+        <dt class="col-sm-6">
+            Neighborhood :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.neighborhood.name
         </dd>
-        <dt class="col-sm-2">
-            Phone
+        <dt class="col-sm-6">
+            Phone :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.PhoneNumber
         </dd>
-        <dt class="col-sm-2">
-            Last Seen
+        <dt class="col-sm-6">
+            Last Seen :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.last_login
         </dd>
 
-        <dt class="col-sm-2">
-            Total Products
+        <dt class="col-sm-6">
+            Total Products :
         </dt>
-        <dd class="col-sm-10">
+        <dd class="col-sm-6">
             @Model.product.ToList().Count() Products
         </dd>
         @if (@Model.latitude != 0)
         {
-            <dt class="col-sm-2">
-                Location On Map
+            <dt class="col-sm-6">
+                Location On Map :
             </dt>
-            <dd class="col-sm-10">
+            <dd class="col-sm-6">
                 @Model.marker_map_address
             </dd>
         }
     </dl>
-
+    </div>
     @if (@Model.latitude != 0)
     {
         <div id="myMap" style="width:75%;height:400px; margin: auto"></div>

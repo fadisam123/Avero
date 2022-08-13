@@ -2,6 +2,7 @@
 
 @{
     var user = await UserManager.GetUserAsync(User);
+    var photoPath = "/img/users/" + (user.img_name ?? "Default.jpg");
     var userId = user?.Id;
     Boolean? is_wholesealer = null;
     if (user != null)
@@ -16,6 +17,19 @@
     <link rel="icon" type="image/png" href="~/Avero-favicon.png" sizes="32x32" />
     <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
     <style>
+        /* for custom scrollbar for webkit browser*/
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
         header {
             width: 20%;
             height: 100vh;
@@ -61,13 +75,19 @@
     <header>
         <nav class="w-100 h-100 bg-primary sidebar py-2 rounded-end">
             <ul class="nav flex-column" id="nav_accordion">
-                <li class="nav-item">
+                <li class="nav-item mb-2">
                     <a class="nav-link link-light" asp-action="index" asp-controller="Home">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-fill" viewBox="0 0 16 16">
                             <path d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z" />
                         </svg>
                         Back To Home
                     </a>
+                </li>
+                <li class="mb-2">
+                    <img src="@photoPath" class="d-block w-50 m-auto card-img-top rounded-circle" alt="user image">
+                    <div>
+                        <h5 class="text-center text-white">@user.name</h5>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-light active" asp-action="Profile" asp-controller="Admin" asp-route-id="@userId"> My Profile </a>
@@ -161,7 +181,7 @@
             }
 
         });
-                                                                        // DOMContentLoaded  end
+                                                                                        // DOMContentLoaded  end
     </script>
     @*we set (type="module") in this script because we used (import statment) inside the file*@
     @await RenderSectionAsync("script", required: false)

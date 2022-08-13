@@ -22,13 +22,16 @@
 }
 
 
-<h1>Cart</h1>
+<h1>Your Cart</h1>
 <hr />
 
 
 @if (itemCount != 0)
 {
-    var ordersDetails = orders.ElementAt(0).order_details.ToList();
+    <h3>Total items: @itemCount products</h3>
+    <br />
+
+    @*var ordersDetails = orders.ElementAt(0).order_details.ToList();
     var totalPrice = 0.0;
     @for (int i = 0; i < ordersDetails.Count(); i++)
     {
@@ -51,10 +54,13 @@
             totalPrice += (pPricePerUnit * pQuantity);
         }
 
+    }*@
 
 
 
-    }
+    // delete this comment and code here
+
+
 
 
     <a class="btn btn-primary" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">checkout</a>

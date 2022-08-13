@@ -45,6 +45,20 @@ namespace Avero.Web.Controllers
             ViewBag.orderId = orderId;
             return View(model);
         }
+        [HttpGet]
+        public IActionResult search(String searchTxt, long? orderId = null)
+        {
+            int page = 1;
+            var products = context.product.Where(p => p.name.Contains(searchTxt) || p.desc.Contains(searchTxt) || p.wholesealer.name.Contains(searchTxt) || p.wholesealer.Email.Contains(searchTxt) || p.wholesealer.marker_map_address.Contains(searchTxt)).Include(p => p.wholesealer).OrderByDescending(p => p.created_at).ToList();
+            var model = new viewProductsViewModel
+            {
+                products = products,
+                productPerPage = 9,
+                currentPage = page,
+            };
+            ViewBag.orderId = orderId;
+            return View("browseProducts", model);
+        }
 
         [HttpGet]
         public async Task<IActionResult> viewProduct(long id)
@@ -113,7 +127,7 @@ namespace Avero.Web.Controllers
         public async Task<long[]> RemoveFromCart(long productId, String userId, long orderId)
         {
             long[] result = new long[2];
-            
+
             var orderDetailsToRemove = context.order_details.FirstOrDefault(od => od.product_id == productId && od.order_id == orderId);
             context.order_details.Remove(orderDetailsToRemove);
             await context.SaveChangesAsync();

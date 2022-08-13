@@ -3,7 +3,7 @@
     public enum Order_state
     {
         pending,
-        completed,
+        approved,
         rejected
     }
 }

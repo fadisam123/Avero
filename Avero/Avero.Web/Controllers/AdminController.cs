@@ -396,6 +396,21 @@ namespace Avero.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> approve(long orderDetailsId)
+        {
+            var od = await context.order_details.FindAsync(orderDetailsId);
+            od.processing_state = Order_state.approved;
+            await context.SaveChangesAsync();
+            return RedirectToAction("orders");
+        }
+        public async Task<IActionResult> reject(long orderDetailsId)
+        {
+            var od = await context.order_details.FindAsync(orderDetailsId);
+            od.processing_state = Order_state.rejected;
+            await context.SaveChangesAsync();
+            return RedirectToAction("orders");
+        }
 
     }
 }

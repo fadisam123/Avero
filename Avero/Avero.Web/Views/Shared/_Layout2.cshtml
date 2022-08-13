@@ -100,8 +100,9 @@
                     <a class="nav-link" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Browse Products</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <form method="get" asp-controller="home" asp-action="search" class="d-flex" role="search">
+                <input id="searchTxt" name="searchTxt" type="search" class="form-control me-2" placeholder="Search" aria-label="Search" />
+                <input hidden id="orderId" name="orderId" value="@orderId"/>
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <ul class="navbar-nav">

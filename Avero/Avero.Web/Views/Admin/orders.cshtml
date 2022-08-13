@@ -39,7 +39,7 @@
         }
 
         th {
-            padding: 20px 15px;
+            padding: 10px 7.5px;
             text-align: center;
             font-weight: 500;
             font-size: 15px;
@@ -48,7 +48,7 @@
         }
 
         td {
-            padding: 15px;
+            padding: 8px;
             text-align: center;
             vertical-align: middle;
             font-weight: 300;
@@ -70,19 +70,6 @@
             font-family: 'Roboto', sans-serif;
         }
 
-
-        /* for custom scrollbar for webkit browser*/
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-        }
     </style>
 
 }
@@ -118,25 +105,25 @@
                      pOrder_date = o.order_date,
                      uId = u.Id,
                      uName = u.name,
-                     uImg = u.img_name
+                     uImg = u.img_name,
+                     odId = od.Id
                  }).OrderByDescending(x => x.pOrder_date).ToList();
 
     if (query.Any())
     {
         <section>
-            <!--for demo wrap-->
             <h1>Orders</h1>
             <div class="tbl-header">
                 <table cellpadding="0" cellspacing="0" border="0">
                     <thead>
                         <tr>
-                            <th>pimage</th>
+                            <th>retailer</th>
                             <th>product</th>
+                            <th>pimage</th>
                             <th>quantity</th>
                             <th>order date</th>
-                            <th>order owner</th>
                             <th>state</th>
-                            <th>aprove btn</th>
+                            <th>action</th>
                         </tr>
                     </thead>
                 </table>
@@ -152,28 +139,46 @@
 
                             <tr>
                                 <td>
-                                    <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@query.ElementAt(i).pId">
-                                        <span class="userImg d-flex align-items-center w-100">
-                                            <img class="mw-100 rounded" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />
-                                        </span>
-                                    </a>
-                                </td>
-
-                                <td>@query.ElementAt(i).pName</td>
-                                <td>@query.ElementAt(i).pQuantity</td>
-                                <td>@query.ElementAt(i).pOrder_date</td>
-
-                                <td>
-                                    <a class="link-dark" asp-controller="Home" asp-action="viewUser" asp-route-id="@query.ElementAt(i).uId">
-                                        <span class="userImg d-flex align-items-center w-50">
-                                            <img class="me-2 mw-100 rounded-circle" src="~/img/users/@uimg" alt="user image" asp-append-version="true" />
+                                    <a class="link-dark text-decoration-none" asp-controller="Home" asp-action="viewUser" asp-route-id="@query.ElementAt(i).uId">
+                                        <span class="userImg d-flex align-items-center w-75">
+                                            <img class="me-2 mw-100 rounded" src="~/img/users/@uimg" alt="user image" asp-append-version="true" />
                                             <span class="userName">@query.ElementAt(i).uName</span>
                                         </span>
                                     </a>
                                 </td>
+                                <td>@query.ElementAt(i).pName</td>
+                                <td>
+                                    <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@query.ElementAt(i).pId">
+                                        <span class="userImg d-flex align-items-center w-75">
+                                            <img class="mw-100 rounded-circle" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>@query.ElementAt(i).pQuantity</td>
+                                <td>@query.ElementAt(i).pOrder_date</td>
+
+
 
                                 <td>@query.ElementAt(i).pProcessing_state</td>
-                                <td><a class="btn btn-primary">Approve</a></td>
+                                @if (@query.ElementAt(i).pProcessing_state == 0)
+                                {
+                                    <td>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <a asp-action="approve" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="w-75 btn btn-primary btn-sm mb-1">Approve</a>
+                                            <a asp-action="reject" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="w-75 btn btn-success btn-sm">Reject</a>
+                                        </div>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <a asp-action="approve" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="disabled w-75 btn btn-primary btn-sm mb-1">Approve</a>
+                                            <a asp-action="reject" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="disabled w-75 btn btn-success btn-sm">Reject</a>
+                                        </div>
+                                    </td>
+                                }
+
                             </tr>
                         }
                     </tbody>
@@ -190,23 +195,96 @@
 }
 else if ((!is_wholesealer) ?? false)
 {
-    var user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.wholesealer).ThenInclude(wh => wh.neighborhood).ThenInclude(ne => ne.city).FirstOrDefaultAsync(u => u.Id == userId);
 
-    int ordersCount = 0;
-    DateTime? lastOrderDate = null;
-    long? lastOrderId = null;
-    if (user.order.ToList().Count() > 1)
+    var query = (from od in context.order_details
+                 join p in context.product on od.product_id equals p.Id
+                 join u in context.Users on p.wholesealer_id equals u.Id
+                 join o in context.order on od.order_id equals o.Id
+                 where o.retailer_id == userId
+                 select new
+                 {
+                     pId = p.Id,
+                     pName = p.name,
+                     pQuantity = od.quantity,
+                     pProcessing_state = od.processing_state,
+                     pOrder_date = o.order_date,
+                     uId = u.Id,
+                     uName = u.name,
+                     uImg = u.img_name,
+                     oId = o.Id
+                 }).OrderByDescending(x => x.pOrder_date).ToList();
+
+
+
+
+
+    var user = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.wholesealer).ThenInclude(wh => wh.neighborhood).ThenInclude(ne => ne.city).FirstOrDefaultAsync(u => u.Id == userId);
+    var orders = user?.order.OrderByDescending(p => p.order_date).ToList();
+
+    if (query.Any())
     {
-        ordersCount = user.order.OrderByDescending(p => p.order_date).ToList().Count() - 1;
-        lastOrderDate = user.order.OrderByDescending(p => p.order_date).ToList().ElementAt(1).order_date;
-        lastOrderId = user.order.OrderByDescending(p => p.order_date).ToList().ElementAt(1).Id;
+
+        <section>
+            <h1>My Orders</h1>
+            <div class="tbl-header">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th>wholesealer</th>
+                            <th>product</th>
+                            <th>pimage</th>
+                            <th>quantity</th>
+                            <th>order date</th>
+                            <th>state</th>
+                            <th>order Id</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbl-content">
+                <table cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+
+                        @for (int i = 0; i < query.Count(); i++)
+                        {
+                            var pimg = context.product_imgs.FirstOrDefault(pi => pi.product_id == @query.ElementAt(i).pId)?.img_name ?? "Default.jpg";
+                            var uimg = @query.ElementAt(i).uImg ?? "Default.jpg";
+
+                            <tr>
+                                <td>
+                                    <a class="link-dark text-decoration-none" asp-controller="Home" asp-action="viewUser" asp-route-id="@query.ElementAt(i).uId">
+                                        <span class="userImg d-flex align-items-center w-75">
+                                            <img class="me-2 mw-100 rounded" src="~/img/users/@uimg" alt="user image" asp-append-version="true" />
+                                            <span class="userName">@query.ElementAt(i).uName</span>
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>@query.ElementAt(i).pName</td>
+                                <td>
+                                    <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@query.ElementAt(i).pId">
+                                        <span class="userImg d-flex align-items-center w-75">
+                                            <img class="mw-100 rounded-circle" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>@query.ElementAt(i).pQuantity</td>
+                                <td>@query.ElementAt(i).pOrder_date</td>
+                                <td>@query.ElementAt(i).pProcessing_state</td>
+                                <td>@query.ElementAt(i).oId</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    }
+    else
+    {
+        <h1>no orders yet</h1>
     }
 
 
-    <h1>My Orders</h1>
-    <h1>orders count: @ordersCount </h1>
-    <h1>last order Date: @lastOrderDate</h1>
-    <h1>last order Id: @lastOrderId</h1>
 }
 
 @section script{

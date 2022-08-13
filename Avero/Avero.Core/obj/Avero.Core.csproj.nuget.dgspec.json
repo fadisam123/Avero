@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\Avero.Core.csproj": {}
+    "C:\\Users\\SAM\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\Avero.Core.csproj": {
+    "C:\\Users\\SAM\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\Avero.Core.csproj",
+        "projectUniqueName": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj",
         "projectName": "Avero.Core",
-        "projectPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\Avero.Core.csproj",
+        "projectPath": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj",
         "packagesPath": "C:\\Users\\SAM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Core\\obj\\",
+        "outputPath": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SAM\\AppData\\Roaming\\NuGet\\NuGet.Config",

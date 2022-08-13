@@ -2268,11 +2268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Infrastructure\\Avero.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Infrastructure\\Avero.Infrastructure.csproj",
       "projectName": "Avero.Infrastructure",
-      "projectPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Infrastructure\\Avero.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Infrastructure\\Avero.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\SAM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2289,8 +2289,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Application\\Avero.Application.csproj": {
-              "projectPath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Application\\Avero.Application.csproj"
+            "C:\\Users\\SAM\\Avero\\Avero\\Avero.Application\\Avero.Application.csproj": {
+              "projectPath": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Application\\Avero.Application.csproj"
             }
           }
         }

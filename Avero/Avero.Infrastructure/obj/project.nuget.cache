@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q46ltN/DrTKrt5H19/RjNC79RjwCXWLbDajrqfk2/2HXatq4a79oXSeIY8hP8OEK/0/hgV5timaONqr7SFCacA==",
+  "dgSpecHash": "O/RwOfJrZRLCo7mWgWpG6zllDkfNGSCDPdjevEuRPItqQ83QtSsrSsAtJv8RxM8e7uEY2QhNqT8Up2qW/vsLyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SAM\\Desktop\\‏‏Avero - نسخة\\Avero\\Avero.Infrastructure\\Avero.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Infrastructure\\Avero.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SAM\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SAM\\.nuget\\packages\\mailkit\\3.3.0\\mailkit.3.3.0.nupkg.sha512",

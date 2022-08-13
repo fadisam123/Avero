@@ -22,3 +22,15 @@ C:\Users\SAM\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.dll
 C:\Users\SAM\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\refint\Avero.Core.dll
 C:\Users\SAM\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.pdb
 C:\Users\SAM\Desktop\Avero\Avero\Avero.Core\obj\Debug\net6.0\ref\Avero.Core.dll
+C:\Users\SAM\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.deps.json
+C:\Users\SAM\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.dll
+C:\Users\SAM\Avero\Avero\Avero.Core\bin\Debug\net6.0\Avero.Core.pdb
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.csproj.AssemblyReference.cache
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.AssemblyInfoInputs.cache
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.AssemblyInfo.cs
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.csproj.CoreCompileInputs.cache
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.dll
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\refint\Avero.Core.dll
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\Avero.Core.pdb
+C:\Users\SAM\Avero\Avero\Avero.Core\obj\Debug\net6.0\ref\Avero.Core.dll

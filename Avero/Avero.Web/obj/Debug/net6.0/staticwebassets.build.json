@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6ARYJh7qGZno52aC3Wc6WbXKg84/a6yViO+ZdYGRNl4=",
+  "Hash": "ykKB352lb0xWXRxz2lGxdV3u08CNKfUe5YmSEoDqGyM=",
   "Source": "Avero.Web",
   "BasePath": "_content/Avero.Web",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Avero.Web\\wwwroot",
       "Source": "Avero.Web",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Avero.Web.styles.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Avero.Web.styles.css",
       "SourceId": "Avero.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "Avero.Web.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Avero.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Avero.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Avero.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Avero.Web.bundle.scp.css",
       "SourceId": "Avero.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "Avero.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Avero.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Avero.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\Avero-favicon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\Avero-favicon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "Avero-favicon.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Avero-favicon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\css\\Account\\Login.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\css\\Account\\Login.css",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "css/Account/Login.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Account\\Login.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\css\\Account\\Register.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\css\\Account\\Register.css",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "css/Account/Register.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Account\\Register.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\css\\site.css",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\2203549_admin_avatar_human_login_user_icon.svg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\2203549_admin_avatar_human_login_user_icon.svg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/2203549_admin_avatar_human_login_user_icon.svg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\2203549_admin_avatar_human_login_user_icon.svg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\admin_avatar_human_login_user_icon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\admin_avatar_human_login_user_icon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/admin_avatar_human_login_user_icon.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\admin_avatar_human_login_user_icon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\bx_street_view_icon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\bx_street_view_icon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/bx_street_view_icon.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\bx_street_view_icon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\email_envelope_mail_send_icon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\email_envelope_mail_send_icon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/email_envelope_mail_send_icon.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\email_envelope_mail_send_icon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\email_envelope_mail_send_icon.svg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\email_envelope_mail_send_icon.svg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/email_envelope_mail_send_icon.svg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\email_envelope_mail_send_icon.svg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\key_lock_pad_security_icon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\key_lock_pad_security_icon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/key_lock_pad_security_icon.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\key_lock_pad_security_icon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\phone_icon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\phone_icon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/phone_icon.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\phone_icon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\phone_icon.svg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\phone_icon.svg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Account/Login/phone_icon.svg",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\phone_icon.svg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero2.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero2.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Avero2.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Avero2.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero2-light.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero2-light.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Avero2-light.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Avero2-light.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero-favicon.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero-favicon.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Avero-favicon.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Avero-favicon.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\body.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\body.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/body.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\img\\body.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\footer.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\footer.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/footer.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\footer.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\2022.jpg_Q90.jpg_.webp",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\2022.jpg_Q90.jpg_.webp",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/2022.jpg_Q90.jpg_.webp",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\2022.jpg_Q90.jpg_.webp"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\black-jacket.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\black-jacket.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/black-jacket.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\black-jacket.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\Boss.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\Boss.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/Boss.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\Boss.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\chair.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\chair.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/chair.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\chair.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\hat.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\hat.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/hat.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\hat.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-heart-50.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-heart-50.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/icons8-heart-50.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\icons8-heart-50.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-shopping-cart-promotion-50.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-shopping-cart-promotion-50.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/icons8-shopping-cart-promotion-50.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\icons8-shopping-cart-promotion-50.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-star-32.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-star-32.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/icons8-star-32.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\icons8-star-32.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-star-48.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\icons8-star-48.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/icons8-star-48.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\icons8-star-48.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\jeans.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\jeans.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/jeans.jpg",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\jeans.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\laptop.webp",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\laptop.webp",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/laptop.webp",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\laptop.webp"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\man-chose-red.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\man-chose-red.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/man-chose-red.jpg",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\man-chose-red.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\man-chose-white.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\man-chose-white.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/man-chose-white.jpg",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\man-chose-white.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\pro-big-2.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\pro-big-2.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/pro-big-2.jpg",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\pro-big-2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\Quick-Dry-Sport-T-Shirt-Men-S-2022-Short-Sleeves-Summer-Casual-White-Plus-OverSize-6XL.jpg_220x220xz.jpg_.webp",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\Quick-Dry-Sport-T-Shirt-Men-S-2022-Short-Sleeves-Summer-Casual-White-Plus-OverSize-6XL.jpg_220x220xz.jpg_.webp",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/Quick-Dry-Sport-T-Shirt-Men-S-2022-Short-Sleeves-Summer-Casual-White-Plus-OverSize-6XL.jpg_220x220xz.jpg_.webp",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\Quick-Dry-Sport-T-Shirt-Men-S-2022-Short-Sleeves-Summer-Casual-White-Plus-OverSize-6XL.jpg_220x220xz.jpg_.webp"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\travel-back-black.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\travel-back-black.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/travel-back-black.jpg",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\travel-back-black.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\travel-back-red.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\travel-back-red.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/travel-back-red.jpg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\travel-back-red.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\watch.webp",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\watch.webp",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/watch.webp",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\watch.webp"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\white-jacket.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Home\\Index\\white-jacket.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/Home/Index/white-jacket.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Home\\Index\\white-jacket.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\marker.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\marker.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/marker.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\img\\marker.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\065e6ef4-bb60-4bc1-937f-f743d8c75b37_unnamed.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\065e6ef4-bb60-4bc1-937f-f743d8c75b37_unnamed.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/065e6ef4-bb60-4bc1-937f-f743d8c75b37_unnamed.jpg",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\065e6ef4-bb60-4bc1-937f-f743d8c75b37_unnamed.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\0ba8c793-2ced-4564-aa77-4ceebf253d01_man-chose-white.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\0ba8c793-2ced-4564-aa77-4ceebf253d01_man-chose-white.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/0ba8c793-2ced-4564-aa77-4ceebf253d01_man-chose-white.jpg",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\0ba8c793-2ced-4564-aa77-4ceebf253d01_man-chose-white.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\0fb6c93c-1f42-439a-8802-6cc7819146b0_Northwind_database.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\0fb6c93c-1f42-439a-8802-6cc7819146b0_Northwind_database.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/0fb6c93c-1f42-439a-8802-6cc7819146b0_Northwind_database.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\0fb6c93c-1f42-439a-8802-6cc7819146b0_Northwind_database.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\199a5724-c200-4571-ac53-7e6b46577b2e_404_dog.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\199a5724-c200-4571-ac53-7e6b46577b2e_404_dog.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/199a5724-c200-4571-ac53-7e6b46577b2e_404_dog.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\199a5724-c200-4571-ac53-7e6b46577b2e_404_dog.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\1cbc27ba-cb75-4d3b-ac64-e060774463f1_unnamed.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\1cbc27ba-cb75-4d3b-ac64-e060774463f1_unnamed.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/1cbc27ba-cb75-4d3b-ac64-e060774463f1_unnamed.jpg",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\1cbc27ba-cb75-4d3b-ac64-e060774463f1_unnamed.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\25d9d687-5826-405a-a5ad-2009500c5404_IMG.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\25d9d687-5826-405a-a5ad-2009500c5404_IMG.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/25d9d687-5826-405a-a5ad-2009500c5404_IMG.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\25d9d687-5826-405a-a5ad-2009500c5404_IMG.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\37c54baf-5dbe-42a7-bbaf-f51ec1ecc04a_clean arch.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\37c54baf-5dbe-42a7-bbaf-f51ec1ecc04a_clean arch.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/37c54baf-5dbe-42a7-bbaf-f51ec1ecc04a_clean arch.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\37c54baf-5dbe-42a7-bbaf-f51ec1ecc04a_clean arch.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\3a539d70-42b2-4f73-b316-ee489a2667e3_hat.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\3a539d70-42b2-4f73-b316-ee489a2667e3_hat.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/3a539d70-42b2-4f73-b316-ee489a2667e3_hat.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\3a539d70-42b2-4f73-b316-ee489a2667e3_hat.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\58401c69-86aa-4ebb-bea5-a670b4735bec_photo6005987064937558773.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\58401c69-86aa-4ebb-bea5-a670b4735bec_photo6005987064937558773.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/58401c69-86aa-4ebb-bea5-a670b4735bec_photo6005987064937558773.jpg",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\58401c69-86aa-4ebb-bea5-a670b4735bec_photo6005987064937558773.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\5cae74f5-9053-4632-ba45-517c47152bcf_travel-back-red.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\5cae74f5-9053-4632-ba45-517c47152bcf_travel-back-red.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/5cae74f5-9053-4632-ba45-517c47152bcf_travel-back-red.jpg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\5cae74f5-9053-4632-ba45-517c47152bcf_travel-back-red.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\7fca1c99-2f3b-4458-8768-818e4d590fce_IMG333fj33.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\7fca1c99-2f3b-4458-8768-818e4d590fce_IMG333fj33.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/7fca1c99-2f3b-4458-8768-818e4d590fce_IMG333fj33.jpg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\7fca1c99-2f3b-4458-8768-818e4d590fce_IMG333fj33.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\801f1ebd-0249-45f8-85a8-33678575cc08_404_dog.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\801f1ebd-0249-45f8-85a8-33678575cc08_404_dog.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/801f1ebd-0249-45f8-85a8-33678575cc08_404_dog.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\801f1ebd-0249-45f8-85a8-33678575cc08_404_dog.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\8b7cd315-d2c2-4b11-8a0a-660d2ee9fc79_clean arch.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\8b7cd315-d2c2-4b11-8a0a-660d2ee9fc79_clean arch.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/8b7cd315-d2c2-4b11-8a0a-660d2ee9fc79_clean arch.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\8b7cd315-d2c2-4b11-8a0a-660d2ee9fc79_clean arch.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\8bf7d969-74e2-47dc-bcf9-bb7e8808068e_Northwind_database.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\8bf7d969-74e2-47dc-bcf9-bb7e8808068e_Northwind_database.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/8bf7d969-74e2-47dc-bcf9-bb7e8808068e_Northwind_database.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\8bf7d969-74e2-47dc-bcf9-bb7e8808068e_Northwind_database.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\a1edda97-4662-490e-b5ac-d24db7a9b4d5_Screenshot (13).png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\a1edda97-4662-490e-b5ac-d24db7a9b4d5_Screenshot (13).png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/a1edda97-4662-490e-b5ac-d24db7a9b4d5_Screenshot (13).png",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\a1edda97-4662-490e-b5ac-d24db7a9b4d5_Screenshot (13).png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\a49d19b7-61ec-4791-abb1-7861cc534a25_jeans.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\a49d19b7-61ec-4791-abb1-7861cc534a25_jeans.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/a49d19b7-61ec-4791-abb1-7861cc534a25_jeans.jpg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\a49d19b7-61ec-4791-abb1-7861cc534a25_jeans.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\bd8a38cc-cb70-4a4e-888a-4adaee877934_photo6005987064937558773.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\bd8a38cc-cb70-4a4e-888a-4adaee877934_photo6005987064937558773.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/bd8a38cc-cb70-4a4e-888a-4adaee877934_photo6005987064937558773.jpg",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\bd8a38cc-cb70-4a4e-888a-4adaee877934_photo6005987064937558773.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\d3f40a9d-1caf-4667-91a5-733e521961d9_IMG333fj33.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\d3f40a9d-1caf-4667-91a5-733e521961d9_IMG333fj33.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/d3f40a9d-1caf-4667-91a5-733e521961d9_IMG333fj33.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\d3f40a9d-1caf-4667-91a5-733e521961d9_IMG333fj33.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\de4730b0-3a61-46c6-af00-233e594ef97d_FB_IMG_33338.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\de4730b0-3a61-46c6-af00-233e594ef97d_FB_IMG_33338.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/de4730b0-3a61-46c6-af00-233e594ef97d_FB_IMG_33338.jpg",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\de4730b0-3a61-46c6-af00-233e594ef97d_FB_IMG_33338.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\deb7ea46-acf0-4b49-944d-5c11d4fe2fa9_IMG.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\deb7ea46-acf0-4b49-944d-5c11d4fe2fa9_IMG.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/deb7ea46-acf0-4b49-944d-5c11d4fe2fa9_IMG.jpg",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\deb7ea46-acf0-4b49-944d-5c11d4fe2fa9_IMG.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\Default.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\Default.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/Default.jpg",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\Default.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\quot1.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\quot1.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/quot1.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\img\\quot1.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\quot2.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\quot2.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/quot2.png",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\img\\quot2.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\slider.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\slider.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/slider.jpg",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r1.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r1.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/test/r1.jpg",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\img\\test\\r1.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r2.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r2.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/test/r2.jpg",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\img\\test\\r2.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r3.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r3.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/test/r3.jpg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\img\\test\\r3.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r4.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\test\\r4.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/test/r4.jpg",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\img\\test\\r4.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\3aa15669-27b6-46eb-a772-b88a2d77b87b_unnamed.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\3aa15669-27b6-46eb-a772-b88a2d77b87b_unnamed.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/3aa15669-27b6-46eb-a772-b88a2d77b87b_unnamed.jpg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\3aa15669-27b6-46eb-a772-b88a2d77b87b_unnamed.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\58219be5-cb2a-46b6-b3cc-079a5739e7d5_404_dog.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\58219be5-cb2a-46b6-b3cc-079a5739e7d5_404_dog.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/58219be5-cb2a-46b6-b3cc-079a5739e7d5_404_dog.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\58219be5-cb2a-46b6-b3cc-079a5739e7d5_404_dog.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\5e10ff34-8249-4c95-923a-f49b02db3f9b_unnamed.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\5e10ff34-8249-4c95-923a-f49b02db3f9b_unnamed.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/5e10ff34-8249-4c95-923a-f49b02db3f9b_unnamed.jpg",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\5e10ff34-8249-4c95-923a-f49b02db3f9b_unnamed.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\75812037-be23-4d71-b41b-4adb20e6267e_white-jacket.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\75812037-be23-4d71-b41b-4adb20e6267e_white-jacket.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/75812037-be23-4d71-b41b-4adb20e6267e_white-jacket.png",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\75812037-be23-4d71-b41b-4adb20e6267e_white-jacket.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\8ecdba08-ac25-4a2e-90f9-b76e171ef1e1_404_dog.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\8ecdba08-ac25-4a2e-90f9-b76e171ef1e1_404_dog.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/8ecdba08-ac25-4a2e-90f9-b76e171ef1e1_404_dog.png",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\8ecdba08-ac25-4a2e-90f9-b76e171ef1e1_404_dog.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\Default.jpg",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\Default.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/Default.jpg",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\Default.jpg"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\f49ba91f-57c8-4f33-83a3-85f3bae3ba01_clean arch.png",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\f49ba91f-57c8-4f33-83a3-85f3bae3ba01_clean arch.png",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/f49ba91f-57c8-4f33-83a3-85f3bae3ba01_clean arch.png",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\img\\users\\f49ba91f-57c8-4f33-83a3-85f3bae3ba01_clean arch.png"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Partial\\_slider.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Partial\\_slider.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "js/Partial/_slider.js",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Partial\\_slider.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\site.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/bootstrap/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery\\jquery.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery\\jquery.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery/jquery.min.js",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\additional-methods.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\additional-methods.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/additional-methods.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\additional-methods.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\additional-methods.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/additional-methods.min.js",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\jquery.validate.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\jquery.validate.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/jquery.validate.js",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\jquery.validate.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\jquery-validation-sri.json",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\jquery-validation-sri.json",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/jquery-validation-sri.json",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\jquery-validation-sri.json"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ar.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ar.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ar.js",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ar.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ar.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ar.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ar.min.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ar.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_az.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_az.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_az.js",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_az.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_az.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_az.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_az.min.js",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_az.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bg.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bg.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_bg.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_bg.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bg.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bg.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_bg.min.js",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_bg.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_bn_BD.js",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_bn_BD.min.js",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_bn_BD.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ca.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ca.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ca.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ca.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ca.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ca.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ca.min.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ca.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_cs.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_cs.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_cs.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_cs.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_cs.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_cs.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_cs.min.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_cs.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_da.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_da.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_da.js",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_da.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_da.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_da.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_da.min.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_da.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_de.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_de.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_de.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_de.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_de.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_de.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_de.min.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_de.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_el.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_el.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_el.js",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_el.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_el.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_el.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_el.min.js",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_el.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_es.js",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_es.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_es.min.js",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_es.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_es_AR.js",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_es_AR.min.js",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_es_AR.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_es_PE.js",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_es_PE.min.js",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_es_PE.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_et.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_et.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_et.js",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_et.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_et.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_et.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_et.min.js",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_et.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_eu.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_eu.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_eu.js",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_eu.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_eu.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_eu.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_eu.min.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_eu.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fa.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fa.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_fa.js",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_fa.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fa.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fa.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_fa.min.js",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_fa.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fi.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fi.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_fi.js",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_fi.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fi.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fi.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_fi.min.js",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_fi.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fr.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fr.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_fr.js",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_fr.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fr.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_fr.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_fr.min.js",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_fr.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ge.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ge.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ge.js",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ge.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ge.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ge.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ge.min.js",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ge.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_gl.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_gl.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_gl.js",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_gl.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_gl.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_gl.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_gl.min.js",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_gl.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_he.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_he.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_he.js",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_he.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_he.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_he.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_he.min.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_he.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hr.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hr.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_hr.js",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_hr.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hr.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hr.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_hr.min.js",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_hr.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hu.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hu.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_hu.js",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_hu.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hu.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hu.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_hu.min.js",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_hu.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_hy_AM.js",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_hy_AM.min.js",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_hy_AM.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_id.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_id.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_id.js",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_id.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_id.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_id.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_id.min.js",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_id.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_is.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_is.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_is.js",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_is.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_is.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_is.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_is.min.js",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_is.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_it.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_it.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_it.js",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_it.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_it.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_it.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_it.min.js",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_it.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ja.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ja.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ja.js",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ja.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ja.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ja.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ja.min.js",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ja.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ka.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ka.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ka.js",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ka.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ka.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ka.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ka.min.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ka.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_kk.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_kk.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_kk.js",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_kk.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_kk.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_kk.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_kk.min.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_kk.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ko.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ko.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ko.js",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ko.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ko.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ko.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ko.min.js",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ko.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lt.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lt.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_lt.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_lt.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lt.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lt.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_lt.min.js",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_lt.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lv.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lv.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_lv.js",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_lv.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lv.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_lv.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_lv.min.js",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_lv.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_mk.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_mk.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_mk.js",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_mk.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_mk.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_mk.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_mk.min.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_mk.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_my.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_my.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_my.js",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_my.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_my.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_my.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_my.min.js",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_my.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_nl.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_nl.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_nl.js",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_nl.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_nl.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_nl.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_nl.min.js",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_nl.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_no.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_no.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_no.js",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_no.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_no.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_no.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_no.min.js",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_no.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pl.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pl.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_pl.js",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_pl.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pl.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pl.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_pl.min.js",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_pl.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_pt_BR.js",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_pt_BR.min.js",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_pt_BR.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_pt_PT.js",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_pt_PT.min.js",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_pt_PT.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ro.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ro.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ro.js",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ro.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ro.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ro.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ro.min.js",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ro.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ru.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ru.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ru.js",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ru.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ru.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ru.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ru.min.js",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ru.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sd.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sd.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sd.js",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sd.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sd.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sd.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sd.min.js",
       "AssetKind": "All",
@@ -2907,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sd.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_si.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_si.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_si.js",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_si.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_si.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_si.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_si.min.js",
       "AssetKind": "All",
@@ -2941,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_si.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sk.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sk.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sk.js",
       "AssetKind": "All",
@@ -2958,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sk.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sk.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sk.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sk.min.js",
       "AssetKind": "All",
@@ -2975,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sk.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sl.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sl.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sl.js",
       "AssetKind": "All",
@@ -2992,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sl.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sl.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sl.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sl.min.js",
       "AssetKind": "All",
@@ -3009,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sl.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sr.js",
       "AssetKind": "All",
@@ -3026,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sr.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sr.min.js",
       "AssetKind": "All",
@@ -3043,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sr.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sr_lat.js",
       "AssetKind": "All",
@@ -3060,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sr_lat.min.js",
       "AssetKind": "All",
@@ -3077,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sr_lat.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sv.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sv.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sv.js",
       "AssetKind": "All",
@@ -3094,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sv.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sv.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_sv.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_sv.min.js",
       "AssetKind": "All",
@@ -3111,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_sv.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_th.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_th.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_th.js",
       "AssetKind": "All",
@@ -3128,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_th.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_th.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_th.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_th.min.js",
       "AssetKind": "All",
@@ -3145,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_th.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tj.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tj.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_tj.js",
       "AssetKind": "All",
@@ -3162,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_tj.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tj.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tj.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_tj.min.js",
       "AssetKind": "All",
@@ -3179,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_tj.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_tr.js",
       "AssetKind": "All",
@@ -3196,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_tr.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_tr.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_tr.min.js",
       "AssetKind": "All",
@@ -3213,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_tr.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_uk.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_uk.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_uk.js",
       "AssetKind": "All",
@@ -3230,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_uk.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_uk.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_uk.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_uk.min.js",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_uk.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ur.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ur.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ur.js",
       "AssetKind": "All",
@@ -3264,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ur.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ur.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_ur.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_ur.min.js",
       "AssetKind": "All",
@@ -3281,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_ur.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_vi.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_vi.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_vi.js",
       "AssetKind": "All",
@@ -3298,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_vi.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_vi.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_vi.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_vi.min.js",
       "AssetKind": "All",
@@ -3315,10 +3315,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_vi.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_zh.js",
       "AssetKind": "All",
@@ -3332,10 +3332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_zh.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_zh.min.js",
       "AssetKind": "All",
@@ -3349,10 +3349,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_zh.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_zh_TW.js",
       "AssetKind": "All",
@@ -3366,10 +3366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/messages_zh_TW.min.js",
       "AssetKind": "All",
@@ -3383,10 +3383,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\messages_zh_TW.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_de.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_de.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_de.js",
       "AssetKind": "All",
@@ -3400,10 +3400,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_de.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_de.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_de.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_de.min.js",
       "AssetKind": "All",
@@ -3417,10 +3417,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_de.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_es_CL.js",
       "AssetKind": "All",
@@ -3434,10 +3434,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_es_CL.min.js",
       "AssetKind": "All",
@@ -3451,10 +3451,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_es_CL.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_fi.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_fi.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_fi.js",
       "AssetKind": "All",
@@ -3468,10 +3468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_fi.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_fi.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_fi.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_fi.min.js",
       "AssetKind": "All",
@@ -3485,10 +3485,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_fi.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_it.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_it.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_it.js",
       "AssetKind": "All",
@@ -3502,10 +3502,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_it.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_it.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_it.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_it.min.js",
       "AssetKind": "All",
@@ -3519,10 +3519,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_it.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_nl.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_nl.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_nl.js",
       "AssetKind": "All",
@@ -3536,10 +3536,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_nl.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_nl.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_nl.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_nl.min.js",
       "AssetKind": "All",
@@ -3553,10 +3553,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_nl.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_pt.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_pt.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_pt.js",
       "AssetKind": "All",
@@ -3570,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_pt.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_pt.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validate\\localization\\methods_pt.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validate/localization/methods_pt.min.js",
       "AssetKind": "All",
@@ -3587,10 +3587,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validate\\localization\\methods_pt.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3604,10 +3604,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3621,10 +3621,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.css",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.css",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/Swiper/swiper-bundle.min.css",
       "AssetKind": "All",
@@ -3638,10 +3638,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\Swiper\\swiper-bundle.min.css"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.js",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.js",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/Swiper/swiper-bundle.min.js",
       "AssetKind": "All",
@@ -3655,10 +3655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\Swiper\\swiper-bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.js.map",
+      "Identity": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\lib\\Swiper\\swiper-bundle.min.js.map",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "lib/Swiper/swiper-bundle.min.js.map",
       "AssetKind": "All",

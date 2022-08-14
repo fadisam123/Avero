@@ -11,6 +11,37 @@
     var userId = user?.Id;
 }
 
+@section style {
+    <style>
+
+    body {
+           background: linear-gradient(to right, #25c481, #25b7c4);
+        }
+    
+    .card {
+        background: linear-gradient(45deg, #098766, transparent);
+    }
+
+    .btn {
+        border-radius:5px;
+        margin-right:10px;
+    }
+
+    nav {
+        border:1px solid white;
+        border-radius:5px;
+    }
+    .page-item.active .page-link {
+    background-color: transparent;
+    border:1px solid green;
+   }
+
+.page-link:focus{
+    box-shadow:none;
+}
+    </style>
+}
+
 @if (TempData["add"] != null || TempData["edit"] != null || TempData["remove"] != null)
 {
     <!-- toast -->
@@ -42,7 +73,8 @@
     </div>
 }
 
-<h1>Your Products</h1>
+<h1 class="text-center text-white mt-1">Your Products</h1>
+<hr/>
 <div class="form-group d-flex flex-wrap justify-content-evenly">
     @for (int i = 0; i < Model.PaginatedProduct().Count(); i++)
     {
@@ -53,12 +85,12 @@
             main_img = pimgs[0].img_name;
         else
             main_img = "Default.jpg";
-        <div class="card mb-4" style="width: 18rem; flex: 0 0 32%;">
+        <div class="card text-center text-white mb-4" style="width: 18rem; flex: 0 0 32%;">
             <img src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
             <div class="card-body">
                 <h5 class="card-title">@Model.products.ElementAt(productIndex).name</h5>
                 <p class="card-text">@Model.products.ElementAt(productIndex).price_per_unit SYP</p>
-                <form asp-controller="Admin" asp-action="deleteProduct" asp-route-id="@Model.products.ElementAt(productIndex).Id" asp-route-currentPage="@Model.currentPage" method="post">
+                <form class="ms-4" asp-controller="Admin" asp-action="deleteProduct" asp-route-id="@Model.products.ElementAt(productIndex).Id" asp-route-currentPage="@Model.currentPage" method="post">
                     <a id="edit_@Model.products.ElementAt(productIndex).Id" asp-action="editProduct" asp-controller="Admin" asp-route-id="@Model.products.ElementAt(productIndex).Id" class="btn btn-primary">Edit</a>
                     <span id="confirmDeleteSpan_@Model.products.ElementAt(productIndex).Id" style="display:none">
                         <span>Are you sure you want to delete this product?</span>
@@ -94,7 +126,7 @@
             if ((i >= @Model.currentPage - 3 && i <= @Model.currentPage + 3) || (i == @Model.PageCount()))
             {
                 <li class="@(i == Model.currentPage ? "page-item active" : "page-item")">
-                    <a class="page-link" href="@Url.Action("viewProducts", new {id = userId, page = i })">@i</a>
+                    <a class="page-link text-success" href="@Url.Action("viewProducts", new {id = userId, page = i })">@i</a>
                 </li>
             }
             else if (i == @Model.currentPage + 4 && i != @Model.PageCount())
@@ -107,7 +139,7 @@
         @if (Model.PageCount() > 1)
         {
             <li class="page-item">
-                <a class="page-link nextPagination" href="#">
+                <a class="page-link nextPagination text-success" href="#">
                     Next
                 </a>
             </li>

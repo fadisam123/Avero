@@ -15,10 +15,18 @@
     }
 }
 
-<h1>Edit Product</h1>
+@section style {
+    <style>
+    body{
+          background: linear-gradient(to right, #25c481, #25b7c4);
+    }
+    </style>
+}
+
+<h1 class="text-center text-white">Edit Product</h1>
 
 <hr />
-<div class="row">
+<div class="row text-center  d-flex justify-content-center align-items-center">
     <div class="col-md-8">
         <form enctype="multipart/form-data" asp-action="editProduct" asp-controller="Admin" asp-route-id="@ViewBag.productId">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>

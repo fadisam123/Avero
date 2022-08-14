@@ -1099,7 +1099,6 @@ C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\Avero.Web.RazorAssemblyInfo.
 C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
-C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\Views\Partial\_searchBox.cshtml.rz.scp.css
 C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\Views\Partial\_slider.cshtml.rz.scp.css
 C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\bundle\Avero.Web.styles.css
 C:\Users\SAM\Avero\Avero\Avero.Web\obj\Debug\net6.0\scopedcss\projectbundle\Avero.Web.bundle.scp.css

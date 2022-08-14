@@ -15,12 +15,17 @@
             content: " *";
             color: red;
         }
+
+     body {
+                 background: linear-gradient(to right, #25c481, #25b7c4);
+
+     }
     </style>
 }
-<h1>Add Product</h1>
+<h1 class="text-white text-center">Add Product</h1>
 
 <hr />
-<div class="row">
+<div class="row text-center d-flex justify-content-center align-items-center">
     <div class="col-md-8">
         <form asp-action="AddProduct" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>

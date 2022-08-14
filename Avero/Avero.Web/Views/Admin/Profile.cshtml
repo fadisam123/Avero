@@ -9,6 +9,19 @@
     ViewBag.Title = "Register";
 }
 
+@section style {
+    <style>
+
+     body {
+         background: linear-gradient(to right, #25c481, #25b7c4);
+    }
+
+    .row {
+        margin-top:30px;
+    }
+    </style>
+}
+
 @if (TempData["confirm"] != null)
 {
     // update profile successfully toast
@@ -29,45 +42,46 @@
     </div>
 }
 
-<div class="px-2">
+<div class="row text-center d-flex justify-content-center align-items-center">
+    <div class="col-md-8">
     <form id="reg" method="post" asp-controller="Admin" asp-action="Profile" enctype="multipart/form-data">
 
-        <div class="form-group">
+        <div class="form-group mb-4">
             <label class="required" asp-for="Email"></label>
             <input disabled asp-for="Email" class="form-control" />
         </div>
 
-        <div class="form-group">
+        <div class="form-group mb-4">
             <label class="required" asp-for="name"></label>
             <input asp-for="name" class="form-control" />
             <span asp-validation-for="name" class="text-danger"></span>
         </div>
-        <div class="form-group">
+        <div class="form-group mb-4">
             <label asp-for="street_name"></label>
             <input asp-for="street_name" class="form-control" />
         </div>
-        <div class="form-group">
+        <div class="form-group mb-4">
             <label asp-for="Phone"></label>
             <input asp-for="Phone" />
         </div>
-        <div class="form-group">
+        <div class="form-group mb-4">
             <label>City</label>
             <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"></select>
         </div>
-        <div class="form-group">
+        <div class="form-group mb-4">
             <label class="required" asp-for="neighborhood"></label>
             <select id="neighborhood" asp-for="neighborhood"></select>
             <span asp-validation-for="neighborhood" class="text-danger"></span>
         </div>
 
-        <div class="form-check">
+        <div class="form-check mb-4">
             <label asp-for="is_wholesealer"></label>
             <input disabled type="checkbox" asp-for="is_wholesealer" />
         </div>
 
 
 
-        <div class="form-group d-flex align-items-center">
+        <div class="form-group d-flex align-items-center mb-4">
             <div class="me-4"><img asp-append-version="true" src="@photoPath" class="rounded" id="photoOutput" width="200" /></div>
             <div class="flex-fill">
                 <div class="custom-file">
@@ -87,6 +101,7 @@
 
         <button onclick="if(!$('#reg').valid())$('#myModal').modal('show')" type="submit" class="btn btn-primary">Save</button>
     </form>
+</div>
 </div>
 
 @section script {

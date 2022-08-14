@@ -8,11 +8,18 @@
 
 @section style{
 <style> 
+
+    .user-detiles {
+        background: linear-gradient(to right, #25c481, #25b7c4);
+        margin-top:-7px;
+    }
+
     dl {
+
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color:white; 
+        background: linear-gradient(45deg, #098766, transparent); 
         padding: 20px;
         width: 75%;
         border: 1px solid black;
@@ -31,7 +38,7 @@
 }
 
 <div class="user-detiles text-center">
-    <h4 class="mt-2"><em>User Details</em></h4>
+    <h4 class="mt-2 pt-1 text-white"><em>User Details</em></h4>
     <hr />
 
     @{
@@ -43,7 +50,7 @@
 
 
     <div class="d-flex justify-content-center align-items-center">
-    <dl class="row">
+    <dl class="row text-white">
         <dt class="col-sm-6">
             User name :
         </dt>

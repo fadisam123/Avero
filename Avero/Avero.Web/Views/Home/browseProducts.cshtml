@@ -21,13 +21,17 @@
 }
 @section style {
     <style>
+        .main-page {
+            background: linear-gradient(to right, #25c481, #25b7c4);
+        }
+
 
         .product {
             display: block;
             top: 0px;
             position: relative;
             width: 300px;
-            background-color: #705f93;
+            background: linear-gradient(45deg, #098766, transparent);
             border-radius: 4px;
             padding: 10px;
             margin-right: 15px;
@@ -89,9 +93,9 @@
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: none;
-    background-color: #705f93;
+align-items:center;
+border: none;
+    background: linear-gradient(to right, #098766, #00ffff);
     border: 2px solid #eee;
 }
 .side-navbar .widget {
@@ -99,7 +103,7 @@
 }
 
 .form-check-input:checked {
-    background-color:#766df4;
+    background-color:green;
     border-color: white;
 }
 
@@ -116,14 +120,18 @@ h3 {
     color: #eee;
 }
 
-.side-navbar .nav-item .nav-link:hover {
-    color: white;
-} 
+.page-item.active .page-link {
+    background-color: transparent;
+    border:1px solid green;
+}
 
+.page-link:focus{
+    box-shadow:none;
+}
     </style>
 
 }
-    <div class="main-page mt-2 p-2 d-flex">
+    <div class="main-page text-white p-2 d-flex">
          <div class="side-navbar d-none d-lg-flex text-center col-lg-4">
          <div class="widget">
            <h3 class="widget-title mb-3">Sorte by</h3>
@@ -163,7 +171,7 @@ h3 {
                     </span>
                 </a>
 
-                <img style="display:block; border-radius:50%; margin:auto; object-position: 50% 50%; object-fit: cover; width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+                <img style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
                 <div class="card-body text-center">
                     <h5 class="card-title">@p.name</h5>
                     <p class="card-text">@p.price_per_unit SYP</p>
@@ -205,7 +213,7 @@ h3 {
         @if (Model.PageCount() > 1)
         {
             <li class="page-item">
-                <a class="page-link prevPagination" href="#">
+                <a class="page-link text-success prevPagination" href="#">
                     Previous
                 </a>
             </li>
@@ -215,7 +223,7 @@ h3 {
             if ((i >= @Model.currentPage - 3 && i <= @Model.currentPage + 3) || (i == @Model.PageCount()))
             {
                 <li class="@(i == Model.currentPage ? "page-item active" : "page-item")">
-                    <a class="page-link" href="@Url.Action("browseProducts", new { page = i , orderId = @ViewBag.orderId})">@i</a>
+                    <a class="page-link text-success" href="@Url.Action("browseProducts", new { page = i , orderId = @ViewBag.orderId})">@i</a>
                 </li>
             }
             else if (i == @Model.currentPage + 4 && i != @Model.PageCount())
@@ -228,7 +236,7 @@ h3 {
         @if (Model.PageCount() > 1)
         {
             <li class="page-item">
-                <a class="page-link nextPagination" href="#">
+                <a class="page-link nextPagination text-success" href="#">
                     Next
                 </a>
             </li>

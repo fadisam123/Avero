@@ -34,7 +34,6 @@
             background: linear-gradient(45deg, #098766, transparent);
             border-radius: 4px;
             padding: 10px;
-            margin-right: 15px;
             text-decoration: none;
             z-index: 0;
             overflow: hidden;
@@ -128,6 +127,12 @@ h3 {
 .page-link:focus{
     box-shadow:none;
 }
+
+
+.page-item.disabled .page-link{
+    background-color: #f0e7e7  !important;
+}
+
     </style>
 
 }
@@ -171,7 +176,7 @@ h3 {
                     </span>
                 </a>
 
-                <img style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+                <img style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; max-width: 200px; max-height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
                 <div class="card-body text-center">
                     <h5 class="card-title">@p.name</h5>
                     <p class="card-text">@p.price_per_unit SYP</p>

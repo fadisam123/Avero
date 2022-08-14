@@ -11,9 +11,33 @@ html, body {
 }
 
 .header {
-    background: linear-gradient(to right, #25c481, #25b7c4);
+    /*background: linear-gradient(to right, #25c481, #25b7c4);*/
+
+    position: relative;
+    background: url(/img/body.jpg) top center fixed no-repeat #3A0000;
     background-size: cover;
-    position: relative
+    /*
+    
+
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+
+    background-image: linear-gradient(to right, #870000, #190a05);
+
+    background-image: linear-gradient(to right, #141e30, #243b55);
+
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+    background: linear-gradient(to right, #4286f4, #373B44);
+
+    background: linear-gradient(to right, #240b36, #c31432);
+
+    */
 }
 
 

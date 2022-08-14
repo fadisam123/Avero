@@ -40,7 +40,8 @@
 
         nav {
             overflow: auto;
-            background: linear-gradient(to right,#098766,#00ffff);
+            /*background: linear-gradient(to right,#098766,#00ffff);*/
+            background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
         }
 
         ul li a {
@@ -67,7 +68,12 @@
         main {
             width: 80%;
             float: right;
-            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        input:disabled {
+            background: #dddddd !important;
         }
     </style>
     @await RenderSectionAsync("style", false)
@@ -182,7 +188,7 @@
             }
 
         });
-                                                                                        // DOMContentLoaded  end
+                                                                                                        // DOMContentLoaded  end
     </script>
     @*we set (type="module") in this script because we used (import statment) inside the file*@
     @await RenderSectionAsync("script", required: false)

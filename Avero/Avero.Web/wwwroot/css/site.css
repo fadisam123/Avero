@@ -11,7 +11,7 @@ html, body {
 }
 
 .header {
-    background: url(/img/body.jpg) top center fixed no-repeat #3A0000;
+    background: linear-gradient(to right, #25c481, #25b7c4);
     background-size: cover;
     position: relative
 }

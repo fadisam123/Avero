@@ -21,7 +21,7 @@ namespace Avero.Web.ViewModels.Admin
         [Display(Name = "Description")]
         public string? desc { get; set; }
 
-        [Range(0, int.MaxValue, ErrorMessage = "The quantity must be greater than zero.")]
+        [Range(0, int.MaxValue, ErrorMessage = "The quantity must be positive.")]
         [RegularExpression(@"^[0-9]*$", ErrorMessage = "Invalid quantity, Enter positive numbers only")]
         [Display(Name = "Quantity Available")]
         public int quantity_available { get; set; }

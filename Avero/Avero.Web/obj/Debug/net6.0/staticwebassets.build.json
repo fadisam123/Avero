@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6ARYJh7qGZno52aC3Wc6WbXKg84/a6yViO+ZdYGRNl4=",
+  "Hash": "wetlKzahjsbjbkJN69jIor3d3sYGqo0Lvj/DpUeSU84=",
   "Source": "Avero.Web",
   "BasePath": "_content/Avero.Web",
   "Mode": "Default",
@@ -986,6 +986,23 @@
       "OriginalItemSpec": "wwwroot\\img\\products\\d3f40a9d-1caf-4667-91a5-733e521961d9_IMG333fj33.jpg"
     },
     {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\dc511c10-f9e4-4899-ac65-7bf8042a449e_404_dog.png",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "img/products/dc511c10-f9e4-4899-ac65-7bf8042a449e_404_dog.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\products\\dc511c10-f9e4-4899-ac65-7bf8042a449e_404_dog.png"
+    },
+    {
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\de4730b0-3a61-46c6-af00-233e594ef97d_FB_IMG_33338.jpg",
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
@@ -1035,6 +1052,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\products\\Default.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\fa272706-d5a0-4f04-bf6b-c261efe4b611_404_dog.png",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "img/products/fa272706-d5a0-4f04-bf6b-c261efe4b611_404_dog.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\products\\fa272706-d5a0-4f04-bf6b-c261efe4b611_404_dog.png"
     },
     {
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\quot1.png",

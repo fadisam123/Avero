@@ -315,11 +315,11 @@ namespace Avero.Web.Controllers
         public async Task<IActionResult> deleteProduct(long id, int currentPage)
         {
             var productToDelete = await context.product.FindAsync(id);
-            var productImgs = context.product_imgs.Where(pi => pi.product_id == id);
-            var productCatagories = context.product_catagory.Where(pc => pc.product_id == id);
+            /*var productImgs = context.product_imgs.Where(pi => pi.product_id == id);
+            var productCatagories = context.product_catagory.Where(pc => pc.product_id == id);*/
             var userId = productToDelete.wholesealer_id;
 
-            // delete product images in WWWroot folder
+            /*// delete product images in WWWroot folder
             var imegesList = productImgs.ToList();
             for (int i = 0; i < productImgs.Count(); i++)
             {
@@ -328,11 +328,12 @@ namespace Avero.Web.Controllers
                 {
                     System.IO.File.Delete(imageToDelete);
                 }
-            }
+            }*/
 
-            context.product.Remove(productToDelete);
+            productToDelete.quantity_available = 0;
+            /*context.product.Remove(productToDelete);
             context.product_imgs.RemoveRange(productImgs);
-            context.product_catagory.RemoveRange(productCatagories);
+            context.product_catagory.RemoveRange(productCatagories);*/
             await context.SaveChangesAsync();
             TempData["remove"] = "remove";
             return RedirectToAction("viewProducts", new

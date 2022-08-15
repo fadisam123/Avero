@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Avero.Web
 build_property.RootNamespace = Avero.Web
-build_property.ProjectDir = C:\Users\ROG\Desktop\Avero\Avero\Avero.Web\
+build_property.ProjectDir = C:\Users\SAM\Desktop\Avero\Avero\Avero.Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ROG\Desktop\Avero\Avero\Avero.Web
+build_property.MSBuildProjectDirectory = C:\Users\SAM\Desktop\Avero\Avero\Avero.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Account/AccountLocked.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Account/AccountLocked.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2NvdW50TG9ja2VkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Account/ForgotPassword.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Account/Login.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Account/Register.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Account/ResetPassword.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Admin/AddProduct.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Admin/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Admin/Cart.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Admin/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Admin/editProduct.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Admin/editProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZWRpdFByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Admin/orders.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Admin/orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cb3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Admin/Profile.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Admin/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Admin/viewProducts.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Admin/viewProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cdmlld1Byb2R1Y3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/browseProducts.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/browseProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxicm93c2VQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/viewProduct.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/viewProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWV3UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/viewUser.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/viewUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx2aWV3VXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/Error.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/NotFound.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/_Layout2.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/_Layout2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/_LayoutAccount.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/_LayoutAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/_ViewImports.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/_ViewStart.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Home/Index.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-zil5iyl7cg
 
-[C:/Users/ROG/Desktop/Avero/Avero/Avero.Web/Views/Partial/_slider.cshtml]
+[C:/Users/SAM/Desktop/Avero/Avero/Avero.Web/Views/Partial/_slider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFxfc2xpZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-0hyncgi3kr

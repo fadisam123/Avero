@@ -1,25 +1,24 @@
 /* _content/Avero.Web/Views/Home/Index.cshtml.rz.scp.css */
 .slide[b-zil5iyl7cg] {
     position: relative;
-    height: 100%;
+    height: 100vh;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
     color: #000;
     margin: 0;
     padding: 0;
+    background: url(/img/body.jpg) top center fixed no-repeat #3A0000;
+    background-size: cover;
 }
 
 .swiper[b-zil5iyl7cg] {
     width: 90%;
     height: 100%;
-    background: #eee;
-    border: 1px solid #eee;
+    background:transparent;
 }
 
 .swiper-slide[b-zil5iyl7cg] {
     text-align: center;
     font-size: 18px;
-    background: rgba(0,0,0,.5);
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
@@ -31,14 +30,15 @@
         background-color: rgba(0, 0, 0, .1);
         z-index: -1;
         border: 2px solid rgba(0, 0, 0, .1);
+        transition: all .9s ease-in-out;
     }
 
-        .swiper-slide .card .imag:hover[b-zil5iyl7cg] {
+        .swiper-slide .card a:hover[b-zil5iyl7cg] {
             opacity: 0.6;
+            transition: all .2s ease-in-out;
         }
 
         .swiper-slide .card img[b-zil5iyl7cg] {
-            transition: all .3s ease-in-out;
             height: auto;
             max-width: 100%;
         }
@@ -52,20 +52,7 @@
             letter-spacing: 2px;
         }
 
-        .swiper-slide .card .card-body .icons[b-zil5iyl7cg] {
-            margin-top: 25px;
-        }
-
-            .swiper-slide .card .card-body .icons img[b-zil5iyl7cg] {
-                width: 30px;
-                height: 30px;
-            }
-
-        .swiper-slide .card .basket img:hover[b-zil5iyl7cg] {
-            cursor: pointer;
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
+        
 /* ﻿.main {
     height: 100vh;
     background-image: linear-gradient(to right bottom, #4c0622, #430426, #380528, #2d0629, #210529);

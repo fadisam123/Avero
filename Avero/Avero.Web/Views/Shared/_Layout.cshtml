@@ -201,6 +201,14 @@
             color:white;
         }
 
+        footer .logo {
+            background-color:black;
+            border:1px solid black;
+            border-radius:50%;
+            width:40px;
+            height:40px;
+        }
+
         @@media (max-width: 576px) {
             .search-container {
                 top: 16.5% !important;
@@ -316,8 +324,10 @@
 
     <div class="footer">
         <footer class="mx-2 d-flex flex-nowrap flex-column justify-content-center">
-            <div class="container">
-                &copy; 2022 - Avero
+            <div class="container text-center">
+                &copy; 2022 -
+                    <img class="logo" src="~/img/Avero2-light.png"/>
+
             </div>
         </footer>
     </div>

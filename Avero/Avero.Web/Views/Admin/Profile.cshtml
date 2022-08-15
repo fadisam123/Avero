@@ -47,26 +47,26 @@
         <form id="reg" method="post" asp-controller="Admin" asp-action="Profile" enctype="multipart/form-data">
 
             <div class="form-group mb-4">
-                <label class="required" asp-for="Email"></label>
-                <input disabled asp-for="Email" class="form-control" />
+                <label class="required text-white" asp-for="Email"></label>
+                <input disabled asp-for="Email" class="form-control text-center" />
             </div>
 
             <div class="form-group mb-4">
-                <label class="required" asp-for="name"></label>
-                <input asp-for="name" class="form-control" />
+                <label class="required text-white" asp-for="name"></label>
+                <input asp-for="name" class="form-control text-center" />
                 <span asp-validation-for="name" class="text-danger"></span>
             </div>
             <div class="form-group mb-4">
-                <label asp-for="street_name"></label>
-                <input asp-for="street_name" class="form-control" />
+                <label class="text-white" asp-for="street_name"></label>
+                <input asp-for="street_name" class="form-control text-center" />
             </div>
             <div class="form-group mb-4">
-                <label asp-for="Phone"></label>
-                <input asp-for="Phone" />
+                <label class="text-white" asp-for="Phone"></label>
+                <input asp-for="Phone" class="text-center" />
             </div>
             <div class="form-check mb-4">
-                <label asp-for="is_wholesealer"></label>
-                <input disabled type="checkbox" asp-for="is_wholesealer" />
+                <label class="text-white" asp-for="is_wholesealer"></label>
+                <input disabled type="checkbox" asp-for="is_wholesealer" class="text-center" />
             </div>
 
 
@@ -82,11 +82,11 @@
 
             <div class="d-flex justify-content-around">
                 <div class="form-group mb-4">
-                    <label>City</label>
+                    <label class="text-white">City</label>
                     <select id="cityes" asp-items="@(new SelectList(ViewBag.cityes,"Id","name"))"></select>
                 </div>
                 <div class="form-group mb-4">
-                    <label class="required" asp-for="neighborhood"></label>
+                    <label class="required text-white" asp-for="neighborhood"></label>
                     <select id="neighborhood" asp-for="neighborhood"></select>
                     <span asp-validation-for="neighborhood" class="text-danger"></span>
                 </div>

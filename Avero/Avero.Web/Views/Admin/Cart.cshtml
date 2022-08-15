@@ -21,16 +21,39 @@
 
 }
 
+@section style {
+    <style>
+     body {
+         background: linear-gradient(to right, #25c481, #25b7c4);
+     }
 
-<h1>Your Cart</h1>
-<hr />
+     h1{
+         border-bottom:1px solid white;    
+     }
+
+     .btn {
+         width:170px;
+     }
+     
+     .logo {
+         position:absolute;
+         top: 30%;
+         width:400px;
+         height:400px;
+     }
+
+    </style>
+}
+
+
+<h1 class="text-center text-white mt-2 pb-3">Your Cart</h1>
+
 
 
 @if (itemCount != 0)
 {
-    <h3>Total items: @itemCount products</h3>
+    <h3 class="text-center text-white">Total items: @itemCount products</h3>
     <br />
-
     @*var ordersDetails = orders.ElementAt(0).order_details.ToList();
     var totalPrice = 0.0;
     @for (int i = 0; i < ordersDetails.Count(); i++)
@@ -62,17 +85,25 @@
 
 
 
-
-    <a class="btn btn-primary" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">checkout</a>
-    <a class="btn btn-danger" asp-controller="Admin" asp-action="clearCart" asp-route-id="@userId" asp-route-orderId="@orderId">clear my cart</a>
-    <a class="btn btn-dark" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Continue Shopping</a>
-
+    <div class="section-1 ms-5 d-flex justify-content-center align-items-center">
+    <a class="btn btn-primary ms-4 me-5" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">checkout</a>
+    <a class="btn btn-danger ms-4 me-5" asp-controller="Admin" asp-action="clearCart" asp-route-id="@userId" asp-route-orderId="@orderId">clear my cart</a>
+    <a class="btn btn-dark ms-4 me-5" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Continue Shopping</a>
+    <img class="logo mt-4" src="~/img/Avero2-light.png"/>
+    </div>
 }
 else
 {
 
+    <div class="section-1 ms-5 mt-5 d-flex justify-content-center align-items-center">
+    <a class="btn btn-primary disabled ms-4 me-5" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">Checkout</a>
+    <a class="btn btn-danger disabled ms-4 me-5" asp-controller="Admin" asp-action="clearCart" asp-route-id="@userId" asp-route-orderId="@orderId">Clear My Cart</a>
+    <a class="btn btn-dark ms-4 me-5" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Browse Products</a>
+    <img class="logo" src="~/img/Avero2-light.png" />
+</div>
 
-    <a class="btn btn-primary disabled" asp-controller="Admin" asp-action="checkOut" asp-route-id="@userId" asp-route-orderId="@orderId">checkout</a>
-    <a class="btn btn-danger disabled" asp-controller="Admin" asp-action="clearCart" asp-route-id="@userId" asp-route-orderId="@orderId">clear my cart</a>
-    <a class="btn btn-dark" asp-controller="Home" asp-action="browseProducts" asp-route-orderId="@orderId">Browse Products</a>
 }
+
+
+
+    

@@ -17,7 +17,7 @@
  .product-detiles {
     margin: 0;
     box-sizing: border-box;
-    height: 90vh;
+    height: 100vh;
     width: auto;
             background: linear-gradient(to right, #25c481, #25b7c4);
 
@@ -36,8 +36,10 @@
     background: linear-gradient(45deg, #098766, transparent); 
 }
 
-
-
+   dl dt {
+        color: white;
+   }
+   
    dl dd {
     margin-bottom: 5px;
 }
@@ -138,7 +140,7 @@
             <a class="link-dark text-decoration-none" asp-controller="Home" asp-action="viewUser" asp-route-id="@Model.wholesealer_id">
                 <span class="userImg d-flex align-items-center">
                     <img style="object-position: 50% 50%; object-fit: cover; width: 50px; height:50px" class="rounded-circle me-2" src="~/img/users/@wholesealerImage" alt="user image" asp-append-version="true" />
-                    <span class="userName">@Model.wholesealer.name</span>
+                    <span class="userName text-white">@Model.wholesealer.name</span>
                 </span>
             </a>
 

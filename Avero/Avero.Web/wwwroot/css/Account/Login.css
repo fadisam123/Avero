@@ -119,9 +119,10 @@ body {
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 40px;
+    margin-top: 36px;
+    margin-bottom: 17px;
     letter-spacing: 4px;
-    left: 110px;
+    left: 106px;
 }
 
 .login-box form .prev {
@@ -154,21 +155,25 @@ body {
     left: 168px;
 }
 
-.login-box form .button {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #03e9f4;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 20px;
-    letter-spacing: 4px;
-    left: 53px;
-    margin-left: -5px;
-}
+    .login-box form .new a{
+        letter-spacing:0px;
+    }
+
+    .login-box form .button {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 20px;
+        letter-spacing: 4px;
+        left: 53px;
+        margin-left: -5px;
+    }
 
 .login-box a:hover {
     background: #03e9f4;

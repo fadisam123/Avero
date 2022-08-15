@@ -68,7 +68,7 @@
         var pWholesealerName = ordersDetails.ElementAt(i).product.wholesealer.name;
         var pWholesealerImage = ordersDetails.ElementAt(i).product.wholesealer.img_name;
 
-        if (pOfferEndDate >= DateTime.Now)
+        if (pOfferEndDate >= DateTime.Now) // offer on
         {
             totalPrice += (pOfferPrice * pQuantity);
         }

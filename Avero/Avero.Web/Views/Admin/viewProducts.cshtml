@@ -40,6 +40,10 @@
         .page-link:focus {
             box-shadow: none;
         }
+                .page-item.disabled .page-link {
+    background-color: #c8c1c1  !important;
+    colo
+}
     </style>
 }
 
@@ -183,7 +187,7 @@
         @if (Model.PageCount() > 1)
         {
             <li class="page-item">
-                <a class="page-link prevPagination" href="#">
+                <a class="page-link prevPagination text-success" href="#">
                     Previous
                 </a>
             </li>

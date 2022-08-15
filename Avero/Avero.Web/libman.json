@@ -3,16 +3,6 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "bootstrap@5.1.3",
-      "destination": "wwwroot/lib/bootstrap/",
-      "files": [
-        "js/bootstrap.bundle.min.js",
-        "js/bootstrap.bundle.min.js.map",
-        "css/bootstrap.min.css.map",
-        "css/bootstrap.min.css"
-      ]
-    },
-    {
       "library": "jquery@3.6.0",
       "destination": "wwwroot/lib/jquery/",
       "files": [
@@ -20,12 +10,12 @@
       ]
     },
     {
-      "library": "Swiper@8.2.4",
+      "library": "Swiper@8.3.2",
       "destination": "wwwroot/lib/Swiper/",
       "files": [
         "swiper-bundle.min.js",
-        "swiper-bundle.min.js.map",
-        "swiper-bundle.min.css"
+        "swiper-bundle.min.css",
+        "swiper-bundle.min.js.map"
       ]
     },
     {
@@ -33,8 +23,24 @@
       "destination": "wwwroot/lib/jquery-validate/"
     },
     {
-      "library": "jquery-validation-unobtrusive@3.2.12",
+      "library": "jquery-validation-unobtrusive@4.0.0",
       "destination": "wwwroot/lib/jquery-validation-unobtrusive/"
+    },
+    {
+      "library": "bootstrap@5.2.0",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "js/bootstrap.min.js",
+        "css/bootstrap.min.css.map",
+        "css/bootstrap.min.css",
+        "js/bootstrap.min.js.map",
+        "js/bootstrap.bundle.min.js",
+        "js/bootstrap.bundle.min.js.map"
+      ]
+    },
+    {
+      "library": "slick-carousel@1.8.1",
+      "destination": "wwwroot/lib/slick-carousel/"
     }
   ]
 }

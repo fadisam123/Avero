@@ -132,7 +132,12 @@ h3 {
 .page-item.disabled .page-link{
     background-color: #f0e7e7  !important;
 }
-
+.btn-primary.disabled, .btn-primary:disabled {
+        background-color: #4284e4 !important;
+}
+.btn-danger.disabled, .btn-danger:disabled {
+        background-color: #d5636e !important;
+}
     </style>
 
 }
@@ -182,10 +187,10 @@ h3 {
                     <p class="card-text">@p.price_per_unit SYP</p>
                     @if (is_wholesealer ?? false)
                     {
-                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="This Action Is Disabled">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
                             <a class="btn-sm btn me-2 btn-primary disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
                         </span>
-                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="This Action Is Disabled">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
                             <a id="@p.Id" class="btn-sm btn btn-danger disabled" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
                         </span>
                     }

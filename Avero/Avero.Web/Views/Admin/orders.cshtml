@@ -159,9 +159,15 @@
 
 
 
-                                <td>@query.ElementAt(i).pProcessing_state</td>
-                                @if (@query.ElementAt(i).pProcessing_state == 0)
+
+                                @if (@query.ElementAt(i).pProcessing_state == Avero.Core.Enum.Order_state.pending)
                                 {
+                                    <td>
+                                        <span class="text-primary">
+                                            &#9654;
+                                        </span>
+                                        @query.ElementAt(i).pProcessing_state
+                                    </td>
                                     <td>
                                         <div class="d-flex flex-column align-items-center">
                                             <a asp-action="approve" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="w-75 btn btn-primary btn-sm mb-1">Approve</a>
@@ -169,8 +175,26 @@
                                         </div>
                                     </td>
                                 }
+                                else if (@query.ElementAt(i).pProcessing_state == Avero.Core.Enum.Order_state.approved)
+                                {
+                                    // is true sign
+                                    <td>
+                                        &#9989;
+                                        @query.ElementAt(i).pProcessing_state
+                                    </td>
+                                    <td>
+                                        <div class="d-flex flex-column align-items-center">
+                                            <a asp-action="approve" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="disabled w-75 btn btn-primary btn-sm mb-1">Approve</a>
+                                            <a asp-action="reject" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="disabled w-75 btn btn-success btn-sm">Reject</a>
+                                        </div>
+                                    </td>
+                                }
                                 else
                                 {
+                                    <td>
+                                        &#10060;
+                                        @query.ElementAt(i).pProcessing_state
+                                    </td>
                                     <td>
                                         <div class="d-flex flex-column align-items-center">
                                             <a asp-action="approve" asp-controller="admin" asp-route-orderDetailsId="@query.ElementAt(i).odId" class="disabled w-75 btn btn-primary btn-sm mb-1">Approve</a>
@@ -269,7 +293,32 @@ else if ((!is_wholesealer) ?? false)
                                 </td>
                                 <td>@query.ElementAt(i).pQuantity</td>
                                 <td>@query.ElementAt(i).pOrder_date</td>
-                                <td>@query.ElementAt(i).pProcessing_state</td>
+
+                                @if (@query.ElementAt(i).pProcessing_state == Avero.Core.Enum.Order_state.pending)
+                                {
+                                    <td>
+                                        <span class="text-primary">
+                                            &#9654;
+                                        </span>
+                                        @query.ElementAt(i).pProcessing_state
+                                    </td>
+                                }
+                                else if (@query.ElementAt(i).pProcessing_state == Avero.Core.Enum.Order_state.approved)
+                                {
+                                    // is true sign
+                                    <td>
+                                        &#9989;
+                                        @query.ElementAt(i).pProcessing_state
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        &#10060;
+                                        @query.ElementAt(i).pProcessing_state
+                                    </td>
+                                }
+
                                 <td>@query.ElementAt(i).oId</td>
                             </tr>
                         }

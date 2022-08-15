@@ -1,4 +1,8 @@
-﻿@model Avero.Core.Entities.Product
+﻿@using Avero.Infrastructure.Persistence.DBContext
+@using Microsoft.EntityFrameworkCore
+@model Avero.Core.Entities.Product;
+@inject UserManager<User> UserManager;
+@inject ApplicationDBContext context;
 
 @{
     ViewData["Title"] = "View Product";
@@ -8,58 +12,221 @@
 @{
     var pImages = @Model.product_imgs.ToList();
 
-}
+    var user = await UserManager.GetUserAsync(User);
+    var userId = user?.Id;
+    Boolean? is_wholesealer = null;
 
+    User? user2 = null;
+    int? orderCount = null;
+    long? orderId = null;
+    Order? order = null;
+    if (user != null)
+    {
+        is_wholesealer = await UserManager.IsInRoleAsync(user, "WholeSealer");
+        user2 = await context.Users.Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(od => od.product_imgs).Include(u => u.order).ThenInclude(o => o.order_details).ThenInclude(od => od.product).ThenInclude(p => p.product_catagory).ThenInclude(pc => pc.catagory).FirstOrDefaultAsync(u => u.Id == user.Id);
+        if (user2?.order.OrderByDescending(p => p.order_date).ToList().Any() ?? false)
+        {
+            orderCount = user2.order.OrderByDescending(p => p.order_date).ToList().ElementAt(0).order_details.ToList().Count();
+            orderId = user2?.order.OrderByDescending(p => p.order_date).ToList().ElementAt(0).Id;
+            order = context.order.Include(o => o.order_details).FirstOrDefault(o => o.Id == orderId);
 
-@section style {
-<style>
-   
- .product-detiles {
-    margin: 0;
-    box-sizing: border-box;
-    height: 100vh;
-    width: auto;
-            background: linear-gradient(to right, #25c481, #25b7c4);
-
-}
-
-  .row .first-section {
-    height: 600px;
-}
-
-  .boxs {
-    background-color:white; 
-    padding: 20px;
-    width: 75%;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    background: linear-gradient(45deg, #098766, transparent); 
-}
-
-   dl dt {
-        color: white;
-   }
-   
-   dl dd {
-    margin-bottom: 5px;
-}
-
-   .userImg img {
-        transition: all 0.3s ease-out;
-    }
-
-   .userImg:hover img {
-            transform: scale(1.15);
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
 
-       
 
-
-</style>
+    }
 }
-<div class="product-detiles row text-center">
-   
+
+@section style {
+
+    <link rel="stylesheet" href="~/lib/slick-carousel/slick.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/slick-carousel/slick-theme.css" asp-append-version="true" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: open sans;
+            text-decoration: none;
+        }
+
+        body {
+            background: #eef2f9;
+        }
+
+        .product-card {
+            background: white;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: #dbe2ee 0 0 20px 5px;
+            display: flex;
+            gap: 30px;
+            color: #191847;
+        }
+
+        .cover-image {
+            width: 300px;
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        img {
+            transition: ease 0.5s;
+        }
+
+            img:hover {
+                transform: scale(1.05);
+            }
+
+        .more-image {
+            width: 100px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .free-shipping {
+            display: inline-block;
+            background: #191847;
+            padding: 5px 10px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: white;
+            font-weight: 400;
+        }
+
+        .product-name {
+            margin: 10px 0 20px 0;
+            font-size: 27px;
+        }
+
+        .regular-price {
+            text-decoration: line-through;
+        }
+
+        .discount-price {
+            display: inline-block;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .offer-info {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .add-to-cart {
+            display: inline-block;
+            width: 100%;
+            background: #191847;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            box-shadow: #e2e9f3 0 5px;
+            margin: 5px 0;
+        }
+
+            .add-to-cart ion-icon {
+                font-size: 30px;
+                margin-bottom: -8px;
+            }
+
+            .add-to-cart:hover {
+                background: #e2e9f3;
+                box-shadow: #191847 0 5px;
+                color: #191847;
+            }
+
+                .add-to-cart:hover ion-icon {
+                    transform: rotate(360deg);
+                }
+
+            .add-to-cart.disabled {
+                background-color: #9897ba;
+            }
+
+
+
+        .stock {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .stock-status {
+            width: 14px;
+            height: 14px;
+            background: #00d98b;
+            border-radius: 50%;
+        }
+
+        .stock-info {
+            font-size: 14px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 200px;
+            color: #191847;
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            padding: 15px;
+            border: solid #dfe6f0 2px;
+            border-radius: 10px;
+        }
+
+            .button ion-icon {
+                font-size: 30px;
+                margin-bottom: -7px;
+            }
+
+            .button:hover {
+                box-shadow: #e2e9f3 0 0 10px;
+            }
+
+                .button:hover ion-icon {
+                    transform: rotate(360deg);
+                }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: center;
+            max-width: 50%;
+        }
+
+        .more-image-container {
+        }
+
+        .more-image-container {
+            overflow: auto;
+            padding: 5px 25px;
+            background: radial-gradient(#888888, transparent);
+            box-shadow: 2px 2px 10px 5px #b8b8b8;
+            border-radius: 10px;
+        }
+    </style>
+}
+    @*<div class="product-detiles row text-center">
+
     <hr />
     <div class="first-section col-md-7 mt-5 p-5">
         @for (int i = 0; i < pImages.Count(); i++)
@@ -148,5 +315,257 @@
     </dl>
     </div>
 </div>
+</div>*@
+
+
+
+    <div class="product-card">
+        <div class="image-container w-50">
+            @{
+            var pImage = "Default.jpg";
+            if (@pImages.Any())
+                pImage = @pImages.ElementAt(0).img_name;
+        }
+        <div style="box-shadow: 2px 2px 10px 5px #b8b8b8; border-radius: 10px;" class="cover-image product-image mb-3">
+            <a target=”_blank” href="~/img/products/@pImage">
+                <img id="mainImage" src="~/img/products/@pImage" alt="Product image 0">
+            </a>
+        </div>
+        @if (@pImages.Count() > 4)
+        {
+            <div id="more-image-container" class="container more-image-container">
+                <div role="button" style="height: 150px" class="ads_sponsors d-flex">
+                    @for (int i = 1; i < pImages.Count(); i++)
+                    {
+                        <div>
+                            <img style="object-fit: cover; height:150px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="d-flex">
+                @for (int i = 1; i < pImages.Count(); i++)
+                {
+                    <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;border-radius: 10px;" class="product-image m-1 p-1">
+                        <a target=”_blank” href="~/img/products/@pImages.ElementAt(i).img_name">
+                            <img src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">
+                        </a>
+                    </div>
+                }
+            </div>
+        }
+
+
+
+
+
+
+
+    </div>
+    <div class="product-info w-50">
+        @{
+            var wholeSealerImage = @Model.wholesealer.img_name ?? "Default.jpg";
+        }
+        <a style="width: 115px; display: inline-block;" class="link-dark text-decoration-none" asp-controller="Home" asp-action="viewUser" asp-route-id="@Model.wholesealer_id">
+            <span class="userImg d-flex align-items-center w-75">
+                <img class="me-2 mw-100 rounded" src="~/img/users/@wholeSealerImage" alt="user image" asp-append-version="true" />
+                <span class="userName">@Model.wholesealer.name</span>
+            </span>
+        </a>
+        <h3 class="product-name">@Model.name</h3>
+        <p>Description: @Model.desc</p>
+        @if (@Model.quantity_available == 0) // unavilable
+        {
+            <p class="discount-price text-danger">Unavilable Now</p>
+            <a href="#" class="btn add-to-cart text-decoration-none disabled text-white addToCart">
+                <ion-icon name="add-outline"></ion-icon> Add to cart
+            </a>
+            <a id="@Model.Id" class="add-to-cart btn bg-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId">
+                <ion-icon name="remove-outline"></ion-icon> Remove
+            </a>
+        }
+        else
+        {
+            if (@Model.offer_price_end_date >= DateTime.Now) // offer on
+            {
+                <p>Price: <span class="regular-price">@Model.price_per_unit S.P</span></p>
+                <p class="discount-price">Offer price: @Model.offer_price S.P</p>
+                <p class="offer-info">Offer end at: @Model.offer_price_end_date</p>
+            }
+            else
+            {
+                <p class="discount-price">Price: @Model.price_per_unit S.P</p>
+            }
+            @if (is_wholesealer ?? false)
+            {
+                <span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
+                    <a asp-action="addToCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId" class="disabled btn add-to-cart text-decoration-none addToCart">
+                        <ion-icon name="add-outline"></ion-icon> Add to cart
+                    </a>
+                </span>
+                <span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
+                    <a id="@Model.Id" class="add-to-cart btn bg-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId">
+                        <ion-icon name="remove-outline"></ion-icon> Remove
+                    </a>
+                </span>
+
+            }
+            else
+            {
+
+                if (order?.order_details.Any(od => od.product_id == @Model.Id) ?? false)
+                {
+                    <span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart.">
+                        <a id="@Model.Id" asp-action="addToCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId" class="add-to-cart text-decoration-none disabled btn">
+                            <ion-icon name="add-outline"></ion-icon> Add to cart
+                        </a>
+                    </span>
+                    <a id="@Model.Id" class="add-to-cart btn bg-danger removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId">
+                        <ion-icon name="remove-outline"></ion-icon> Remove
+                    </a>
+                }
+                else
+                {
+                    <a id="@Model.Id" asp-action="addToCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId" class="btn add-to-cart text-decoration-none addToCart">
+                        <ion-icon name="add-outline"></ion-icon> Add to cart
+                    </a>
+                    <a id="@Model.Id" class="add-to-cart btn bg-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@Model.Id" asp-route-userId="@userId">
+                        <ion-icon name="remove-outline"></ion-icon> Remove
+                    </a>
+                }
+
+
+            }
+        }
+
+        <div class="stock">
+            <div class="stock-status"></div>
+            <p class="stock-info">@Model.quantity_available pcs. in stock.</p>
+        </div>
+    </div>
 </div>
 
+@section script{
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="~/lib/slick-carousel/slick.js"></script>
+    <script>
+
+        // Enable tooltips (initialize tooltips before they can be used)
+        var tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        var tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+
+        $('.ads_sponsors').slick({
+            autoplay: true,
+            autoplaySpeed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+        });
+
+
+
+
+        var main = document.getElementById("mainImage")
+        $("#more-image-container img").click(function() {
+            let s = this.src;
+            $("#mainImage").css('transition', 'none');
+            $("#mainImage").hide(600, function() {
+                main.src = s;
+                $(this).parent().attr("href", s);
+                $(this).show(600, function() {
+                    $(this).css('transition', 'ease 0.5s');
+                });
+
+            });
+        })
+
+
+        if ($("#cartItemCount").html() == 0)
+            $("#cartItemCount").hide();
+        var orderId = @orderId;
+
+        $(".addToCart").click(function(e) {
+
+            e.preventDefault();
+            $(this).addClass("disabled");
+            $(this).next().removeClass("disabled");
+            $(this).wrap('<span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart."></span>');
+
+            tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+            let url = $(this).attr("href") + "&orderId=0";
+            if (orderId != null)
+                url = $(this).attr("href") + "&orderId=" + orderId;
+
+            $.get(url, function(data, status) {
+
+                if (status == "success") {
+                    //data[0] = orderItemCount
+                    //data[1] = orderId
+
+                    $("#cartItemCount").fadeOut(250, function() {
+                        $("#cartItemCount").html(data[0]);
+                        $("#cartItemCount").fadeIn(250);
+                    });
+
+
+
+                    orderId = data[1];
+                }
+                else {
+                    alert("Error in add to cart");
+                }
+            });
+
+        })
+
+
+
+
+
+
+        $(".removeFromCart").click(function(e) {
+
+            e.preventDefault();
+
+            $(this).addClass("disabled");
+            $(this).prev().children().removeClass("disabled").unwrap();
+            
+
+            url = $(this).attr("href") + "&orderId=" + orderId;
+
+            $.get(url, function(data, status) {
+
+                if (status == "success") {
+                    //data[0] = orderItemCount
+                    //data[1] = orderId
+
+                    orderId = data[1];
+
+                    if (data[0] == 0) {
+                        $("#cartItemCount").fadeOut();
+                        $("#cartItemCount").html(data[0]);
+                    }
+                    else {
+                        $("#cartItemCount").fadeOut(250);
+                        $("#cartItemCount").fadeIn(250);
+                        $("#cartItemCount").html(data[0]);
+                    }
+
+                }
+                else {
+                    alert("Error in remove from cart");
+                }
+            });
+
+        })
+
+    </script>
+        }

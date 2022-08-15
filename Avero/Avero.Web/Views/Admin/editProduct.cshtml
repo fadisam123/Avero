@@ -1,76 +1,96 @@
-﻿@using Avero.Web.ViewModels.Admin
+﻿@using Avero.Infrastructure.Persistence.DBContext
+@using Avero.Web.ViewModels.Admin
 @model addProductViewModel
 @inject UserManager<User> UserManager;
+@inject ApplicationDBContext context;
 @{
     var user = await UserManager.GetUserAsync(User);
     var userId = user?.Id;
+    var pImage = context.product_imgs?.FirstOrDefault(pi => pi.product_id == @Model.product.Id)?.img_name ?? "Default.jpg";
 }
 @{
     ViewData["Title"] = "Edit product";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
-    List<String> photoPaths = new List<String>();
-    for (int i = 0; i < Model?.imgs?.Count(); i++)
-    {
-        photoPaths.Add("~/img/products" + (Model.imgs[i].FileName));
-    }
 }
 
 @section style {
     <style>
-    body{
-          background: linear-gradient(to right, #25c481, #25b7c4);
-    }
+        body {
+            background: linear-gradient(to right, #25c481, #25b7c4);
+        }
     </style>
 }
 
-<h1 class="text-center text-white">Edit Product</h1>
+    <h1 class="text-center text-white">Edit Product</h1>
 
-<hr />
-<div class="row text-center  d-flex justify-content-center align-items-center">
-    <div class="col-md-8">
-        <form enctype="multipart/form-data" asp-action="editProduct" asp-controller="Admin" asp-route-id="@ViewBag.productId">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group mb-4">
-                <label asp-for="@Model.name" class="control-label text-white"></label>
-                <input asp-for="@Model.name" class="form-control text-center" />
-                <span asp-validation-for="@Model.name" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-4">
-                <label asp-for="desc" class="control-label text-white"></label>
-                <input asp-for="desc" class="form-control text-center" />
-                <span asp-validation-for="desc" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-4">
-                <label asp-for="quantity_available" class="control-label text-white"></label>
-                <input asp-for="quantity_available" class="form-control text-center" />
-                <span asp-validation-for="quantity_available" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-4">
-                <label asp-for="price_per_unit" class="control-label text-white"></label>
-                <input asp-for="price_per_unit" class="form-control text-center" />
-                <span asp-validation-for="price_per_unit" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-4">
-                <input class="discountId text-center" type="checkbox" asp-for="make_discount" />
-                <label asp-for="make_discount" class="control-label text-white"></label>
-            </div>
-            <div class="form-group mb-4">
-                <label asp-for="offer_price" class="control-label text-white"></label>
-                <input disabled asp-for="offer_price" class="form-control offerId text-center" />
-                <span asp-validation-for="offer_price" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-4">
-                <label asp-for="offer_price_start_date" class="control-label text-white"></label>
-                <input disabled asp-for="offer_price_start_date" class="form-control offerId text-center" />
-                <span asp-validation-for="offer_price_start_date" class="text-danger"></span>
-            </div>
-            <div class="form-group mb-4">
-                <label asp-for="offer_price_end_date" class="control-label text-white"></label>
-                <input disabled asp-for="offer_price_end_date" class="form-control offerId text-center" />
-                <span asp-validation-for="offer_price_end_date" class="text-danger"></span>
-            </div>
+    <hr />
+    <div class="row text-center  d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+            <form enctype="multipart/form-data" asp-action="editProduct" asp-controller="Admin" asp-route-id="@ViewBag.productId">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group mb-4">
+                    <label asp-for="@Model.name" class="control-label text-white"></label>
+                    <input asp-for="@Model.name" class="form-control text-center" />
+                    <span asp-validation-for="@Model.name" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="desc" class="control-label text-white"></label>
+                    <input asp-for="desc" class="form-control text-center" />
+                    <span asp-validation-for="desc" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="quantity_available" class="control-label text-white"></label>
+                    <input asp-for="quantity_available" class="form-control text-center" />
+                    <span asp-validation-for="quantity_available" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="price_per_unit" class="control-label text-white"></label>
+                    <input asp-for="price_per_unit" class="form-control text-center" />
+                    <span asp-validation-for="price_per_unit" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <input class="discountId text-center" type="checkbox" asp-for="make_discount" />
+                    <label asp-for="make_discount" class="control-label text-white"></label>
+                </div>
+                @if (@Model.make_discount)
+            {
+                <div class="form-group mb-4">
+                    <label asp-for="offer_price" class="control-label text-white"></label>
+                    <input asp-for="offer_price" class="form-control offerId text-center" />
+                    <span asp-validation-for="offer_price" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="offer_price_start_date" class="control-label text-white"></label>
+                    <input asp-for="offer_price_start_date" class="form-control offerId text-center" />
+                    <span asp-validation-for="offer_price_start_date" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="offer_price_end_date" class="control-label text-white"></label>
+                    <input asp-for="offer_price_end_date" class="form-control offerId text-center" />
+                    <span asp-validation-for="offer_price_end_date" class="text-danger"></span>
+                </div>
+            }
+            else
+            {
+                <div class="form-group mb-4">
+                    <label asp-for="offer_price" class="control-label text-white"></label>
+                    <input disabled asp-for="offer_price" class="form-control offerId text-center" />
+                    <span asp-validation-for="offer_price" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="offer_price_start_date" class="control-label text-white"></label>
+                    <input disabled asp-for="offer_price_start_date" class="form-control offerId text-center" />
+                    <span asp-validation-for="offer_price_start_date" class="text-danger"></span>
+                </div>
+                <div class="form-group mb-4">
+                    <label asp-for="offer_price_end_date" class="control-label text-white"></label>
+                    <input disabled asp-for="offer_price_end_date" class="form-control offerId text-center" />
+                    <span asp-validation-for="offer_price_end_date" class="text-danger"></span>
+                </div>
+            }
+
             <div class="form-group mb-4 d-flex align-items-center">
-                <div class="me-4"><img src="~/img/users/Default.jpg" class="rounded" id="photoOutput" width="200" /></div>
+                <div class="me-4"><img src="~/img/products/@pImage" class="rounded" id="photoOutput" width="200" /></div>
                 <div class="flex-fill">
                     <div class="custom-file">
                         <input multiple accept="image/png, image/jpeg" id="photo" asp-for="imgs" class="form-control custom-file-input">

@@ -251,13 +251,20 @@ namespace Avero.Web.Controllers
                 quantity_available = product.quantity_available,
                 created_at = product.created_at,
                 price_per_unit = product.price_per_unit,
-                offer_price = product.offer_price,
-                offer_price_start_date = product.offer_price_start_date,
-                offer_price_end_date = product.offer_price_end_date,
+                offer_price = 0,
+                offer_price_start_date = null,
+                offer_price_end_date = null,
                 wholesealer_id = product.wholesealer_id,
                 product = product,
                 catagories = context.catagory.Select(c => new CatagoriesViewModel { catagory_id = c.Id, catagory_name = c.name, IsSelected = context.product_catagory.Where(pc => pc.catagory_id == c.Id && pc.product_id == id).FirstOrDefault() != null ? true : false }).ToList(),
             };
+            if(product.offer_price_end_date >= DateTime.Now)
+            {
+                model.make_discount = true;
+                model.offer_price = product.offer_price;
+                model.offer_price_start_date = product.offer_price_start_date;
+                model.offer_price_end_date = product.offer_price_end_date;
+            }
             ViewBag.productId = id;
             return View(model);
         }
@@ -281,9 +288,15 @@ namespace Avero.Web.Controllers
                 product.desc = model.desc;
                 product.quantity_available = model.quantity_available;
                 product.price_per_unit = model.price_per_unit;
-                product.offer_price = model.offer_price;
-                product.offer_price_start_date = model.offer_price_start_date;
-                product.offer_price_end_date = model.offer_price_end_date;
+                product.offer_price = 0;
+                product.offer_price_start_date = null;
+                product.offer_price_end_date = null;
+                if (model.make_discount)
+                {
+                    product.offer_price = model.offer_price;
+                    product.offer_price_start_date = model.offer_price_start_date;
+                    product.offer_price_end_date = model.offer_price_end_date;
+                }
 
                 await context.SaveChangesAsync();
 
@@ -304,6 +317,31 @@ namespace Avero.Web.Controllers
 
                 }
                 await context.SaveChangesAsync();
+
+                // if user uploads new image remove all old images and add all new images
+                if ((model?.imgs?.Count() ?? 0) > 0)
+                {
+                    var imagesToDelete = context.product_imgs.Where(pi => pi.product_id == id);
+                    context.product_imgs.RemoveRange(imagesToDelete);
+
+                    // add new images
+                    List<Product_imgs> pimgs = new List<Product_imgs>();
+                    List<string> uniqueFilesNames = new List<string>();
+                    string uploadsFolder = Path.Combine(webHostingEnvironment.WebRootPath, "img", "products");
+                    for (int i = 0; i < model?.imgs?.Count(); i++)
+                    {
+                        uniqueFilesNames.Add(Guid.NewGuid().ToString() + "_" + model.imgs[i].FileName);
+                        string filePath = Path.Combine(uploadsFolder, uniqueFilesNames[i]);
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            model.imgs[i].CopyTo(fileStream);
+                        }
+                        var pimg = new Product_imgs { img_name = uniqueFilesNames[i], product_id = product.Id };
+                        pimgs.Add(pimg);
+                    }
+                    await context.product_imgs.AddRangeAsync(pimgs);
+                    await context.SaveChangesAsync();
+                }
 
                 TempData["edit"] = "edit";
                 return RedirectToAction("viewProducts", new { id = product.wholesealer_id });

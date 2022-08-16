@@ -186,7 +186,10 @@
                             <td>
                                 <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@temp?.product?.Id">
                                     <span class="m-auto userImg d-flex align-items-center w-75">
-                                        <img style="width: 100px; height: 100px" class="mw-100 rounded-circle" src="~/img/products/@pImage" alt="product image" asp-append-version="true" />
+                                        @* ------------------------------------------------------------------------------------------------- *@
+                                        <img style="width: 100px; height: 100px" class="mw-100 rounded-circle" src="https://loremflickr.com/320/240/food?random=@i" alt="product image" asp-append-version="true" />
+                                        @*<img style="width: 100px; height: 100px" class="mw-100 rounded-circle" src="~/img/products/@pImage" alt="product image" asp-append-version="true" />*@
+                                    
                                     </span>
                                 </a>
                             </td>

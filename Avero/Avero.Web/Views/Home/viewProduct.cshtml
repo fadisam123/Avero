@@ -327,8 +327,12 @@
                 pImage = @pImages.ElementAt(0).img_name;
         }
         <div style="box-shadow: 2px 2px 10px 5px #b8b8b8; border-radius: 10px;" class="cover-image product-image mb-3">
-            <a target=”_blank” href="~/img/products/@pImage">
-                <img id="mainImage" src="~/img/products/@pImage" alt="Product image 0">
+            @* ------------------------------------------------------------------------------------------------- *@
+            @*<a target=”_blank” href="~/img/products/@pImage">*@
+            <a target=”_blank” href="https://loremflickr.com/320/240/food?random=1">
+                <img id="mainImage" src="https://loremflickr.com/320/240/food?random=1" alt="Product image 0">
+                @*<img id="mainImage" src="~/img/products/@pImage" alt="Product image 0">*@
+
             </a>
         </div>
         @if (@pImages.Count() > 4)
@@ -338,7 +342,9 @@
                     @for (int i = 1; i < pImages.Count(); i++)
                     {
                         <div>
-                            <img style="object-fit: cover; height:150px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">
+                            @* ------------------------------------------------------------------------------------------------- *@
+                            <img style="object-fit: cover; height:150px" src="https://loremflickr.com/320/240/food?random=@i+1" alt="Product image @i">
+                            @*<img style="object-fit: cover; height:150px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">*@
                         </div>
                     }
                 </div>
@@ -350,8 +356,12 @@
                 @for (int i = 1; i < pImages.Count(); i++)
                 {
                     <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;border-radius: 10px;" class="product-image m-1 p-1">
-                        <a target=”_blank” href="~/img/products/@pImages.ElementAt(i).img_name">
-                            <img src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">
+                        
+                            @* ------------------------------------------------------------------------------------------------- *@
+                        @*<a target=”_blank” href="~/img/products/@pImages.ElementAt(i).img_name">*@
+                        <a target=”_blank” href="https://loremflickr.com/320/240/food?random=@i+1">
+                            <img src="https://loremflickr.com/320/240/food?random=@i+1" alt="Product image @i">
+                        @*<img src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">*@
                         </a>
                     </div>
                 }
@@ -472,100 +482,100 @@
 
 
         var main = document.getElementById("mainImage");
-$("#more-image-container img").click(function() {
-    let s = this.src;
-    $("#mainImage").css('transition', 'none');
-    $("#mainImage").hide(600, function() {
-        main.src = s;
-        $(this).parent().attr("href", s);
-        $(this).show(600, function() {
-            $(this).css('transition', 'ease 0.5s');
-        });
+        $("#more-image-container img").click(function() {
+            let s = this.src;
+            $("#mainImage").css('transition', 'none');
+            $("#mainImage").hide(600, function() {
+                main.src = s;
+                $(this).parent().attr("href", s);
+                $(this).show(600, function() {
+                    $(this).css('transition', 'ease 0.5s');
+                });
 
-    });
-});
+            });
+        });
 
 
         if ($("#cartItemCount").html() == 0)
             $("#cartItemCount").hide();
         var orderId = @orderId;
 
-$(".addToCart").click(function(e) {
+        $(".addToCart").click(function(e) {
 
-    e.preventDefault();
-    $(this).addClass("disabled");
-    $(this).next().removeClass("disabled");
-    $(this).wrap('<span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart."></span>');
+            e.preventDefault();
+            $(this).addClass("disabled");
+            $(this).next().removeClass("disabled");
+            $(this).wrap('<span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart."></span>');
 
-    tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+            tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-    let url = $(this).attr("href") + "&orderId=0";
-    if (orderId != null)
-        url = $(this).attr("href") + "&orderId=" + orderId;
+            let url = $(this).attr("href") + "&orderId=0";
+            if (orderId != null)
+                url = $(this).attr("href") + "&orderId=" + orderId;
 
-    $.get(url, function(data, status) {
+            $.get(url, function(data, status) {
 
-        if (status == "success") {
-            //data[0] = orderItemCount
-            //data[1] = orderId
+                if (status == "success") {
+                    //data[0] = orderItemCount
+                    //data[1] = orderId
 
-            $("#cartItemCount").fadeOut(250, function() {
-                $("#cartItemCount").html(data[0]);
-                $("#cartItemCount").fadeIn(250);
+                    $("#cartItemCount").fadeOut(250, function() {
+                        $("#cartItemCount").html(data[0]);
+                        $("#cartItemCount").fadeIn(250);
+                    });
+
+
+
+                    orderId = data[1];
+                }
+                else {
+                    alert("Error in add to cart");
+                }
             });
 
-
-
-            orderId = data[1];
-        }
-        else {
-            alert("Error in add to cart");
-        }
-    });
-
-});
+        });
 
 
 
 
 
 
-$(".removeFromCart").click(function(e) {
+        $(".removeFromCart").click(function(e) {
 
-    e.preventDefault();
+            e.preventDefault();
 
-    $(this).addClass("disabled");
-    $(this).prev().children().removeClass("disabled").unwrap();
+            $(this).addClass("disabled");
+            $(this).prev().children().removeClass("disabled").unwrap();
 
 
-    url = $(this).attr("href") + "&orderId=" + orderId;
+            url = $(this).attr("href") + "&orderId=" + orderId;
 
-    $.get(url, function(data, status) {
+            $.get(url, function(data, status) {
 
-        if (status == "success") {
-            //data[0] = orderItemCount
-            //data[1] = orderId
+                if (status == "success") {
+                    //data[0] = orderItemCount
+                    //data[1] = orderId
 
-            orderId = data[1];
+                    orderId = data[1];
 
-            if (data[0] == 0) {
-                $("#cartItemCount").fadeOut();
-                $("#cartItemCount").html(data[0]);
-            }
-            else {
-                $("#cartItemCount").fadeOut(250);
-                $("#cartItemCount").fadeIn(250);
-                $("#cartItemCount").html(data[0]);
-            }
+                    if (data[0] == 0) {
+                        $("#cartItemCount").fadeOut();
+                        $("#cartItemCount").html(data[0]);
+                    }
+                    else {
+                        $("#cartItemCount").fadeOut(250);
+                        $("#cartItemCount").fadeIn(250);
+                        $("#cartItemCount").html(data[0]);
+                    }
 
-        }
-        else {
-            alert("Error in remove from cart");
-        }
-    });
+                }
+                else {
+                    alert("Error in remove from cart");
+                }
+            });
 
-});
+        });
 
     </script>
         }

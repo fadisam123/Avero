@@ -410,7 +410,9 @@ namespace Avero.Web.Controllers
                 var od = oldOrder.order_details.ToList();
                 for (int i = 0; i < od.Count(); i++)
                 {
-                    (await context.product.FindAsync(od.ElementAt(i).Id)).quantity_available -= od.ElementAt(i).quantity;
+                    var x = (await context.product.FindAsync(od.ElementAt(i).product_id)).quantity_available;
+                    var x2 = od.ElementAt(i).quantity;
+                    (await context.product.FindAsync(od.ElementAt(i).product_id)).quantity_available -= od.ElementAt(i).quantity;
                 }
                 oldOrder.order_date = DateTime.Now;
                 await context.SaveChangesAsync();

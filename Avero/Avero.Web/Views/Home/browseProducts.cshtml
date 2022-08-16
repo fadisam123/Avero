@@ -182,7 +182,11 @@
                         <span class="userName bg-light">@p.wholesealer.name</span>
                     </span>
                 </a>
-                <img style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; max-width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+
+                @* ------------------------------------------------------------------------------------------------- *@
+                <img src="https://loremflickr.com/320/240/food?random=@i" style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; max-width: 200px; height:200px" class="card-img-top" alt="product image" asp-append-version="true" />
+                @*<img style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; max-width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />*@
+
                 <div class="card-body text-center">
 
 
@@ -234,8 +238,19 @@
                         }
                         else
                         {
-                            <a id="@p.Id" class="btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
-                            <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                            @if (p.quantity_available > 0) // product is available
+                            {
+                                <a id="@p.Id" class="btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                                <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                            }
+                            else
+                            {
+                                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Product Not Available Now">
+                                <a id="@p.Id" class="disabled btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                                </span>
+                                <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                            }
+
                         }
                     }
                 </div>

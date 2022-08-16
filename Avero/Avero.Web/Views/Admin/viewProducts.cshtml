@@ -40,10 +40,11 @@
         .page-link:focus {
             box-shadow: none;
         }
-                .page-item.disabled .page-link {
-    background-color: #c8c1c1  !important;
-    colo
-}
+
+        .page-item.disabled .page-link {
+            background-color: #c8c1c1 !important;
+            colo
+        }
     </style>
 }
 
@@ -99,7 +100,11 @@
             {
                 <a class="text-decoration-none text-white" asp-controller="Home" asp-action="viewProduct" asp-route-id="@productAtIndex.Id">
                     <div class="card text-center text-white mb-4" style="width: 18rem; flex: 0 0 32%;">
-                        <img style="height: 260px; object-fit:cover" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+
+                        @* ------------------------------------------------------------------------------------------------- *@
+                        <img style="height: 260px; object-fit:cover" src="https://loremflickr.com/320/240/food?random=1" class="card-img-top" alt="product image" asp-append-version="true" />
+                        @*<img style="height: 260px; object-fit:cover" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />*@
+
                         <div class="card-body">
                             <h5 class="card-title">@productAtIndex.name</h5>
                             <p class="card-text mb-0">Price: <span class="text-decoration-line-through">@productAtIndex.price_per_unit SYP</span></p>
@@ -127,7 +132,11 @@
             {
                 <a class="text-decoration-none text-white" asp-controller="Home" asp-action="viewProduct" asp-route-id="@productAtIndex.Id">
                     <div class="card text-center text-white mb-4" style="width: 18rem; flex: 0 0 32%;">
-                        <img style="height: 260px; object-fit:cover" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+
+                        @* ------------------------------------------------------------------------------------------------- *@
+                        <img style="height: 260px; object-fit:cover" src="https://loremflickr.com/320/240/food?random=2" class="card-img-top" alt="product image" asp-append-version="true" />
+                        @*<img style="height: 260px; object-fit:cover" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />*@
+
                         <div class="card-body">
                             <h5 class="card-title">@productAtIndex.name</h5>
                             <p class="card-text mb-0">Price: @productAtIndex.price_per_unit SYP</p>
@@ -154,7 +163,11 @@
         {
             <a class="text-decoration-none text-white" asp-controller="Home" asp-action="viewProduct" asp-route-id="@productAtIndex.Id">
                 <div class="card text-center text-white mb-4" style="width: 18rem; flex: 0 0 32%;">
-                    <img style="height: 260px; object-fit:cover" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
+
+                    @* ------------------------------------------------------------------------------------------------- *@
+                    <img style="height: 260px; object-fit:cover" src="https://loremflickr.com/320/240/food?random=3" class="card-img-top" alt="product image" asp-append-version="true" />
+                    @*<img style="height: 260px; object-fit:cover" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />*@
+
                     <div class="card-body">
                         <h5 class="card-title">@productAtIndex.name</h5>
                         <p class="card-text mb-0 text-warning">Unavailable for order</p>

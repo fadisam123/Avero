@@ -150,7 +150,9 @@
                                 <td>
                                     <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@query.ElementAt(i).pId">
                                         <span class="userImg d-flex align-items-center w-75">
-                                            <img class="mw-100 rounded-circle" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />
+                                            @* ------------------------------------------------------------------------------------------------- *@
+                                            <img class="mw-100 rounded-circle" src="https://loremflickr.com/320/240/food?random=@i" alt="user image" asp-append-version="true" />
+                                            @*<img class="mw-100 rounded-circle" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />*@
                                         </span>
                                     </a>
                                 </td>
@@ -287,7 +289,11 @@ else if ((!is_wholesealer) ?? false)
                                 <td>
                                     <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="@query.ElementAt(i).pId">
                                         <span class="userImg d-flex align-items-center w-75">
-                                            <img class="mw-100 rounded-circle" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />
+
+                                            @* ------------------------------------------------------------------------------------------------- *@
+                                            <img class="mw-100 rounded-circle" src="https://loremflickr.com/320/240/food?random=@i" alt="user image" asp-append-version="true" />
+
+                                            @*<img class="mw-100 rounded-circle" src="~/img/products/@pimg" alt="user image" asp-append-version="true" />*@
                                         </span>
                                     </a>
                                 </td>

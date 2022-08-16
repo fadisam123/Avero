@@ -38,7 +38,7 @@
             z-index: 0;
             overflow: hidden;
             border: 1px solid #f2f8f9;
-            border-radius:10px;
+            border-radius: 10px;
             transition: all 0.3s ease-out;
         }
 
@@ -87,91 +87,93 @@
             top: 10px;
         }
 
-        
-.side-navbar {
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-align-items:center;
-border: none;
-    background: linear-gradient(to right, #098766, #00ffff);
-    border: 2px solid #eee;
-}
-.side-navbar .widget {
-    position: absolute;
-}
 
-.form-check-input:checked {
-    background-color:green;
-    border-color: white;
-}
+        .side-navbar {
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background: linear-gradient(to right, #098766, #00ffff);
+            border: 2px solid #eee;
+        }
 
-.form-check-input:focus{
-    box-shadow: none;
-}
+            .side-navbar .widget {
+                position: absolute;
+            }
 
-h3 {
-    color: white;
-}
+        .form-check-input:checked {
+            background-color: green;
+            border-color: white;
+        }
 
-.widget::after {
-    content: "ــــــــــــــــــــــ";
-    color: #eee;
-}
+        .form-check-input:focus {
+            box-shadow: none;
+        }
 
-.page-item.active .page-link {
-    background-color: transparent;
-    border:1px solid green;
-}
+        h3 {
+            color: white;
+        }
 
-.page-link:focus{
-    box-shadow:none;
-}
+        .widget::after {
+            content: "ــــــــــــــــــــــ";
+            color: #eee;
+        }
+
+        .page-item.active .page-link {
+            background-color: transparent;
+            border: 1px solid green;
+        }
+
+        .page-link:focus {
+            box-shadow: none;
+        }
 
 
-.page-item.disabled .page-link{
-    background-color: #f0e7e7  !important;
-}
-.btn-primary.disabled, .btn-primary:disabled {
-        background-color: #4284e4 !important;
-}
-.btn-danger.disabled, .btn-danger:disabled {
-        background-color: #d5636e !important;
-}
+        .page-item.disabled .page-link {
+            background-color: #f0e7e7 !important;
+        }
+
+        .btn-primary.disabled, .btn-primary:disabled {
+            background-color: #4284e4 !important;
+        }
+
+        .btn-danger.disabled, .btn-danger:disabled {
+            background-color: #d5636e !important;
+        }
     </style>
 
 }
     <div class="main-page text-white p-2 d-flex">
-         <div class="side-navbar d-none d-lg-flex text-center col-lg-4">
-         <div class="widget">
-           <h3 class="widget-title mb-3">Sorte by</h3>
+        <div class="side-navbar d-none d-lg-flex text-center col-lg-4">
+            <div class="widget">
+                <h3 class="widget-title mb-3">Sorte by</h3>
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="Size">
-                  <label class="form-check-label text-nav" for="Size">Size</label>
+                    <input class="form-check-input" type="checkbox" id="Size">
+                    <label class="form-check-label text-nav" for="Size">Size</label>
                 </div>
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="Type" checked="">
-                  <label class="form-check-label text-nav" for="Type">Type</label>
+                    <input class="form-check-input" type="checkbox" id="Type" checked="">
+                    <label class="form-check-label text-nav" for="Type">Type</label>
                 </div>
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="Price">
-                  <label class="form-check-label text-nav" for="Price">Price</label>
+                    <input class="form-check-input" type="checkbox" id="Price">
+                    <label class="form-check-label text-nav" for="Price">Price</label>
                 </div>
                 <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" id="Quantity">
-                  <label class="form-check-label text-nav" for="Quantity">Qunatity</label>
+                    <input class="form-check-input" type="checkbox" id="Quantity">
+                    <label class="form-check-label text-nav" for="Quantity">Qunatity</label>
                 </div>
-         </div>
-         </div>
-         
-        <div  class="form-group col-lg-8 d-flex flex-wrap justify-content-evenly">
+            </div>
+        </div>
+
+        <div class="form-group col-lg-8 d-flex flex-wrap justify-content-evenly">
             @for (int i = 0; i < Model.PaginatedProduct().Count(); i++)
         {
             int productIndex = ((@Model.currentPage - 1) * @Model.productPerPage) + i;
             var p = @Model.products.ElementAt(productIndex);
             var main_img = context.product_imgs.FirstOrDefault(pi => pi.product_id == p.Id)?.img_name ?? "Default.jpg";
             var userImg = @p.wholesealer.img_name;
-
 
             <div role="button" val="/Home/viewProduct/@p.Id" class="card product mb-2" style=" flex: 0 0 30%;">
                 <a class="link-dark" asp-controller="Home" asp-action="viewUser" asp-route-id="@p.wholesealer_id">
@@ -180,11 +182,38 @@ h3 {
                         <span class="userName bg-light">@p.wholesealer.name</span>
                     </span>
                 </a>
-
                 <img style="display:block; border-radius:50%; border:2px solid white; margin:auto; object-position: 50% 50%; object-fit: cover; max-width: 200px; height:200px" src="~/img/products/@main_img" class="card-img-top" alt="product image" asp-append-version="true" />
                 <div class="card-body text-center">
-                    <h5 class="card-title">@p.name</h5>
-                    <p class="card-text">@p.price_per_unit SYP</p>
+
+
+                    @if (p.quantity_available > 0) // product is available
+                    {
+                        if (p.offer_price_end_date >= DateTime.Now) // offer on
+                        {
+                            <h5 class="card-title">@p.name</h5>
+                            <p class="card-text mb-0">Price: <span class="text-decoration-line-through">@p.price_per_unit SYP</span></p>
+                            <p class="card-text mb-0">Offer Price: @p.offer_price SYP</p>
+                            <p class="card-text mb-0">Offer End: @p.offer_price_end_date</p>
+
+                        }
+                        else // offer off
+                        {
+
+                            <h5 class="card-title">@p.name</h5>
+                            <p class="card-text mb-0">Price: @p.price_per_unit SYP</p>
+
+                        }
+                    }
+                    else // product is unavailable (deleted)
+                    {
+
+                        <h5 class="card-title">@p.name</h5>
+                        <p class="card-text mb-0 text-warning">Unavailable Now</p>
+
+
+                    }
+
+
                     @if (is_wholesealer ?? false)
                     {
                         <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
@@ -209,9 +238,7 @@ h3 {
                             <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
                         }
                     }
-
                 </div>
-
             </div>
 
         }

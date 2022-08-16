@@ -101,15 +101,18 @@ namespace Avero.Web.Controllers
             var isProductAddedBefore = context.order_details.Where(od => od.order_id == orderId && od.product_id == productId).ToList();
             if (isProductAddedBefore.Count() == 0)
             {
-                var order_details = new Order_details
+                if ((await context.product.FindAsync(productId)).quantity_available > 0)
                 {
-                    order_id = order.Id,
-                    product_id = productId,
-                    quantity = 1,
-                    processing_state = Order_state.pending,
-                };
-                context.order_details.Add(order_details);
-                await context.SaveChangesAsync();
+                    var order_details = new Order_details
+                    {
+                        order_id = order.Id,
+                        product_id = productId,
+                        quantity = 1,
+                        processing_state = Order_state.pending,
+                    };
+                    context.order_details.Add(order_details);
+                    await context.SaveChangesAsync();
+                }
             }
 
             var orderItemCount = context.order_details.Where(od => od.order_id == orderId).ToList().Count();

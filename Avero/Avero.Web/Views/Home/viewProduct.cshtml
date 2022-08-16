@@ -18,7 +18,7 @@
 
     User? user2 = null;
     int? orderCount = null;
-    long? orderId = null;
+    long? orderId = 0;
     Order? order = null;
     if (user != null)
     {
@@ -465,107 +465,107 @@
             autoplaySpeed: 1000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: true
         });
 
 
 
 
-        var main = document.getElementById("mainImage")
-        $("#more-image-container img").click(function() {
-            let s = this.src;
-            $("#mainImage").css('transition', 'none');
-            $("#mainImage").hide(600, function() {
-                main.src = s;
-                $(this).parent().attr("href", s);
-                $(this).show(600, function() {
-                    $(this).css('transition', 'ease 0.5s');
-                });
+        var main = document.getElementById("mainImage");
+$("#more-image-container img").click(function() {
+    let s = this.src;
+    $("#mainImage").css('transition', 'none');
+    $("#mainImage").hide(600, function() {
+        main.src = s;
+        $(this).parent().attr("href", s);
+        $(this).show(600, function() {
+            $(this).css('transition', 'ease 0.5s');
+        });
 
-            });
-        })
+    });
+});
 
 
         if ($("#cartItemCount").html() == 0)
             $("#cartItemCount").hide();
         var orderId = @orderId;
 
-        $(".addToCart").click(function(e) {
+$(".addToCart").click(function(e) {
 
-            e.preventDefault();
-            $(this).addClass("disabled");
-            $(this).next().removeClass("disabled");
-            $(this).wrap('<span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart."></span>');
+    e.preventDefault();
+    $(this).addClass("disabled");
+    $(this).next().removeClass("disabled");
+    $(this).wrap('<span class="w-100 d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart."></span>');
 
-            tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-            tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-            let url = $(this).attr("href") + "&orderId=0";
-            if (orderId != null)
-                url = $(this).attr("href") + "&orderId=" + orderId;
+    let url = $(this).attr("href") + "&orderId=0";
+    if (orderId != null)
+        url = $(this).attr("href") + "&orderId=" + orderId;
 
-            $.get(url, function(data, status) {
+    $.get(url, function(data, status) {
 
-                if (status == "success") {
-                    //data[0] = orderItemCount
-                    //data[1] = orderId
+        if (status == "success") {
+            //data[0] = orderItemCount
+            //data[1] = orderId
 
-                    $("#cartItemCount").fadeOut(250, function() {
-                        $("#cartItemCount").html(data[0]);
-                        $("#cartItemCount").fadeIn(250);
-                    });
-
-
-
-                    orderId = data[1];
-                }
-                else {
-                    alert("Error in add to cart");
-                }
+            $("#cartItemCount").fadeOut(250, function() {
+                $("#cartItemCount").html(data[0]);
+                $("#cartItemCount").fadeIn(250);
             });
 
-        })
+
+
+            orderId = data[1];
+        }
+        else {
+            alert("Error in add to cart");
+        }
+    });
+
+});
 
 
 
 
 
 
-        $(".removeFromCart").click(function(e) {
+$(".removeFromCart").click(function(e) {
 
-            e.preventDefault();
+    e.preventDefault();
 
-            $(this).addClass("disabled");
-            $(this).prev().children().removeClass("disabled").unwrap();
-            
+    $(this).addClass("disabled");
+    $(this).prev().children().removeClass("disabled").unwrap();
 
-            url = $(this).attr("href") + "&orderId=" + orderId;
 
-            $.get(url, function(data, status) {
+    url = $(this).attr("href") + "&orderId=" + orderId;
 
-                if (status == "success") {
-                    //data[0] = orderItemCount
-                    //data[1] = orderId
+    $.get(url, function(data, status) {
 
-                    orderId = data[1];
+        if (status == "success") {
+            //data[0] = orderItemCount
+            //data[1] = orderId
 
-                    if (data[0] == 0) {
-                        $("#cartItemCount").fadeOut();
-                        $("#cartItemCount").html(data[0]);
-                    }
-                    else {
-                        $("#cartItemCount").fadeOut(250);
-                        $("#cartItemCount").fadeIn(250);
-                        $("#cartItemCount").html(data[0]);
-                    }
+            orderId = data[1];
 
-                }
-                else {
-                    alert("Error in remove from cart");
-                }
-            });
+            if (data[0] == 0) {
+                $("#cartItemCount").fadeOut();
+                $("#cartItemCount").html(data[0]);
+            }
+            else {
+                $("#cartItemCount").fadeOut(250);
+                $("#cartItemCount").fadeIn(250);
+                $("#cartItemCount").html(data[0]);
+            }
 
-        })
+        }
+        else {
+            alert("Error in remove from cart");
+        }
+    });
+
+});
 
     </script>
         }

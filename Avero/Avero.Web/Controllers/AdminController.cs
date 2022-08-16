@@ -258,7 +258,7 @@ namespace Avero.Web.Controllers
                 product = product,
                 catagories = context.catagory.Select(c => new CatagoriesViewModel { catagory_id = c.Id, catagory_name = c.name, IsSelected = context.product_catagory.Where(pc => pc.catagory_id == c.Id && pc.product_id == id).FirstOrDefault() != null ? true : false }).ToList(),
             };
-            if(product.offer_price_end_date >= DateTime.Now)
+            if (product.offer_price_end_date >= DateTime.Now)
             {
                 model.make_discount = true;
                 model.offer_price = product.offer_price;
@@ -403,10 +403,15 @@ namespace Avero.Web.Controllers
 
         public async Task<IActionResult> checkOut(String id, long orderId)
         {
-            
+
             var oldOrder = await context.order.Include(o => o.order_details).FirstOrDefaultAsync(o => o.Id == orderId);
             if (oldOrder.order_details.Any())
             {
+                var od = oldOrder.order_details.ToList();
+                for (int i = 0; i < od.Count(); i++)
+                {
+                    (await context.product.FindAsync(od.ElementAt(i).Id)).quantity_available -= od.ElementAt(i).quantity;
+                }
                 oldOrder.order_date = DateTime.Now;
                 await context.SaveChangesAsync();
 
@@ -421,11 +426,11 @@ namespace Avero.Web.Controllers
                 return RedirectToAction("orders", new { id });
             }
 
-            else 
+            else
             {
                 return RedirectToAction("Cart", new { id });
             }
-            
+
         }
 
         [HttpGet]
@@ -447,9 +452,37 @@ namespace Avero.Web.Controllers
         {
             var od = await context.order_details.FindAsync(orderDetailsId);
             od.processing_state = Order_state.rejected;
+            (await context.product.FindAsync(od.product_id)).quantity_available += od.quantity;
             await context.SaveChangesAsync();
             return RedirectToAction("orders");
         }
 
+        public async Task<IActionResult> addQuantity(String id, long? orderDetailsId)
+        {
+            if (orderDetailsId == null)
+                return View("Error");
+            var od = context.order_details.Include(od => od.product).FirstOrDefault(od => od.Id == orderDetailsId);
+            if (od.product?.quantity_available > od.quantity)
+            {
+                od.quantity += 1;
+                await context.SaveChangesAsync();
+            }
+            return RedirectToAction("cart", new { id });
+        }
+        public async Task<IActionResult> subQuantity(String id, long? orderDetailsId)
+        {
+            if (orderDetailsId == null)
+                return View("Error");
+            var od = await context.order_details.FindAsync(orderDetailsId);
+            if (od.quantity - 1 == 0)
+            {
+                context.order_details.Remove(od);
+                await context.SaveChangesAsync();
+                return RedirectToAction("cart", new { id });
+            }
+            od.quantity -= 1;
+            await context.SaveChangesAsync();
+            return RedirectToAction("cart", new { id });
+        }
     }
 }

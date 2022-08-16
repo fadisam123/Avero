@@ -27,9 +27,64 @@
          background: linear-gradient(to right, #25c481, #25b7c4);
      }
 
-     h1{
-         border-bottom:1px solid white;    
-     }
+     h1 {
+         border-bottom:1px solid white;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-header {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+th {
+    padding: 10px 7.5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+.tbl-content tr:hover {
+    background: linear-gradient(to left, #25c481, #25b7c4);
+}
+
+.form-control {
+ width: 70px;
+ margin-left: 60px;
+}
+
+input {
+    width: 60px;
+    border-radius: 5px;
+}
 
      .btn {
          width:170px;
@@ -37,22 +92,74 @@
      
      .logo {
          position:absolute;
-         top: 30%;
-         width:400px;
-         height:400px;
+         top: 80%;
+         width:60px;
+         height:60px;
      }
 
     </style>
 }
 
 
-<h1 class="text-center text-white mt-2 pb-3">Your Cart</h1>
+
+<section>
+        <h1 class="text-center text-white mt-2 pb-3">YOUR CART</h1>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th>WHOLESEALER</th>
+                        <th>IMAGE</th>
+                        <th>PRODUCT</th>
+                        <th>PRICE</th>
+                        <th>QUANTITY</th>
+                        <th class="text-right"><span id="amount" class="amount">TOTAL</span> </th>
+
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table id="myTable" cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                        <tr>
+                            <td>
+                                <a class="link-dark text-decoration-none" asp-controller="Home" asp-action="viewUser" asp-route-id="">
+                                    <span class="userImg d-flex align-items-center w-75">
+                                        <img class="me-2 mw-100 rounded" src="" alt="user image" asp-append-version="true" />
+                                        <span class="userName">NAME-WHOLESEALER</span>
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a class="link-dark" asp-controller="Home" asp-action="viewProduct" asp-route-id="">
+                                    <span class="userImg d-flex align-items-center w-75">
+                                        <img class="mw-100 rounded-circle" src="" alt="user image" asp-append-version="true" />
+                                    </span>
+                                </a>
+                            </td>
+                            <td>NAME-PRODUCT</td>
+                            <td><input type="text" value="72" class="price form-control text-center"></td>
+                            <td>
+                                <input type="number" name="qty" min="0" value="0" class="qty text-center"/>
+                            </td>  
+                            <td align="right">SYP <span id="amount" class="amount">0</span></td>
+                        </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                           <td colspan="5"></td><td align="right"><strong>TOTAL = SYP  <span id="total" class="total">0</span></strong></td>
+                    </tr>
+                </tfoot>
+           </table>
+       </div>
+</section>
 
 
 
 @if (itemCount != 0)
 {
-    <h3 class="text-center text-white">Total items: @itemCount products</h3>
+    <h3 class="text-center text-white mt-3">Total items: @itemCount products</h3>
     <br />
     @*var ordersDetails = orders.ElementAt(0).order_details.ToList();
     var totalPrice = 0.0;
@@ -102,6 +209,28 @@ else
     <img class="logo" src="~/img/Avero2-light.png" />
 </div>
 
+}
+
+@section script {
+    <script>
+             $(document).ready(function(){
+    update_amounts();
+    $('.qty, .price').on('keyup keypress blur change', function(e) {
+        update_amounts();
+                           });
+                                        });
+             function update_amounts(){
+     var sum = 0.0;
+     $('#myTable > tbody  > tr').each(function() {
+          var qty = $(this).find('.qty').val();
+            var price = $(this).find('.price').val();
+            var amount = (qty*price)
+            sum+=amount;
+            $(this).find('.total').text(''+amount);
+        });
+  $('.total').text(sum);
+       
+    </script>
 }
 
 

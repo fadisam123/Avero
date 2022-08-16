@@ -3,8 +3,17 @@
     Layout = "~/Views/Shared/_LayoutAccount.cshtml";
 }
 
-<h1>@ViewBag.ErrorMessage</h1>
+@section style {
+    <style>
+        body {
+          background: linear-gradient(to right, #25c481, #25b7c4);
+        }
+    </style>
+}
 
-<a asp-action="index" asp-controller="home">
+<h1 class="text-center mt-4 text-danger">@ViewBag.ErrorMessage</h1>
+<div class="row">
+<a asp-action="index" asp-controller="home" class="text-center text-decoration-none">
     Click here to navigate to the home page
 </a>
+</div>

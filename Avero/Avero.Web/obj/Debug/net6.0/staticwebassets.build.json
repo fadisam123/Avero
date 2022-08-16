@@ -1,7 +1,11 @@
 {
   "Version": 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "Hash": "WLBab5hgksEDDjiyXdTq6nvtYIV6jv0jOZN9dZ/yeJk=",
+=======
+  "Hash": "zOa0tWWKU4sL4WR4b8xxO6n4g/2YNwRLRufcGfQpXKk=",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
 =======
   "Hash": "zOa0tWWKU4sL4WR4b8xxO6n4g/2YNwRLRufcGfQpXKk=",
 >>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
@@ -787,10 +791,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\1a30323c-2957-4631-807c-29b837c60f16_rice.jpg",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\1cbc27ba-cb75-4d3b-ac64-e060774463f1_unnamed.jpg",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/1a30323c-2957-4631-807c-29b837c60f16_rice.jpg",
       "AssetKind": "All",
@@ -961,10 +969,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\50cccd1b-daac-40b1-acec-1f86abd567d2_91-KcdesxHL._SL1500_.jpg",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\58401c69-86aa-4ebb-bea5-a670b4735bec_photo6005987064937558773.jpg",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/50cccd1b-daac-40b1-acec-1f86abd567d2_91-KcdesxHL._SL1500_.jpg",
       "AssetKind": "All",
@@ -1033,10 +1045,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\73efaaf8-f28c-4a23-88c3-c1c446d0e3bb_5kg-thai-white-rice-vitamin-enriched-fit.png",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\777ddf0d-61c8-450c-9436-9ce6b43b21ae_Boss.jpg",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/73efaaf8-f28c-4a23-88c3-c1c446d0e3bb_5kg-thai-white-rice-vitamin-enriched-fit.png",
       "AssetKind": "All",
@@ -1292,10 +1308,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\d34387bb-4b20-4d29-8892-91ac727818af_rice (1).jpg",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\d3f40a9d-1caf-4667-91a5-733e521961d9_IMG333fj33.jpg",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/d34387bb-4b20-4d29-8892-91ac727818af_rice (1).jpg",
       "AssetKind": "All",
@@ -1415,10 +1435,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\f406f6fe-7015-479f-b300-3366a94ace99_qpemcwbfgijsclmiyakl.png",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\products\\fa272706-d5a0-4f04-bf6b-c261efe4b611_404_dog.png",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/products/f406f6fe-7015-479f-b300-3366a94ace99_qpemcwbfgijsclmiyakl.png",
       "AssetKind": "All",
@@ -1572,10 +1596,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\0129d640-b2be-4b50-a476-6ba7699bb662_150.jpg",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\3aa15669-27b6-46eb-a772-b88a2d77b87b_unnamed.jpg",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/0129d640-b2be-4b50-a476-6ba7699bb662_150.jpg",
       "AssetKind": "All",
@@ -1712,10 +1740,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\a11af751-d452-482e-bcdb-10b86a136513_Opera Snapshot_2022-08-17_001541_i.pravatar.cc.png",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\Default.jpg",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/a11af751-d452-482e-bcdb-10b86a136513_Opera Snapshot_2022-08-17_001541_i.pravatar.cc.png",
       "AssetKind": "All",
@@ -1767,10 +1799,14 @@
     },
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\users\\f8f480a0-ab7f-4d33-8e76-bc2f84525763_150 (1).jpg",
+=======
+      "Identity": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\js\\Partial\\_slider.js",
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
       "SourceId": "Avero.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SAM\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
       "BasePath": "_content/Avero.Web",
       "RelativePath": "img/users/f8f480a0-ab7f-4d33-8e76-bc2f84525763_150 (1).jpg",
       "AssetKind": "All",

@@ -27,13 +27,11 @@
 
 
         .product {
-            display: block;
+            display: grid;
             top: 0px;
             position: relative;
             width: 300px;
             background: linear-gradient(45deg, #098766, transparent);
-            border-radius: 4px;
-            padding: 10px;
             text-decoration: none;
             z-index: 0;
             overflow: hidden;
@@ -220,10 +218,10 @@
 
                     @if (is_wholesealer ?? false)
                     {
-                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
+                        <span class="d-inline-block mt-1" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
                             <a class="btn-sm btn me-2 btn-primary disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
                         </span>
-                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
+                        <span class="d-inline-block mt-1" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Wholesaler can't do this action">
                             <a id="@p.Id" class="btn-sm btn btn-danger disabled" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
                         </span>
                     }
@@ -231,13 +229,14 @@
                     {
                         if (order?.order_details.Any(od => od.product_id == @p.Id) ?? false)
                         {
-                            <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart.">
+                            <span class="d-inline-block mt-1" tabindex="0" data-bs-toggle="tooltip" data-bs-title="You have added this product to your shopping list, to edit the quantity, go to cart.">
                                 <a id="@p.Id" class="btn-sm btn btn-primary addToCart disabled" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
                             </span>
-                            <a id="@p.Id" class="btn-sm btn btn-danger removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+                            <a id="@p.Id" class="btn-sm btn btn-danger removeFromCart mt-1" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
                         }
                         else
                         {
+<<<<<<< HEAD
                             @if (p.quantity_available > 0) // product is available
                             {
                                 <a id="@p.Id" class="btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
@@ -251,6 +250,10 @@
                                 <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
                             }
 
+=======
+                            <a id="@p.Id" class="btn-sm btn btn-primary addToCart mt-1" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                            <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart mt-1" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
+>>>>>>> 112b1bb45f97a9c2ec0defcb8a6eaf12721f701d
                         }
                     }
                 </div>

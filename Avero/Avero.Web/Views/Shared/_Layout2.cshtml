@@ -20,7 +20,7 @@
         {
             orderCount = user.order.OrderByDescending(p => p.order_date).ToList().ElementAt(0).order_details.ToList().Count();
             orderId = user?.order.OrderByDescending(p => p.order_date).ToList().ElementAt(0).Id;
-        }  
+        }
 
     }
 
@@ -46,7 +46,18 @@
     <link rel="stylesheet" href="~/Avero.Web.styles.css" asp-append-version="true" />
     <style>
 
+        /* for custom scrollbar for webkit browser*/
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
 
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
         /* Dim the screen on menu item active and focus on dropdown  start */
         .screen-darken {
             content: '';
@@ -67,18 +78,18 @@
             position: relative;
             z-index: 15;
             background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-            border-bottom:1px solid white;
+            border-bottom: 1px solid white;
         }
-        /*-------------- Dim the screen on menu item active and focus on dropdown  end --------------*/
+            /*-------------- Dim the screen on menu item active and focus on dropdown  end --------------*/
 
 
-        .navbar .navbar-collapse .nav-link:hover {
-            color:#098766;
-        }
+            .navbar .navbar-collapse .nav-link:hover {
+                color: #098766;
+            }
 
-        .navbar .navbar-collapse .nav-link{
-            color:white;
-        }
+            .navbar .navbar-collapse .nav-link {
+                color: white;
+            }
 
         #cartItemCount {
             background: #ff0000;
@@ -92,15 +103,15 @@
 
         .line {
             margin-top: -10px;
-            margin-bottom:-15px;
+            margin-bottom: -15px;
         }
 
-          footer .logo {
-            background-color:black;
-            border:1px solid black;
-            border-radius:50%;
-            width:40px;
-            height:40px;
+        footer .logo {
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
         }
 
     </style>
@@ -124,7 +135,7 @@
             </ul>
             <form method="get" asp-controller="home" asp-action="search" class="d-flex" role="search">
                 <input id="searchTxt" name="searchTxt" type="search" class="form-control me-2" placeholder="Search" aria-label="Search" />
-                <input hidden id="orderId" name="orderId" value="@orderId"/>
+                <input hidden id="orderId" name="orderId" value="@orderId" />
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <ul class="navbar-nav">
@@ -192,7 +203,7 @@
 
 
     <div class="line text-center">
-    <p>ــــــــــــــــــــــــــ</p>
+        <p>ــــــــــــــــــــــــــ</p>
     </div>
     <div class="footer">
         <footer class="mx-2 mb-2 d-flex flex-nowrap flex-column justify-content-center">

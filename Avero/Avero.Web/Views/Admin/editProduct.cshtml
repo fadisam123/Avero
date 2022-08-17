@@ -90,7 +90,10 @@
             }
 
             <div class="form-group mb-4 d-flex align-items-center">
-                <div class="me-4"><img src="~/img/products/@pImage" class="rounded" id="photoOutput" width="200" /></div>
+                @* ------------------------------------------------------------------------------------------------- *@
+                <div class="me-4"><img class="rounded" id="photoOutput" width="200" src="https://loremflickr.com/320/240/food" alt="user image" asp-append-version="true" /></div>
+                @*<div class="me-4"><img src="~/img/products/@pImage" class="rounded" id="photoOutput" width="200" /></div>*@
+
                 <div class="flex-fill">
                     <div class="custom-file">
                         <input multiple accept="image/png, image/jpeg" id="photo" asp-for="imgs" class="form-control custom-file-input">

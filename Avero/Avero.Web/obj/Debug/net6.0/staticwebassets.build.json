@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WLBab5hgksEDDjiyXdTq6nvtYIV6jv0jOZN9dZ/yeJk=",
+  "Hash": "dq5PKBvrmKPxfI/8vc0hkSoBOmWChY4dPYAHAq7Zonc=",
   "Source": "Avero.Web",
   "BasePath": "_content/Avero.Web",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Access.gif",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "img/Account/Access.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Account\\Access.gif"
     },
     {
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\Login\\2203549_admin_avatar_human_login_user_icon.svg",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Account\\Login\\phone_icon.svg"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Account\\noaccess.png",
+      "SourceId": "Avero.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\",
+      "BasePath": "_content/Avero.Web",
+      "RelativePath": "img/Account/noaccess.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Account\\noaccess.png"
     },
     {
       "Identity": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Web\\wwwroot\\img\\Avero2.png",

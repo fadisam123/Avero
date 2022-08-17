@@ -2,6 +2,7 @@
 using Avero.Core.Enum;
 using Avero.Infrastructure.Persistence.DBContext;
 using Avero.Web.ViewModels.Admin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,10 +28,6 @@ namespace Avero.Web.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [HttpGet]
         public IActionResult browseProducts(int page = 1, long? orderId = null)
@@ -81,6 +78,21 @@ namespace Avero.Web.Controllers
             long[] result = new long[2];
             var product = await context.product.FindAsync(productId);
             var user = await context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                result[0] = -1;
+                result[1] = -1;
+                return (result);
+            }
+            else
+            {
+                if (!(await userManager.IsInRoleAsync(user, "Retailer")))
+                {
+                    result[0] = -2;
+                    result[1] = -2;
+                    return (result);
+                }
+            }
             Order order;
             if (orderId == 0)
             {
@@ -130,7 +142,22 @@ namespace Avero.Web.Controllers
         public async Task<long[]> RemoveFromCart(long productId, String userId, long orderId)
         {
             long[] result = new long[2];
-
+            var user = await context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                result[0] = -1;
+                result[1] = -1;
+                return (result);
+            }
+            else
+            {
+                if (!(await userManager.IsInRoleAsync(user, "Retailer")))
+                {
+                    result[0] = -2;
+                    result[1] = -2;
+                    return (result);
+                }
+            }
             var orderDetailsToRemove = context.order_details.FirstOrDefault(od => od.product_id == productId && od.order_id == orderId);
             context.order_details.Remove(orderDetailsToRemove);
             await context.SaveChangesAsync();

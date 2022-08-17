@@ -243,12 +243,13 @@ namespace Avero.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
             return RedirectToAction("index", "home");
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> ResendConfirmationEmail(string userId)
         {
             if (userId != null)
@@ -384,6 +385,13 @@ namespace Avero.Web.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
 
     }

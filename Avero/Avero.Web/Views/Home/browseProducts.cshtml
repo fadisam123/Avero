@@ -244,7 +244,7 @@
                             else
                             {
                                 <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Product Not Available Now">
-                                <a id="@p.Id" class="disabled btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
+                                    <a id="@p.Id" class="disabled btn-sm btn btn-primary addToCart" asp-action="addToCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Add To Cart</a>
                                 </span>
                                 <a id="@p.Id" class="btn-sm btn btn-danger disabled removeFromCart" asp-action="RemoveFromCart" asp-controller="Home" asp-route-productId="@p.Id" asp-route-userId="@userId">Remove</a>
                             }
@@ -354,12 +354,23 @@
             if (orderId != null)
                 url = $(this).attr("href") + "&orderId=" + orderId;
 
-            $.get(url, function(data, status) {
+            $.get(url, function(data, status, xhr) {
 
                 if (status == "success") {
                     //data[0] = orderItemCount
                     //data[1] = orderId
-
+                    if (data[0] == -1) {
+                        window.location.href = "https://localhost:7172/account/login";
+                        return;
+                    }
+                    else
+                    if(data[0] == -2)
+                    {
+                        window.location.href = "https://localhost:7172/account/AccessDenied";
+                        return;
+                    }
+                    console.log(data[0]);
+                    console.log(data[1]);
                     $("#cartItemCount").fadeOut(250);
                     $("#cartItemCount").fadeIn(250);
                     $("#cartItemCount").html(data[0]);
@@ -367,6 +378,7 @@
                     orderId = data[1];
                 }
                 else {
+                    console.log("alert")
                     alert("Error in add to cart");
                 }
             });
@@ -395,6 +407,17 @@
                 if (status == "success") {
                     //data[0] = orderItemCount
                     //data[1] = orderId
+
+                    if (data[0] == -1) {
+                        window.location.href = "https://localhost:7172/account/login";
+                        return;
+                    }
+                    else
+                    if(data[0] == -2)
+                    {
+                        window.location.href = "https://localhost:7172/account/AccessDenied";
+                        return;
+                    }
 
                     orderId = data[1];
 

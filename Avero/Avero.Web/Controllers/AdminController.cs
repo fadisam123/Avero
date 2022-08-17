@@ -11,9 +11,11 @@ using Microsoft.AspNetCore.Identity;
 using Avero.Web.ViewModels;
 using Avero.Web.ViewModels.Admin;
 using Avero.Core.Enum;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Avero.Web.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private readonly UserManager<User> userManager;
@@ -143,6 +145,7 @@ namespace Avero.Web.Controllers
 
 
         [HttpGet]
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> viewProducts(String id, int page = 1)
         {
             ViewBag.active = "viewProducts";
@@ -157,6 +160,7 @@ namespace Avero.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "WholeSealer")]
         public IActionResult AddProduct()
         {
             ViewBag.active = "AddProduct";
@@ -166,6 +170,7 @@ namespace Avero.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> AddProduct(addProductViewModel model)
         {
             ViewBag.active = "AddProduct";
@@ -236,6 +241,7 @@ namespace Avero.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> editProduct(long id)
         {
             var product = await context.product.Include(p => p.product_imgs).FirstOrDefaultAsync(p => p.Id == id);
@@ -270,6 +276,7 @@ namespace Avero.Web.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> editProduct(addProductViewModel model, long id)
         {
             if (
@@ -350,6 +357,7 @@ namespace Avero.Web.Controllers
             return View(model);
         }
         [HttpPost]
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> deleteProduct(long id, int currentPage)
         {
             var productToDelete = await context.product.FindAsync(id);
@@ -382,6 +390,7 @@ namespace Avero.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Retailer")]
         public async Task<IActionResult> Cart(String id)
         {
             ViewBag.active = "Cart";
@@ -390,6 +399,7 @@ namespace Avero.Web.Controllers
             return View(user);
         }
         [HttpGet]
+        [Authorize(Roles = "Retailer")]
         public async Task<IActionResult> clearCart(String id, long orderId)
         {
             ViewBag.active = "Cart";
@@ -401,6 +411,7 @@ namespace Avero.Web.Controllers
             return RedirectToAction("Cart", new { id });
         }
 
+        [Authorize(Roles = "Retailer")]
         public async Task<IActionResult> checkOut(String id, long orderId)
         {
 
@@ -443,6 +454,7 @@ namespace Avero.Web.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> approve(long orderDetailsId)
         {
             var od = await context.order_details.FindAsync(orderDetailsId);
@@ -450,6 +462,7 @@ namespace Avero.Web.Controllers
             await context.SaveChangesAsync();
             return RedirectToAction("orders");
         }
+        [Authorize(Roles = "WholeSealer")]
         public async Task<IActionResult> reject(long orderDetailsId)
         {
             var od = await context.order_details.FindAsync(orderDetailsId);
@@ -459,6 +472,7 @@ namespace Avero.Web.Controllers
             return RedirectToAction("orders");
         }
 
+        [Authorize(Roles = "Retailer")]
         public async Task<IActionResult> addQuantity(String id, long? orderDetailsId)
         {
             if (orderDetailsId == null)
@@ -471,6 +485,7 @@ namespace Avero.Web.Controllers
             }
             return RedirectToAction("cart", new { id });
         }
+        [Authorize(Roles = "Retailer")]
         public async Task<IActionResult> subQuantity(String id, long? orderDetailsId)
         {
             if (orderDetailsId == null)

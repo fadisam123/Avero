@@ -37,9 +37,7 @@
 }
 
 @section style {
-
-    <link rel="stylesheet" href="~/lib/slick-carousel/slick.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/slick-carousel/slick-theme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/Swiper/swiper-bundle.min.css" />
     <style>
         * {
             padding: 0;
@@ -223,6 +221,37 @@
             box-shadow: 2px 2px 10px 5px #b8b8b8;
             border-radius: 10px;
         }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
     </style>
 }
     @*<div class="product-detiles row text-center">
@@ -339,14 +368,20 @@
         {
             <div id="more-image-container" class="container more-image-container">
                 <div role="button" style="height: 150px" class="ads_sponsors d-flex">
-                    @for (int i = 1; i < pImages.Count(); i++)
-                    {
-                        <div>
-                            @* ------------------------------------------------------------------------------------------------- *@
-                            <img style="object-fit: cover; height:150px" src="https://loremflickr.com/320/240/food?random=@i+1" alt="Product image @i">
-                            @*<img style="object-fit: cover; height:150px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">*@
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            @for (int i = 1; i < pImages.Count(); i++)
+                            {
+                                <div class="swiper-slide">
+                                    @* ------------------------------------------------------------------------------------------------- *@
+                                    <img style="object-fit: cover; height:150px" src="https://loremflickr.com/320/240/food?random=@i+1" alt="Product image @i">
+                                    @*<img style="object-fit: cover; height:150px" src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">*@
+                                </div>
+                            }
                         </div>
-                    }
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </div>
         }
@@ -356,24 +391,17 @@
                 @for (int i = 1; i < pImages.Count(); i++)
                 {
                     <div style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;border-radius: 10px;" class="product-image m-1 p-1">
-                        
-                            @* ------------------------------------------------------------------------------------------------- *@
+
+                        @* ------------------------------------------------------------------------------------------------- *@
                         @*<a target=”_blank” href="~/img/products/@pImages.ElementAt(i).img_name">*@
                         <a target=”_blank” href="https://loremflickr.com/320/240/food?random=@i+1">
                             <img src="https://loremflickr.com/320/240/food?random=@i+1" alt="Product image @i">
-                        @*<img src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">*@
+                            @*<img src="~/img/products/@pImages.ElementAt(i).img_name" alt="Product image @i">*@
                         </a>
                     </div>
                 }
             </div>
         }
-
-
-
-
-
-
-
     </div>
     <div class="product-info w-50">
         @{
@@ -462,7 +490,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="~/lib/slick-carousel/slick.js"></script>
+    <script src="~/lib/Swiper/swiper-bundle.min.js"></script>
     <script>
 
         // Enable tooltips (initialize tooltips before they can be used)
@@ -470,12 +498,11 @@
         var tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
 
-        $('.ads_sponsors').slick({
-            autoplay: true,
-            autoplaySpeed: 1000,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
 
 

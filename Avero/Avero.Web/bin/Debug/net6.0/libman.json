@@ -37,10 +37,6 @@
         "js/bootstrap.bundle.min.js",
         "js/bootstrap.bundle.min.js.map"
       ]
-    },
-    {
-      "library": "slick-carousel@1.8.1",
-      "destination": "wwwroot/lib/slick-carousel/"
     }
   ]
 }

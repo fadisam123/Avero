@@ -90,12 +90,10 @@
                         Back To Home
                     </a>
                 </li>
-                <li class="mb-2">
-                    <img src="@photoPath" class="d-block w-50 m-auto card-img-top rounded-circle" alt="user image">
-                    <div>
-                        <h5 class="text-center text-white">@user.name</h5>
-                    </div>
-                </li>
+                <img src="@photoPath" class="mh-100 d-block w-50 m-auto card-img-top rounded-circle" alt="user image">
+                <div class="mb-2">
+                    <h5 class="text-center text-white">@user.name</h5>
+                </div>
                 <li class="nav-item">
                     <a class="nav-link link-light active" asp-action="Profile" asp-controller="Admin" asp-route-id="@userId"> My Profile </a>
                 </li>
@@ -135,16 +133,7 @@
                         <li>
                             <a class="nav-link link-light active" asp-action="orders" asp-controller="Admin"> My Orders </a>
                         </li>
-                        <li><a class="nav-link link-light" href="#">Submenu item 5 </a></li>
-                        <li><a class="nav-link link-light" href="#">Submenu item 6 </a></li>
-                        <li><a class="nav-link link-light" href="#">Submenu item 7 </a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#"> Something </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link-light" href="#"> Other link </a>
                 </li>
             </ul>
         </nav>
@@ -188,7 +177,7 @@
             }
 
         });
-                                                                                                        // DOMContentLoaded  end
+                                                                                                                // DOMContentLoaded  end
     </script>
     @*we set (type="module") in this script because we used (import statment) inside the file*@
     @await RenderSectionAsync("script", required: false)

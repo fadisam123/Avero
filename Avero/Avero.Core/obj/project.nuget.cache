@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SsbXtUkXgBdL+wGKY4i+ibwSYAOoeV279+Csh5cBFZhXn0RzoUg6x4E5I3UsL/ZUJausYs/dv1ylg+aX8xsNnw==",
+  "dgSpecHash": "vZ+heb9/nR4tuCKA/p0zBD5e6Zv54v2BTm3OOLFUMdLJ4JfRITnvsGcy9a/Ar52o5RRiXkqQIk3/1kvblALT0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj",
+  "projectFilePath": "C:\\Users\\ROG\\Desktop\\مشروع الرابعة\\Avero\\Avero.Core\\Avero.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ROG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.6\\microsoft.aspnetcore.cryptography.internal.6.0.6.nupkg.sha512",
     "C:\\Users\\ROG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.6\\microsoft.aspnetcore.cryptography.keyderivation.6.0.6.nupkg.sha512",

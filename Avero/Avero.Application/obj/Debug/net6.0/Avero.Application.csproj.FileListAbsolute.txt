@@ -43,3 +43,18 @@ C:\Users\ROG\Desktop\Avero\Avero\Avero.Application\obj\Debug\net6.0\Avero.Applic
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Application\obj\Debug\net6.0\refint\Avero.Application.dll
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.pdb
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Application\obj\Debug\net6.0\ref\Avero.Application.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\bin\Debug\net6.0\Avero.Application.deps.json
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\bin\Debug\net6.0\Avero.Application.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\bin\Debug\net6.0\Avero.Application.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\bin\Debug\net6.0\Avero.Core.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\bin\Debug\net6.0\Avero.Core.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.csproj.AssemblyReference.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.AssemblyInfoInputs.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.AssemblyInfo.cs
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.csproj.CopyComplete
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\refint\Avero.Application.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\Avero.Application.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Application\obj\Debug\net6.0\ref\Avero.Application.dll

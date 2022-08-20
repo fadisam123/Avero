@@ -17,3 +17,22 @@ C:\Users\ROG\Desktop\Avero\Avero\Avero.Infrastructure\obj\Debug\net6.0\refint\Av
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.pdb
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.genruntimeconfig.cache
 C:\Users\ROG\Desktop\Avero\Avero\Avero.Infrastructure\obj\Debug\net6.0\ref\Avero.Infrastructure.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Infrastructure.deps.json
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Infrastructure.runtimeconfig.json
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Infrastructure.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Infrastructure.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Application.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Core.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Application.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\bin\Debug\net6.0\Avero.Core.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.AssemblyInfo.cs
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.csproj.CopyComplete
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\refint\Avero.Infrastructure.dll
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.pdb
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\Avero.Infrastructure.genruntimeconfig.cache
+C:\Users\ROG\Desktop\مشروع الرابعة\Avero\Avero.Infrastructure\obj\Debug\net6.0\ref\Avero.Infrastructure.dll

@@ -522,11 +522,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Application\\Avero.Application.csproj",
+      "projectUniqueName": "C:\\Users\\ROG\\Desktop\\مشروع الرابعة\\Avero\\Avero.Application\\Avero.Application.csproj",
       "projectName": "Avero.Application",
-      "projectPath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Application\\Avero.Application.csproj",
+      "projectPath": "C:\\Users\\ROG\\Desktop\\مشروع الرابعة\\Avero\\Avero.Application\\Avero.Application.csproj",
       "packagesPath": "C:\\Users\\ROG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Application\\obj\\",
+      "outputPath": "C:\\Users\\ROG\\Desktop\\مشروع الرابعة\\Avero\\Avero.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -547,8 +547,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj": {
-              "projectPath": "C:\\Users\\ROG\\Desktop\\Avero\\Avero\\Avero.Core\\Avero.Core.csproj"
+            "C:\\Users\\ROG\\Desktop\\مشروع الرابعة\\Avero\\Avero.Core\\Avero.Core.csproj": {
+              "projectPath": "C:\\Users\\ROG\\Desktop\\مشروع الرابعة\\Avero\\Avero.Core\\Avero.Core.csproj"
             }
           }
         }

@@ -10,5 +10,5 @@
 
 	> For testing purpose, there are two pre-registered accounts that you can use to log in.  
 wholesale user: wholesale@avero.com  
-retailer user: retailer@avero.com
+retailer user: retailer@avero.com  
 password: 123456
